@@ -18,6 +18,12 @@
 -(void) subtract: (double) value;
 -(void) multiply: (double) value;
 -(void) divide: (double) value;
+//Memory Methods
+-(double) memoryClear;// clear memory
+-(double) memoryStore;// set memory to accumulator
+-(double) memoryRecall; // set accumulator to memory
+-(double) memoryAdd: (double) value; // add value into memory
+-(double) memorySubtract: (double) value;// subtract value from memory
 @end
 
 #endif /* Calculator_h */
