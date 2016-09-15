@@ -13,9 +13,11 @@
 @end
 
 @implementation ViewController
+@synthesize sliderA, sliderB;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"View loaded, sliders should be visible ...");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -23,5 +25,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)sliderA_changed:(id)sender {
+    sliderB.value=1-sliderA.value;
+    NSLog(@"SLider A Value: %f\nSlider B Value: %f",sliderA.value,sliderB.value);
+}
+- (IBAction)sliderB_changed:(id)sender {
+    sliderA.value=1-sliderB.value;
+    NSLog(@"SLider A Value: %f\nSlider B Value: %f",sliderA.value,sliderB.value);
+}
+
 
 @end

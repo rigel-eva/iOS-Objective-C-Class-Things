@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController{
+    IBOutlet UISlider *sliderA;
+    IBOutlet UISlider *sliderB;
+}
+@property (nonatomic, retain) UISlider *sliderA;
+@property (nonatomic, retain) UISlider *sliderB;
+- (IBAction)sliderA_changed:(id)sender;
+- (IBAction)sliderB_changed:(id)sender;
 @end
 
