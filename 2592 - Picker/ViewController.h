@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+<UIPickerViewDelegate, UIPickerViewDataSource>{
+    IBOutlet UIPickerView *picker;
+}
+@property (nonatomic, retain) UIPickerView *picker;
 @end
 
