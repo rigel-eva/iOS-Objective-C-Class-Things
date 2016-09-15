@@ -13,7 +13,8 @@
 @end
 
 @implementation ViewController
-
+@synthesize picker;
+static NSString *pd[3]={@"One",@"Two",@"Three"};
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

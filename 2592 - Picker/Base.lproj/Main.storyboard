@@ -19,6 +19,10 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="axU-HE-fCg">
                                 <rect key="frame" x="0.0" y="163" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FdM-74-yQd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zFK-4l-7XD"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
