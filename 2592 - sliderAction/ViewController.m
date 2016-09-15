@@ -19,8 +19,8 @@
     [super viewDidLoad];
     NSLog(@"View loaded, sliders should be visible ...");
     // Do any additional setup after loading the view, typically from a nib.
-    sliderA.continuous=false;//Semi Useful if we don't want to continuosly trigger... but eh ...
-    sliderB.continuous=false;
+    //sliderA.continuous=false;//Semi Useful if we don't want to continuosly trigger... but eh ...
+    //sliderB.continuous=false;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,12 +29,13 @@
 }
 - (IBAction)sliderA_changed:(id)sender {
     sliderB.value=1-sliderA.value;
-    NSLog(@"SLider A Value: %f\nSlider B Value: %f",sliderA.value,sliderB.value);
 }
 - (IBAction)sliderB_changed:(id)sender {
     sliderA.value=1-sliderB.value;
-    NSLog(@"SLider A Value: %f\nSlider B Value: %f",sliderA.value,sliderB.value);
+    
 }
-
+- (IBAction)slidersMoved:(id)sender{
+    NSLog(@"Slider A Value: %f\nSlider B Value: %f",sliderA.value,sliderB.value);
+}
 
 @end

@@ -31,6 +31,8 @@
                                 </variation>
                                 <connections>
                                     <action selector="sliderB_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="V4c-dA-XTU"/>
+                                    <action selector="slidersMoved:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="U2t-Tb-3Sf"/>
+                                    <action selector="slidersMoved:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mMe-NY-Q8M"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSn-ha-TIk">
@@ -65,6 +67,8 @@
                                 </variation>
                                 <connections>
                                     <action selector="sliderA_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="sA1-Zd-c8n"/>
+                                    <action selector="slidersMoved:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2l-dE-eZw"/>
+                                    <action selector="slidersMoved:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="WKp-KB-UJk"/>
                                 </connections>
                             </slider>
                         </subviews>
