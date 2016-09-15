@@ -19,6 +19,8 @@
     [super viewDidLoad];
     NSLog(@"View loaded, sliders should be visible ...");
     // Do any additional setup after loading the view, typically from a nib.
+    sliderA.continuous=false;//Semi Useful if we don't want to continuosly trigger... but eh ...
+    sliderB.continuous=false;
 }
 
 - (void)didReceiveMemoryWarning {
