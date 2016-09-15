@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController{
+    IBOutlet UITextField *celciusField;
+    IBOutlet UITextField *farenheightField;
+}
+- (IBAction)tempConvert:(id)sender;
 @end
 

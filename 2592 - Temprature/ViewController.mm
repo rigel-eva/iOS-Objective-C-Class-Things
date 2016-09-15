@@ -6,14 +6,13 @@
 //  Copyright © 2016 sir_rigel. All rights reserved.
 //
 
-#import "ViewController.h"
-
+#import "ViewController.hh"
+#import "tempConvert.hpp"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -23,5 +22,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)tempConvert:(id)sender{
+    if([sender isEqual:celciusField]){
+        farenheightField.text=[NSString stringWithFormat:@"%f",celToFar([celciusField.text doubleValue])];
+    }else{
+        celciusField.text=[NSString stringWithFormat:@"%f",farToCel([farenheightField.text doubleValue])];
+    }
+}
 @end
