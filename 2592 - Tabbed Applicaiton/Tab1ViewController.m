@@ -6,13 +6,13 @@
 //  Copyright © 2016 Sir Rigel. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Tab1ViewController.h"
 
-@interface ViewController ()
+@interface Tab1ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation Tab1ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		731AC0B61D934BB60072E689 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0B51D934BB60072E689 /* main.m */; };
 		731AC0B91D934BB60072E689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0B81D934BB60072E689 /* AppDelegate.m */; };
-		731AC0BC1D934BB60072E689 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0BB1D934BB60072E689 /* ViewController.m */; };
+		731AC0BC1D934BB60072E689 /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0BB1D934BB60072E689 /* Tab1ViewController.m */; };
 		731AC0BF1D934BB60072E689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0BD1D934BB60072E689 /* Main.storyboard */; };
 		731AC0C11D934BB60072E689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0C01D934BB60072E689 /* Assets.xcassets */; };
 		731AC0C41D934BB60072E689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0C21D934BB60072E689 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		731AC0B51D934BB60072E689 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		731AC0B71D934BB60072E689 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		731AC0B81D934BB60072E689 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		731AC0BA1D934BB60072E689 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		731AC0BB1D934BB60072E689 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		731AC0BA1D934BB60072E689 /* Tab1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tab1ViewController.h; sourceTree = "<group>"; };
+		731AC0BB1D934BB60072E689 /* Tab1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tab1ViewController.m; sourceTree = "<group>"; };
 		731AC0BE1D934BB60072E689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		731AC0C01D934BB60072E689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		731AC0C31D934BB60072E689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				731AC0B71D934BB60072E689 /* AppDelegate.h */,
 				731AC0B81D934BB60072E689 /* AppDelegate.m */,
-				731AC0BA1D934BB60072E689 /* ViewController.h */,
-				731AC0BB1D934BB60072E689 /* ViewController.m */,
+				731AC0BA1D934BB60072E689 /* Tab1ViewController.h */,
+				731AC0BB1D934BB60072E689 /* Tab1ViewController.m */,
 				731AC0BD1D934BB60072E689 /* Main.storyboard */,
 				731AC0C01D934BB60072E689 /* Assets.xcassets */,
 				731AC0C21D934BB60072E689 /* LaunchScreen.storyboard */,
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				731AC0BC1D934BB60072E689 /* ViewController.m in Sources */,
+				731AC0BC1D934BB60072E689 /* Tab1ViewController.m in Sources */,
 				731AC0B91D934BB60072E689 /* AppDelegate.m in Sources */,
 				731AC0B61D934BB60072E689 /* main.m in Sources */,
 			);
@@ -427,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BW37M2R4G3;
 				INFOPLIST_FILE = "2592 - Tabbed Applicaiton/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sir-rigel.-592---Tabbed-Applicaiton";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BW37M2R4G3;
 				INFOPLIST_FILE = "2592 - Tabbed Applicaiton/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sir-rigel.-592---Tabbed-Applicaiton";
 				PRODUCT_NAME = "$(TARGET_NAME)";
