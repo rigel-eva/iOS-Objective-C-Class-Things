@@ -15,6 +15,7 @@
 		731AC0C41D934BB60072E689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0C21D934BB60072E689 /* LaunchScreen.storyboard */; };
 		731AC0CF1D934BB60072E689 /* _592___Tabbed_ApplicaitonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0CE1D934BB60072E689 /* _592___Tabbed_ApplicaitonTests.m */; };
 		731AC0DA1D934BB60072E689 /* _592___Tabbed_ApplicaitonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0D91D934BB60072E689 /* _592___Tabbed_ApplicaitonUITests.m */; };
+		731AC0E91D934D800072E689 /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0E81D934D800072E689 /* Tab2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		731AC0D51D934BB60072E689 /* 2592 - Tabbed ApplicaitonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2592 - Tabbed ApplicaitonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		731AC0D91D934BB60072E689 /* _592___Tabbed_ApplicaitonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_592___Tabbed_ApplicaitonUITests.m"; sourceTree = "<group>"; };
 		731AC0DB1D934BB60072E689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731AC0E71D934D800072E689 /* Tab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab2ViewController.h; sourceTree = "<group>"; };
+		731AC0E81D934D800072E689 /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				731AC0C21D934BB60072E689 /* LaunchScreen.storyboard */,
 				731AC0C51D934BB60072E689 /* Info.plist */,
 				731AC0B41D934BB60072E689 /* Supporting Files */,
+				731AC0E71D934D800072E689 /* Tab2ViewController.h */,
+				731AC0E81D934D800072E689 /* Tab2ViewController.m */,
 			);
 			path = "2592 - Tabbed Applicaiton";
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				731AC0BC1D934BB60072E689 /* Tab1ViewController.m in Sources */,
 				731AC0B91D934BB60072E689 /* AppDelegate.m in Sources */,
 				731AC0B61D934BB60072E689 /* main.m in Sources */,
+				731AC0E91D934D800072E689 /* Tab2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
