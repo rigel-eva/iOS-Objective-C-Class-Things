@@ -16,6 +16,8 @@
 		731AC0CF1D934BB60072E689 /* _592___Tabbed_ApplicaitonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0CE1D934BB60072E689 /* _592___Tabbed_ApplicaitonTests.m */; };
 		731AC0DA1D934BB60072E689 /* _592___Tabbed_ApplicaitonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0D91D934BB60072E689 /* _592___Tabbed_ApplicaitonUITests.m */; };
 		731AC0E91D934D800072E689 /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0E81D934D800072E689 /* Tab2ViewController.m */; };
+		731AC0EE1D9353140072E689 /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0ED1D9353140072E689 /* Twitter-icon.png */; };
+		731AC0F01D9353190072E689 /* Tumblr-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0EF1D9353190072E689 /* Tumblr-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		731AC0DB1D934BB60072E689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		731AC0E71D934D800072E689 /* Tab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab2ViewController.h; sourceTree = "<group>"; };
 		731AC0E81D934D800072E689 /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab2ViewController.m; sourceTree = "<group>"; };
+		731AC0ED1D9353140072E689 /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-icon.png"; sourceTree = "<group>"; };
+		731AC0EF1D9353190072E689 /* Tumblr-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tumblr-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +108,16 @@
 		731AC0B31D934BB60072E689 /* 2592 - Tabbed Applicaiton */ = {
 			isa = PBXGroup;
 			children = (
+				731AC0ED1D9353140072E689 /* Twitter-icon.png */,
+				731AC0EF1D9353190072E689 /* Tumblr-icon.png */,
+				731AC0EA1D934DA30072E689 /* ViewControllers */,
 				731AC0B71D934BB60072E689 /* AppDelegate.h */,
 				731AC0B81D934BB60072E689 /* AppDelegate.m */,
-				731AC0BA1D934BB60072E689 /* Tab1ViewController.h */,
-				731AC0BB1D934BB60072E689 /* Tab1ViewController.m */,
 				731AC0BD1D934BB60072E689 /* Main.storyboard */,
 				731AC0C01D934BB60072E689 /* Assets.xcassets */,
 				731AC0C21D934BB60072E689 /* LaunchScreen.storyboard */,
 				731AC0C51D934BB60072E689 /* Info.plist */,
 				731AC0B41D934BB60072E689 /* Supporting Files */,
-				731AC0E71D934D800072E689 /* Tab2ViewController.h */,
-				731AC0E81D934D800072E689 /* Tab2ViewController.m */,
 			);
 			path = "2592 - Tabbed Applicaiton";
 			sourceTree = "<group>";
@@ -143,6 +146,17 @@
 				731AC0DB1D934BB60072E689 /* Info.plist */,
 			);
 			path = "2592 - Tabbed ApplicaitonUITests";
+			sourceTree = "<group>";
+		};
+		731AC0EA1D934DA30072E689 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				731AC0BA1D934BB60072E689 /* Tab1ViewController.h */,
+				731AC0BB1D934BB60072E689 /* Tab1ViewController.m */,
+				731AC0E71D934D800072E689 /* Tab2ViewController.h */,
+				731AC0E81D934D800072E689 /* Tab2ViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731AC0EE1D9353140072E689 /* Twitter-icon.png in Resources */,
 				731AC0C41D934BB60072E689 /* LaunchScreen.storyboard in Resources */,
+				731AC0F01D9353190072E689 /* Tumblr-icon.png in Resources */,
 				731AC0C11D934BB60072E689 /* Assets.xcassets in Resources */,
 				731AC0BF1D934BB60072E689 /* Main.storyboard in Resources */,
 			);
