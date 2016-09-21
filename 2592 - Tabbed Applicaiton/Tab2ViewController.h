@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Tab2ViewController : UIViewController
-
+@interface Tab2ViewController : UIViewController{
+    IBOutlet UIImageView *imageView2;
+}
+@property IBOutlet UIImageView *imageView2;
 @end

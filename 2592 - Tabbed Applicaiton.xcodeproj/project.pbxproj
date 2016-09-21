@@ -18,6 +18,7 @@
 		731AC0E91D934D800072E689 /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC0E81D934D800072E689 /* Tab2ViewController.m */; };
 		731AC0EE1D9353140072E689 /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0ED1D9353140072E689 /* Twitter-icon.png */; };
 		731AC0F01D9353190072E689 /* Tumblr-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0EF1D9353190072E689 /* Tumblr-icon.png */; };
+		731AC0F21D9353EB0072E689 /* 1299557075811.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0F11D9353EB0072E689 /* 1299557075811.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		731AC0E81D934D800072E689 /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab2ViewController.m; sourceTree = "<group>"; };
 		731AC0ED1D9353140072E689 /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-icon.png"; sourceTree = "<group>"; };
 		731AC0EF1D9353190072E689 /* Tumblr-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tumblr-icon.png"; sourceTree = "<group>"; };
+		731AC0F11D9353EB0072E689 /* 1299557075811.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1299557075811.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				731AC0ED1D9353140072E689 /* Twitter-icon.png */,
+				731AC0F11D9353EB0072E689 /* 1299557075811.jpg */,
 				731AC0EF1D9353190072E689 /* Tumblr-icon.png */,
 				731AC0EA1D934DA30072E689 /* ViewControllers */,
 				731AC0B71D934BB60072E689 /* AppDelegate.h */,
@@ -268,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731AC0F21D9353EB0072E689 /* 1299557075811.jpg in Resources */,
 				731AC0EE1D9353140072E689 /* Twitter-icon.png in Resources */,
 				731AC0C41D934BB60072E689 /* LaunchScreen.storyboard in Resources */,
 				731AC0F01D9353190072E689 /* Tumblr-icon.png in Resources */,
