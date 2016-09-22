@@ -27,17 +27,17 @@
                                 <frame key="frameInset" height="44" maxY="595"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="◀" id="jL1-CS-Hzs"/>
+                                    <barButtonItem systemItem="rewind" id="jL1-CS-Hzs"/>
                                     <barButtonItem style="plain" id="x3f-Tq-wyw">
                                         <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="hHQ-uM-el5">
-                                            <rect key="frame" x="41" y="7" width="298" height="30"/>
+                                            <rect key="frame" x="50" y="7" width="281" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </barButtonItem>
-                                    <barButtonItem title="▶" id="Oit-vB-zoh"/>
+                                    <barButtonItem systemItem="fastForward" id="Oit-vB-zoh"/>
                                 </items>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
