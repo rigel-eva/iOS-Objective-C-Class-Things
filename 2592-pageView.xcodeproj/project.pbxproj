@@ -15,6 +15,10 @@
 		731AC1531D936CE90072E689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731AC1511D936CE90072E689 /* LaunchScreen.storyboard */; };
 		731AC15E1D936CE90072E689 /* _592_pageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC15D1D936CE90072E689 /* _592_pageViewTests.m */; };
 		731AC1691D936CE90072E689 /* _592_pageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 731AC1681D936CE90072E689 /* _592_pageViewUITests.m */; };
+		731AC1771D936D590072E689 /* Astral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 731AC1761D936D590072E689 /* Astral.jpg */; };
+		731AC1791D936D660072E689 /* Fey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 731AC1781D936D660072E689 /* Fey.jpg */; };
+		731AC17B1D936D730072E689 /* Titanic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 731AC17A1D936D730072E689 /* Titanic.jpg */; };
+		731AC17D1D936DAF0072E689 /* Holo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 731AC17C1D936DAF0072E689 /* Holo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		731AC1641D936CE90072E689 /* 2592-pageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2592-pageViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		731AC1681D936CE90072E689 /* _592_pageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _592_pageViewUITests.m; sourceTree = "<group>"; };
 		731AC16A1D936CE90072E689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731AC1761D936D590072E689 /* Astral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Astral.jpg; sourceTree = "<group>"; };
+		731AC1781D936D660072E689 /* Fey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fey.jpg; sourceTree = "<group>"; };
+		731AC17A1D936D730072E689 /* Titanic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Titanic.jpg; sourceTree = "<group>"; };
+		731AC17C1D936DAF0072E689 /* Holo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Holo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 		731AC1421D936CE90072E689 /* 2592-pageView */ = {
 			isa = PBXGroup;
 			children = (
+				731AC1761D936D590072E689 /* Astral.jpg */,
+				731AC1781D936D660072E689 /* Fey.jpg */,
+				731AC17A1D936D730072E689 /* Titanic.jpg */,
+				731AC17C1D936DAF0072E689 /* Holo.jpg */,
 				731AC1461D936CE90072E689 /* AppDelegate.h */,
 				731AC1471D936CE90072E689 /* AppDelegate.m */,
 				731AC1491D936CE90072E689 /* ViewController.h */,
@@ -249,9 +261,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731AC1791D936D660072E689 /* Fey.jpg in Resources */,
 				731AC1531D936CE90072E689 /* LaunchScreen.storyboard in Resources */,
+				731AC17D1D936DAF0072E689 /* Holo.jpg in Resources */,
 				731AC1501D936CE90072E689 /* Assets.xcassets in Resources */,
 				731AC14E1D936CE90072E689 /* Main.storyboard in Resources */,
+				731AC1771D936D590072E689 /* Astral.jpg in Resources */,
+				731AC17B1D936D730072E689 /* Titanic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
