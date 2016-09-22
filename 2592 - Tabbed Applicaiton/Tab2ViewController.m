@@ -13,10 +13,15 @@
 @end
 
 @implementation Tab2ViewController
-
+@synthesize imageView2;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //Initilize image to display
+    [imageView2 setImage:[UIImage imageNamed:@"1299557075811.jpg"]];
+    //Make it visible
+    [imageView2 setHidden:NO];//Redudent ... but still a good idea.
 }
 
 - (void)didReceiveMemoryWarning {

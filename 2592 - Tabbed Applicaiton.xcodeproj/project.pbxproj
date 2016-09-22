@@ -19,6 +19,8 @@
 		731AC0EE1D9353140072E689 /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0ED1D9353140072E689 /* Twitter-icon.png */; };
 		731AC0F01D9353190072E689 /* Tumblr-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0EF1D9353190072E689 /* Tumblr-icon.png */; };
 		731AC0F21D9353EB0072E689 /* 1299557075811.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0F11D9353EB0072E689 /* 1299557075811.jpg */; };
+		731AC0F41D9354E70072E689 /* 1299297179658.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0F31D9354E70072E689 /* 1299297179658.jpg */; };
+		731AC0F61D9359220072E689 /* myText.txt in Resources */ = {isa = PBXBuildFile; fileRef = 731AC0F51D9359220072E689 /* myText.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		731AC0ED1D9353140072E689 /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-icon.png"; sourceTree = "<group>"; };
 		731AC0EF1D9353190072E689 /* Tumblr-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tumblr-icon.png"; sourceTree = "<group>"; };
 		731AC0F11D9353EB0072E689 /* 1299557075811.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1299557075811.jpg; sourceTree = "<group>"; };
+		731AC0F31D9354E70072E689 /* 1299297179658.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1299297179658.jpg; sourceTree = "<group>"; };
+		731AC0F51D9359220072E689 /* myText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = myText.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +114,7 @@
 		731AC0B31D934BB60072E689 /* 2592 - Tabbed Applicaiton */ = {
 			isa = PBXGroup;
 			children = (
-				731AC0ED1D9353140072E689 /* Twitter-icon.png */,
-				731AC0F11D9353EB0072E689 /* 1299557075811.jpg */,
-				731AC0EF1D9353190072E689 /* Tumblr-icon.png */,
+				731AC0F71D9359C10072E689 /* Resources */,
 				731AC0EA1D934DA30072E689 /* ViewControllers */,
 				731AC0B71D934BB60072E689 /* AppDelegate.h */,
 				731AC0B81D934BB60072E689 /* AppDelegate.m */,
@@ -160,6 +162,18 @@
 				731AC0E81D934D800072E689 /* Tab2ViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		731AC0F71D9359C10072E689 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				731AC0F51D9359220072E689 /* myText.txt */,
+				731AC0ED1D9353140072E689 /* Twitter-icon.png */,
+				731AC0F11D9353EB0072E689 /* 1299557075811.jpg */,
+				731AC0F31D9354E70072E689 /* 1299297179658.jpg */,
+				731AC0EF1D9353190072E689 /* Tumblr-icon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +288,8 @@
 				731AC0F21D9353EB0072E689 /* 1299557075811.jpg in Resources */,
 				731AC0EE1D9353140072E689 /* Twitter-icon.png in Resources */,
 				731AC0C41D934BB60072E689 /* LaunchScreen.storyboard in Resources */,
+				731AC0F61D9359220072E689 /* myText.txt in Resources */,
+				731AC0F41D9354E70072E689 /* 1299297179658.jpg in Resources */,
 				731AC0F01D9353190072E689 /* Tumblr-icon.png in Resources */,
 				731AC0C11D934BB60072E689 /* Assets.xcassets in Resources */,
 				731AC0BF1D934BB60072E689 /* Main.storyboard in Resources */,

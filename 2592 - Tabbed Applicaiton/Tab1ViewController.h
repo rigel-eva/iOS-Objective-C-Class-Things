@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Tab1ViewController : UIViewController
-
+@interface Tab1ViewController : UIViewController{
+    IBOutlet UITextView *textView;
+}
+@property (nonatomic, retain) UITextView *textView;
 
 @end
 

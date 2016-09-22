@@ -13,10 +13,12 @@
 @end
 
 @implementation Tab1ViewController
-
+@synthesize textView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"myText" ofType:@"txt"];//This is how we find a file ...
+    textView.text=[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];//And this is how we use a text file to act as a string!
 }
 
 
