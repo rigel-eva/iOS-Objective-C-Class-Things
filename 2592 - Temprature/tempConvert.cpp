@@ -13,3 +13,9 @@ float farToCel(float farenheight){
 float celToFar(float celcius){
     return celcius*9/5+32;
 }
+float celToKel(float celcius){
+    return celcius+273.15;
+}
+float kelToCel(float kelvin){
+    return kelvin -273.15;
+}

@@ -212,13 +212,16 @@
 				TargetAttributes = {
 					3FE0086C1D8A32B500E56246 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BW37M2R4G3;
 					};
 					3FE008851D8A32B500E56246 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BW37M2R4G3;
 						TestTargetID = 3FE0086C1D8A32B500E56246;
 					};
 					3FE008901D8A32B500E56246 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BW37M2R4G3;
 						TestTargetID = 3FE0086C1D8A32B500E56246;
 					};
 				};
@@ -354,6 +357,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -399,6 +403,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BW37M2R4G3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -421,10 +426,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "2592 - Temprature/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.-592---Temprature";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -433,10 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "2592 - Temprature/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.-592---Temprature";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -506,6 +517,7 @@
 				3FE0089C1D8A32B500E56246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FE0089D1D8A32B500E56246 /* Build configuration list for PBXNativeTarget "2592 - TempratureTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				3FE0089F1D8A32B500E56246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FE008A01D8A32B500E56246 /* Build configuration list for PBXNativeTarget "2592 - TempratureUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				3FE008A21D8A32B500E56246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

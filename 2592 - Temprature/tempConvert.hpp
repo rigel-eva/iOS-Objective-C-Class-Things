@@ -11,5 +11,7 @@
 
 #include <stdio.h>
 float farToCel(float farenheight);
-float celToFar(float farenheight);
+float celToFar(float celcius);
+float celToKel(float celcius);
+float keltoCel(float celcius);
 #endif
