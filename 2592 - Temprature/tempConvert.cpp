@@ -19,3 +19,6 @@ float celToKel(float celcius){
 float kelToCel(float kelvin){
     return kelvin -273.15;
 }
+float returnSelf(float returner){
+    return returner;
+}

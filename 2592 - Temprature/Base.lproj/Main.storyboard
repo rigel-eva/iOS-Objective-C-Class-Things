@@ -17,63 +17,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHZ-5j-c9i" userLabel="Farenheight">
-                                <rect key="frame" x="128" y="66" width="472" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="128" y="48" width="472" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tempConvert:" destination="BYZ-38-t0r" eventType="editingChanged" id="18G-1z-U7z"/>
-                                </connections>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5o-KF-LlY">
-                                <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="123" height="126"/>
-                                </variation>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVz-fA-6Ne">
-                                <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="134" width="123" height="126"/>
-                                </variation>
-                            </pickerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNX-zr-lie" userLabel="Celcius">
                                 <rect key="frame" x="128" y="28" width="472" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="135" y="182" width="464" height="30"/>
+                                    <rect key="frame" x="158" y="182" width="441" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="182" width="242" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="tempConvert:" destination="BYZ-38-t0r" eventType="editingChanged" id="R3u-Fe-qlr"/>
                                 </connections>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHZ-5j-c9i" userLabel="Farenheight">
+                                <rect key="frame" x="128" y="66" width="472" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="48" width="442" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="48" width="242" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tempConvert:" destination="BYZ-38-t0r" eventType="editingChanged" id="18G-1z-U7z"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVz-fA-6Ne">
+                                <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="134" width="150" height="126"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cII-FP-aZy"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Gw3-WP-0Yb"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5o-KF-LlY">
+                                <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="126"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="i55-89-CEu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UBr-49-JKG"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="M5o-KF-LlY"/>
                                 <exclude reference="BVz-fA-6Ne"/>
+                                <exclude reference="M5o-KF-LlY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
-                                <include reference="M5o-KF-LlY"/>
                                 <include reference="BVz-fA-6Ne"/>
+                                <include reference="M5o-KF-LlY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lNX-zr-lie"/>
+                                <include reference="QHZ-5j-c9i"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="celciusField" destination="lNX-zr-lie" id="QzK-IL-cVt"/>
-                        <outlet property="farenheightField" destination="QHZ-5j-c9i" id="k3z-pZ-6qh"/>
+                        <outlet property="input1" destination="QHZ-5j-c9i" id="n8B-0Z-QfW"/>
+                        <outlet property="input2" destination="lNX-zr-lie" id="MJS-86-unE"/>
+                        <outlet property="unit1" destination="M5o-KF-LlY" id="rGs-Xg-r96"/>
+                        <outlet property="unit2" destination="BVz-fA-6Ne" id="Nhj-B3-wKU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="489.75"/>
+            <point key="canvasLocation" x="564" y="489.75"/>
         </scene>
     </scenes>
 </document>

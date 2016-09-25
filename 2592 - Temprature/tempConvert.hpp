@@ -13,5 +13,6 @@
 float farToCel(float farenheight);
 float celToFar(float celcius);
 float celToKel(float celcius);
-float keltoCel(float celcius);
+float kelToCel(float celcius);
+float returnSelf(float returner);
 #endif
