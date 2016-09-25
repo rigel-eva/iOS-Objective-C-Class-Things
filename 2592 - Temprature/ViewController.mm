@@ -50,7 +50,6 @@ static NSString *pd[3]={@"Farenheight", @"Celcius", @"Kelven"};//The tempratures
                 [self kelConvert:[unit1 selectedRowInComponent:0] input:input2 output:input1];
                 break;
         }
-        input1.text=[NSString stringWithFormat:@"%f",farToCel([input2.text doubleValue])];
     }
 }
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -69,13 +68,13 @@ static NSString *pd[3]={@"Farenheight", @"Celcius", @"Kelven"};//The tempratures
 -(void)celsConvert:(NSInteger)to input:(UITextField*)input output:(UITextField*)output{
     switch(to){
         case 0:
-            output.text=[NSString stringWithFormat:@"%f",farToCel([input.text floatValue])];
+            output.text=[NSString stringWithFormat:@"%.2f",celToFar([input.text floatValue])];
             break;
         case 1:
             output.text=input.text;//No sense in duplicating myself ...
             break;
         case 2:
-            output.text=[NSString stringWithFormat:@"%f",farToCel([input.text floatValue])];
+            output.text=[NSString stringWithFormat:@"%.2f",celToKel([input.text floatValue])];
             break;
     }
 }
@@ -85,10 +84,10 @@ static NSString *pd[3]={@"Farenheight", @"Celcius", @"Kelven"};//The tempratures
             output.text=input.text;//Once again, not repeating myself...
             break;
         case 1://far to cel
-            output.text=[NSString stringWithFormat:@"%f",farToCel([input.text floatValue])];
+            output.text=[NSString stringWithFormat:@"%.2f",farToCel([input.text floatValue])];
             break;
         case 2://far to kel
-            output.text=[NSString stringWithFormat:@"%f",celToKel(farToCel([input.text floatValue]))];
+            output.text=[NSString stringWithFormat:@"%.2f",celToKel(farToCel([input.text floatValue]))];
             break;
     }
     
@@ -96,10 +95,10 @@ static NSString *pd[3]={@"Farenheight", @"Celcius", @"Kelven"};//The tempratures
 -(void)kelConvert:(NSInteger)to input:(UITextField*)input output:(UITextField*)output{
     switch (to){
         case 0://kel to far
-            output.text=[NSString stringWithFormat:@"%f",celToFar(kelToCel([input.text floatValue]))];
+            output.text=[NSString stringWithFormat:@"%.2f",celToFar(kelToCel([input.text floatValue]))];
             break;
         case 1://kel to cel
-            output.text=[NSString stringWithFormat:@"%f",celToFar(kelToCel([input.text floatValue]))];
+            output.text=[NSString stringWithFormat:@"%.2f",celToFar(kelToCel([input.text floatValue]))];
             break;
         case 2://kel to kel
             output.text=input.text;

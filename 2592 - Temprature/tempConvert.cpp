@@ -8,10 +8,10 @@
 
 #include "tempConvert.hpp"
 float farToCel(float farenheight){
-    return(farenheight-32)*5/9;
+    return(farenheight-32.0)*5.0/9.0;
 }
 float celToFar(float celcius){
-    return celcius*9/5+32;
+    return celcius*9.0/5.0+32.0;
 }
 float celToKel(float celcius){
     return celcius+273.15;
