@@ -98,7 +98,7 @@ static NSString *pd[3]={@"Farenheight", @"Celcius", @"Kelven"};//The tempratures
             output.text=[NSString stringWithFormat:@"%.2f",celToFar(kelToCel([input.text floatValue]))];
             break;
         case 1://kel to cel
-            output.text=[NSString stringWithFormat:@"%.2f",celToFar(kelToCel([input.text floatValue]))];
+            output.text=[NSString stringWithFormat:@"%.2f",kelToCel([input.text floatValue])];
             break;
         case 2://kel to kel
             output.text=input.text;

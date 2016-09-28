@@ -14,6 +14,12 @@
 		3FE0088B1D8A32B500E56246 /* _592___TempratureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE0088A1D8A32B500E56246 /* _592___TempratureTests.m */; };
 		3FE008961D8A32B500E56246 /* _592___TempratureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE008951D8A32B500E56246 /* _592___TempratureUITests.m */; };
 		3FE008A51D8A348F00E56246 /* tempConvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FE008A31D8A348F00E56246 /* tempConvert.cpp */; };
+		73690DB51D9C6DBF006F6773 /* Artboard 1-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 73690DB21D9C6DBF006F6773 /* Artboard 1-icon.png */; };
+		73690DB61D9C6DBF006F6773 /* Artboard 1-iTunes.png in Resources */ = {isa = PBXBuildFile; fileRef = 73690DB31D9C6DBF006F6773 /* Artboard 1-iTunes.png */; };
+		73690DB71D9C6DBF006F6773 /* tempConvertIcon..ai in Resources */ = {isa = PBXBuildFile; fileRef = 73690DB41D9C6DBF006F6773 /* tempConvertIcon..ai */; };
+		73690DB91D9C6FF7006F6773 /* 1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73690DB81D9C6FF7006F6773 /* 1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg */; };
+		73690DBC1D9C70A2006F6773 /* Icicles-PNG-HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 73690DBB1D9C70A2006F6773 /* Icicles-PNG-HD.png */; };
+		73690DBE1D9C7164006F6773 /* fire_PNG6032.png in Resources */ = {isa = PBXBuildFile; fileRef = 73690DBD1D9C7164006F6773 /* fire_PNG6032.png */; };
 		73C5925E1D97695700D92CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C5925C1D97695700D92CAA /* Main.storyboard */; };
 		73C592611D97696400D92CAA /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73C592601D97696400D92CAA /* ViewController.mm */; };
 /* End PBXBuildFile section */
@@ -51,6 +57,12 @@
 		3FE008971D8A32B500E56246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE008A31D8A348F00E56246 /* tempConvert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tempConvert.cpp; sourceTree = "<group>"; };
 		3FE008A41D8A348F00E56246 /* tempConvert.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tempConvert.hpp; sourceTree = "<group>"; };
+		73690DB21D9C6DBF006F6773 /* Artboard 1-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1-icon.png"; path = "../2592 - Temprature/appIcon/Artboard 1-icon.png"; sourceTree = "<group>"; };
+		73690DB31D9C6DBF006F6773 /* Artboard 1-iTunes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1-iTunes.png"; path = "../2592 - Temprature/appIcon/Artboard 1-iTunes.png"; sourceTree = "<group>"; };
+		73690DB41D9C6DBF006F6773 /* tempConvertIcon..ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = tempConvertIcon..ai; path = "../2592 - Temprature/appIcon/tempConvertIcon..ai"; sourceTree = "<group>"; };
+		73690DB81D9C6FF7006F6773 /* 1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg"; path = "../2592 - Temprature/appIcon/1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg"; sourceTree = "<group>"; };
+		73690DBB1D9C70A2006F6773 /* Icicles-PNG-HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icicles-PNG-HD.png"; sourceTree = "<group>"; };
+		73690DBD1D9C7164006F6773 /* fire_PNG6032.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_PNG6032.png; sourceTree = "<group>"; };
 		73C5925D1D97695700D92CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73C5925F1D97696400D92CAA /* ViewController.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ViewController.hh; sourceTree = "<group>"; };
 		73C592601D97696400D92CAA /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
@@ -104,6 +116,7 @@
 		3FE0086F1D8A32B500E56246 /* 2592 - Temprature */ = {
 			isa = PBXGroup;
 			children = (
+				73690DBA1D9C7000006F6773 /* Assets */,
 				73C5925F1D97696400D92CAA /* ViewController.hh */,
 				73C592601D97696400D92CAA /* ViewController.mm */,
 				73C5925C1D97695700D92CAA /* Main.storyboard */,
@@ -144,6 +157,20 @@
 			);
 			path = "2592 - TempratureUITests";
 			sourceTree = "<group>";
+		};
+		73690DBA1D9C7000006F6773 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				73690DB21D9C6DBF006F6773 /* Artboard 1-icon.png */,
+				73690DB31D9C6DBF006F6773 /* Artboard 1-iTunes.png */,
+				73690DB41D9C6DBF006F6773 /* tempConvertIcon..ai */,
+				73690DBB1D9C70A2006F6773 /* Icicles-PNG-HD.png */,
+				73690DB81D9C6FF7006F6773 /* 1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg */,
+				73690DBD1D9C7164006F6773 /* fire_PNG6032.png */,
+			);
+			name = Assets;
+			path = "2592 - TempratureTests";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -251,9 +278,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73690DB91D9C6FF7006F6773 /* 1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg in Resources */,
+				73690DBE1D9C7164006F6773 /* fire_PNG6032.png in Resources */,
+				73690DB51D9C6DBF006F6773 /* Artboard 1-icon.png in Resources */,
 				73C5925E1D97695700D92CAA /* Main.storyboard in Resources */,
 				3FE008801D8A32B500E56246 /* LaunchScreen.storyboard in Resources */,
+				73690DBC1D9C70A2006F6773 /* Icicles-PNG-HD.png in Resources */,
 				3FE0087D1D8A32B500E56246 /* Assets.xcassets in Resources */,
+				73690DB61D9C6DBF006F6773 /* Artboard 1-iTunes.png in Resources */,
+				73690DB71D9C6DBF006F6773 /* tempConvertIcon..ai in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
