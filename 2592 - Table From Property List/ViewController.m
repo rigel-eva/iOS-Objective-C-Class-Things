@@ -60,5 +60,7 @@
     NSString *myFooterText=[NSString stringWithFormat:@"%lu Courses",[[cod objectForKey:[faculty objectAtIndex:section]] count]];
     return myFooterText;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Selected \"%@\" Index Path:(%d,%d)",[tableView cellForRowAtIndexPath:indexPath].textLabel.text,indexPath.section,indexPath.row);//Welp, wanted someway to figure out what the heck we are tapping
+}
 @end
