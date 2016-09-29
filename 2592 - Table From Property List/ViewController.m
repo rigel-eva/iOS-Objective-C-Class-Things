@@ -37,4 +37,20 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return[[self.cod objectForKey:[self.faculty objectAtIndex:section]]count];
 }
+-(UITableViewCell* )tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellIdentifer=@"cell";//be sure that cell indentifier in SB is set same
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifer];
+    if(cell==nil){
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifer];
+    }
+    //Configure the cell.
+    
+    //get faculty in the section
+    NSString *myFaculty = [self.faculty objectAtIndex:[indexPath section]];
+    
+    //Courses within the Faculty
+    NSArray *facualtyCourses=[self.cod objectForKey:myFaculty];
+    cell.textLabel.text=[facualtyCourses objectAtIndex:[indexPath row]];
+    return cell;
+}
 @end
