@@ -62,5 +62,6 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"Selected \"%@\" Index Path:(%d,%d)",[tableView cellForRowAtIndexPath:indexPath].textLabel.text,indexPath.section,indexPath.row);//Welp, wanted someway to figure out what the heck we are tapping
+    [tableView deselectRowAtIndexPath:indexPath animated:false];
 }
 @end
