@@ -57,9 +57,8 @@
     return [faculty objectAtIndex:section];
 }
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    NSString *myFaculty=[faculty objectAtIndex:section];
-    NSArray *facultyCourses=[cod objectForKey:myFaculty];
-    NSString *myFooterText=[NSString stringWithFormat:@"%i Courses",[facultyCourses count]];
+    NSString *myFooterText=[NSString stringWithFormat:@"%lu Courses",[[cod objectForKey:[faculty objectAtIndex:section]] count]];
     return myFooterText;
 }
+
 @end
