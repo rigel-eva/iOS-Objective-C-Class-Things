@@ -69,4 +69,17 @@ NSMutableArray *courses; // visible to class methods
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
+#pragma mark UITableViewDelegate Protocols
+
+- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath: (NSIndexPath*)indexPath {
+    NSLog(@"Row number %lu ", [indexPath row]);
+    if ([indexPath row] % 2) {
+        return 2;
+    }
+    if ([indexPath row] % 3) {
+        return 3;
+    }
+    return 1;
+}
+
 @end
