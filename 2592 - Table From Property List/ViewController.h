@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>{
+    NSDictionary *cod;
+    NSArray *faculty;
+}
+@property (nonatomic,retain) NSDictionary *cod;
+@property (nonatomic,retain) NSArray *faculty;
 @end
 

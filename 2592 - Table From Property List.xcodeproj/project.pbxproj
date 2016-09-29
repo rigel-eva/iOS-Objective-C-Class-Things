@@ -15,6 +15,7 @@
 		73438F0A1D9C9BAC00D8721A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73438F081D9C9BAC00D8721A /* LaunchScreen.storyboard */; };
 		73438F151D9C9BAC00D8721A /* _592___Table_From_Property_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73438F141D9C9BAC00D8721A /* _592___Table_From_Property_ListTests.m */; };
 		73438F201D9C9BAC00D8721A /* _592___Table_From_Property_ListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73438F1F1D9C9BAC00D8721A /* _592___Table_From_Property_ListUITests.m */; };
+		73438F2E1D9C9CA300D8721A /* courses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73438F2D1D9C9CA300D8721A /* courses.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		73438F1B1D9C9BAC00D8721A /* 2592 - Table From Property ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2592 - Table From Property ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73438F1F1D9C9BAC00D8721A /* _592___Table_From_Property_ListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_592___Table_From_Property_ListUITests.m"; sourceTree = "<group>"; };
 		73438F211D9C9BAC00D8721A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73438F2D1D9C9CA300D8721A /* courses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = courses.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				73438F081D9C9BAC00D8721A /* LaunchScreen.storyboard */,
 				73438F0B1D9C9BAC00D8721A /* Info.plist */,
 				73438EFA1D9C9BAB00D8721A /* Supporting Files */,
+				73438F2D1D9C9CA300D8721A /* courses.plist */,
 			);
 			path = "2592 - Table From Property List";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				TargetAttributes = {
 					73438EF61D9C9BAB00D8721A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BW37M2R4G3;
 					};
 					73438F0F1D9C9BAC00D8721A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -246,6 +250,7 @@
 				73438F0A1D9C9BAC00D8721A /* LaunchScreen.storyboard in Resources */,
 				73438F071D9C9BAC00D8721A /* Assets.xcassets in Resources */,
 				73438F051D9C9BAB00D8721A /* Main.storyboard in Resources */,
+				73438F2E1D9C9CA300D8721A /* courses.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "2592 - Table From Property List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.-592---Table-From-Property-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "2592 - Table From Property List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.-592---Table-From-Property-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
