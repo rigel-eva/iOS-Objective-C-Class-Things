@@ -53,4 +53,13 @@
     cell.textLabel.text=[facualtyCourses objectAtIndex:[indexPath row]];
     return cell;
 }
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [faculty objectAtIndex:section];
+}
+-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    NSString *myFaculty=[faculty objectAtIndex:section];
+    NSArray *facultyCourses=[cod objectForKey:myFaculty];
+    NSString *myFooterText=[NSString stringWithFormat:@"%i Courses",[facultyCourses count]];
+    return myFooterText;
+}
 @end
