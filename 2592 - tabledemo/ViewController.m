@@ -81,5 +81,7 @@ NSMutableArray *courses; // visible to class methods
     }
     return 1;
 }
-
+- (void) tableView:(UITableView *) tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Selected - %@", [courses objectAtIndex:indexPath.row]);
+}
 @end
