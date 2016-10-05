@@ -39,6 +39,10 @@ NSMutableArray *courses;    // visible to class methods
     [courses addObject:@"CIS 113"];
     [courses addObject:@"CIS 114"];
     [courses addObject:@"CIS 115"];
+    //Set Up Navigation Button
+    self.title = @"Edit COD Classes";
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]initWithTitle:@"Edit" style:UIBarButtonItemStyleBordered target:self action:@selector(editTable:)];
+    [self.navigationItem setLeftBarButtonItem:addButton];
 
     
 }
@@ -63,21 +67,24 @@ NSMutableArray *courses;    // visible to class methods
         
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    
+    NSLog(@"Course Count %lu, self.editing==%i",(unsigned long)[courses count], self.editing);
+    if(indexPath.row==([courses count])&&self.editing){
+        cell.textLabel.text=@"Add Class";
+    }
     // set display content
     NSString *cellValue = [ courses objectAtIndex:indexPath.row];
     cell.textLabel.text =cellValue;
     
     NSLog(@"tableView:cellForRowAtIndexPath is returing %@", cell.textLabel.text);
-    
+
     return cell;
     
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    NSLog(@"tableView:numberOfRowsInSection is returning %i", [courses count]);
-    
+    if(self.editing){
+        return [courses count]+1;
+    }
     return [courses count];
     
 }
@@ -102,7 +109,7 @@ NSMutableArray *courses;    // visible to class methods
 
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath
                                                                                    *)indexPath {
-    NSLog(@"Row number %i ", [indexPath row]);
+    NSLog(@"Row number %li ", (long)[indexPath row]);
     if ([indexPath row] % 2) {
         return 2;
     }
@@ -117,5 +124,50 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Selected - %@", [courses
                              objectAtIndex:indexPath.row]);
 }
-
+-(void)tableView:(UITableView*) tableView commitEditingStyle:(UITableViewCellEditingStyle) editingStyle forRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    if(editingStyle==UITableViewCellEditingStyleDelete){
+        [courses removeObjectAtIndex:indexPath.row];
+        [table reloadData];
+    }
+    else if(editingStyle==UITableViewCellEditingStyleInsert){
+        [courses insertObject:@"New COD Class" atIndex:[courses count]];
+        [table reloadData];
+    }
+}
+#pragma mark Table Editing
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    if(self.editing&&indexPath.row==([courses count])){
+        return UITableViewCellEditingStyleInsert;
+    }
+    else{
+        return UITableViewCellEditingStyleDelete;
+    }
+    return UITableViewCellEditingStyleNone;
+}
+-(bool)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath{
+    return TRUE;
+}
+-(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+    NSString *cellItem=[courses objectAtIndex:sourceIndexPath.row];
+    [courses removeObject:cellItem];
+    [courses insertObject:cellItem atIndex:destinationIndexPath.row];
+}
+#pragma mark actionMethods
+-(IBAction)editTable:(id)sender{
+    if(self.editing){
+        [super setEditing:NO animated:NO];
+        [table setEditing:NO animated:NO];
+        [table reloadData];
+        [self.navigationItem.leftBarButtonItem setTitle:@"Edit"];
+        [self.navigationItem.leftBarButtonItem setStyle:UIBarButtonItemStylePlain];
+    }
+    else{
+        [super setEditing:YES animated:YES];
+        [table setEditing:YES animated:YES];
+        [table reloadData];
+        [self.navigationItem.leftBarButtonItem setTitle:@"Done"];
+        [self.navigationItem.leftBarButtonItem setStyle:UIBarButtonItemStyleDone];
+    }
+    
+}
 @end

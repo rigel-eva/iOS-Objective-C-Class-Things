@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface tableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface tableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+    IBOutlet UITableView *table;
+}
+-(IBAction) editTable:(id)sender;
 
 @end
