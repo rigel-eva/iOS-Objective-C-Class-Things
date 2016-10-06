@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    outLabel.text=inLabelText;
+    showRow.text=[NSString stringWithFormat:@"Row Passed to this VC: %li",(long)inRow];
+    showSection.text=[NSString stringWithFormat:@"Section Passed to this VC %li",(long)inSection];
 }
 
 - (void)didReceiveMemoryWarning {
