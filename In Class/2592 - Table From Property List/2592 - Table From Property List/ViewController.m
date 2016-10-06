@@ -7,13 +7,13 @@
 //
 
 #import "ViewController.h"
-
+#import "TableDetailViewController.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-@synthesize cod,faculty;
+@synthesize cod,faculty, myTableView;
 #pragma mark standard setup
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -60,8 +60,26 @@
     NSString *myFooterText=[NSString stringWithFormat:@"%lu Courses",[[cod objectForKey:[faculty objectAtIndex:section]] count]];
     return myFooterText;
 }
+#pragma mark segue
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"Selected \"%@\" Index Path:(%d,%d)",[tableView cellForRowAtIndexPath:indexPath].textLabel.text,indexPath.section,indexPath.row);//Welp, wanted someway to figure out what the heck we are tapping
-    [tableView deselectRowAtIndexPath:indexPath animated:false];
+    [self performSegueWithIdentifier:@"tableDetail" sender:self];
+    
+}
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"tableDetail"]){//If we are dealing with the segue that we are expecting ...
+        //First, let's get to know who we are passing this stuff to ... get their name, address ... things that make shipping easier
+        TableDetailViewController *detailVC=[segue destinationViewController];//get the class that we are pushing
+        //Next, let's get the stuff from our end, and get ready to pack it up and send it off.
+        NSIndexPath *indexPath=[self.myTableView indexPathForSelectedRow];
+        //Let's get the row Number from this next ...
+        NSString *myFaculty = [self.faculty objectAtIndex:[indexPath section]];
+        NSArray *facultyCourses=[self.cod objectForKey:myFaculty];
+        NSInteger row=[indexPath row];
+        NSInteger section=[indexPath section];
+        //now let's pack this stuff up and ship it out
+        detailVC.inLabelText = [facultyCourses objectAtIndex:[indexPath row]];
+        detailVC.inRow = row;
+        detailVC.inSection = section;
+    }
 }
 @end

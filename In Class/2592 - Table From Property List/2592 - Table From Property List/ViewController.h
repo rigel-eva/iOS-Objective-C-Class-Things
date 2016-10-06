@@ -11,8 +11,10 @@
 @interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>{
     NSDictionary *cod;
     NSArray *faculty;
+    IBOutlet UITableView *myTableView;
 }
 @property (nonatomic,retain) NSDictionary *cod;
 @property (nonatomic,retain) NSArray *faculty;
+@property (nonatomic,retain) UITableView *myTableView;
 @end
 

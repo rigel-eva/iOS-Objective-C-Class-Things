@@ -16,7 +16,7 @@
 		73438F151D9C9BAC00D8721A /* _592___Table_From_Property_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73438F141D9C9BAC00D8721A /* _592___Table_From_Property_ListTests.m */; };
 		73438F201D9C9BAC00D8721A /* _592___Table_From_Property_ListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73438F1F1D9C9BAC00D8721A /* _592___Table_From_Property_ListUITests.m */; };
 		73438F2E1D9C9CA300D8721A /* courses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73438F2D1D9C9CA300D8721A /* courses.plist */; };
-		73F52D661DA5D4210055ADEA /* TableDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F52D651DA5D4210055ADEA /* TableDetailViewController.m */; };
+		73F52D661DA5D4210055ADEA /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F52D651DA5D4210055ADEA /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		73438F1F1D9C9BAC00D8721A /* _592___Table_From_Property_ListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_592___Table_From_Property_ListUITests.m"; sourceTree = "<group>"; };
 		73438F211D9C9BAC00D8721A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73438F2D1D9C9CA300D8721A /* courses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = courses.plist; sourceTree = "<group>"; };
-		73F52D641DA5D4210055ADEA /* TableDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDetailViewController.h; sourceTree = "<group>"; };
-		73F52D651DA5D4210055ADEA /* TableDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDetailViewController.m; sourceTree = "<group>"; };
+		73F52D641DA5D4210055ADEA /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		73F52D651DA5D4210055ADEA /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 		73438EF91D9C9BAB00D8721A /* 2592 - Table From Property List */ = {
 			isa = PBXGroup;
 			children = (
-				73F52D641DA5D4210055ADEA /* TableDetailViewController.h */,
-				73F52D651DA5D4210055ADEA /* TableDetailViewController.m */,
+				73F52D641DA5D4210055ADEA /* TabBarViewController.h */,
+				73F52D651DA5D4210055ADEA /* TabBarViewController.m */,
 				73438EFD1D9C9BAB00D8721A /* AppDelegate.h */,
 				73438EFE1D9C9BAB00D8721A /* AppDelegate.m */,
 				73438F001D9C9BAB00D8721A /* ViewController.h */,
@@ -280,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F52D661DA5D4210055ADEA /* TableDetailViewController.m in Sources */,
+				73F52D661DA5D4210055ADEA /* TabBarViewController.m in Sources */,
 				73438F021D9C9BAB00D8721A /* ViewController.m in Sources */,
 				73438EFF1D9C9BAB00D8721A /* AppDelegate.m in Sources */,
 				73438EFC1D9C9BAB00D8721A /* main.m in Sources */,
