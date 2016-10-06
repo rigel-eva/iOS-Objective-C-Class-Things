@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController{
-    IBOutlet UIPageViewControl *pageView;
+    IBOutlet UIPageControl *pageView;
     IBOutlet UIImageView *imageView0;
     IBOutlet UIImageView *imageView1;
     UIImageView *tempImageView, *bgImageView;
 }
 @property (nonatomic,retain) UIPageControl *PageView;
 @property (nonatomic, retain) UIImageView *imageView0, *imageView1,*tempImageView, *bgImageView;
-
+-(IBAction)pageTurning:(UIPageControl*)pageController;
 @end
 
