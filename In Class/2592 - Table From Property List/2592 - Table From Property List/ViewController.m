@@ -80,6 +80,7 @@
         detailVC.inLabelText = [facultyCourses objectAtIndex:[indexPath row]];
         detailVC.inRow = row;
         detailVC.inSection = section;
+        [self.myTableView deselectRowAtIndexPath:indexPath animated:false];
     }
 }
 @end
