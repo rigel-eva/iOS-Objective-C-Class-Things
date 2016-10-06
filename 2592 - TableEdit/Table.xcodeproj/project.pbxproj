@@ -200,6 +200,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = jitin;
 				TargetAttributes = {
+					90542E0519E0C46A009C35F3 = {
+						DevelopmentTeam = BW37M2R4G3;
+					};
 					90542E2619E0C46A009C35F3 = {
 						TestTargetID = 90542E0519E0C46A009C35F3;
 					};
@@ -377,10 +380,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Table/Table-Prefix.pch";
 				INFOPLIST_FILE = "Table/Table-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirrigel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +396,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Table/Table-Prefix.pch";
 				INFOPLIST_FILE = "Table/Table-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sirrigel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +466,7 @@
 				90542E3A19E0C46A009C35F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90542E3B19E0C46A009C35F3 /* Build configuration list for PBXNativeTarget "TableTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +475,7 @@
 				90542E3D19E0C46A009C35F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
