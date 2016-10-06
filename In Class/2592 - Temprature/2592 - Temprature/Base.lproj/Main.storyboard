@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8SY-w7-mrU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8SY-w7-mrU" secondAttribute="height" multiplier="1:2" id="ZOg-Od-VSi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZOg-Od-VSi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <mask key="constraints">
+                                        <include reference="ZOg-Od-VSi"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BVz-fA-6Ne">
+                                <rect key="frame" x="0.0" y="110" width="140" height="74"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cII-FP-aZy"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Gw3-WP-0Yb"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5o-KF-LlY">
+                                <rect key="frame" x="0.0" y="28" width="140" height="74"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="i55-89-CEu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UBr-49-JKG"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHZ-5j-c9i" userLabel="Input1">
+                                <rect key="frame" x="148" y="50" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="tempConvert:" destination="BYZ-38-t0r" eventType="editingChanged" id="18G-1z-U7z"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNX-zr-lie" userLabel="Input2">
+                                <rect key="frame" x="148" y="132" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="tempConvert:" destination="BYZ-38-t0r" eventType="editingChanged" id="R3u-Fe-qlr"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8SY-w7-mrU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="BVz-fA-6Ne"/>
+                                <include reference="M5o-KF-LlY"/>
+                                <include reference="QHZ-5j-c9i"/>
+                                <include reference="lNX-zr-lie"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="BVz-fA-6Ne"/>
+                                <include reference="M5o-KF-LlY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="BVz-fA-6Ne"/>
+                                <include reference="M5o-KF-LlY"/>
+                                <include reference="QHZ-5j-c9i"/>
+                                <include reference="lNX-zr-lie"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8SY-w7-mrU"/>
+                                <include reference="QHZ-5j-c9i"/>
+                                <include reference="lNX-zr-lie"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="input1" destination="QHZ-5j-c9i" id="n8B-0Z-QfW"/>
+                        <outlet property="input2" destination="lNX-zr-lie" id="MJS-86-unE"/>
+                        <outlet property="unit1" destination="M5o-KF-LlY" id="rGs-Xg-r96"/>
+                        <outlet property="unit2" destination="BVz-fA-6Ne" id="Nhj-B3-wKU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="675.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1080x1920-HD-wallpapers-samsung-htc-android-smartphone-4830ldcr9-1080P.jpg" width="1080" height="1920"/>
+    </resources>
+</document>
