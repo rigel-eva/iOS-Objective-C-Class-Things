@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					7378132B1D6E75AA003C6B81 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BW37M2R4G3;
 					};
 					737813441D6E75AA003C6B81 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -413,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
 				INFOPLIST_FILE = "2592-1.1 - In class/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sir-rigel.-592-1-1---In-class";
@@ -424,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
 				INFOPLIST_FILE = "2592-1.1 - In class/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sir-rigel.-592-1-1---In-class";
@@ -496,6 +499,7 @@
 				7378135B1D6E75AA003C6B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7378135C1D6E75AA003C6B81 /* Build configuration list for PBXNativeTarget "2592-1.1 - In classTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +508,7 @@
 				7378135E1D6E75AA003C6B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7378135F1D6E75AA003C6B81 /* Build configuration list for PBXNativeTarget "2592-1.1 - In classUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +517,7 @@
 				737813611D6E75AA003C6B81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
