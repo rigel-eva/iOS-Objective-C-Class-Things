@@ -27,17 +27,31 @@
                                 <frame key="frameInset" height="44" maxY="595"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="jL1-CS-Hzs"/>
+                                    <barButtonItem systemItem="rewind" id="jL1-CS-Hzs">
+                                        <connections>
+                                            <action selector="goBack" destination="UeU-qA-p4V" id="LzM-Z7-dlM"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" id="x3f-Tq-wyw">
                                         <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="hHQ-uM-el5">
                                             <rect key="frame" x="50" y="7" width="281" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="go"/>
+                                            <connections>
+                                                <action selector="LoadPage:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="HrP-tR-mGp"/>
+                                            </connections>
                                         </textField>
+                                        <connections>
+                                            <action selector="LoadPage:" destination="BYZ-38-t0r" id="yIg-S9-lY5"/>
+                                        </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="fastForward" id="Oit-vB-zoh"/>
+                                    <barButtonItem systemItem="fastForward" id="Oit-vB-zoh">
+                                        <connections>
+                                            <action selector="goForward" destination="UeU-qA-p4V" id="8wQ-V8-XVr"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
@@ -45,15 +59,27 @@
                                 <frame key="frameInset" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="refresh" id="vMa-Vy-Aib"/>
+                                    <barButtonItem systemItem="refresh" id="vMa-Vy-Aib">
+                                        <connections>
+                                            <action selector="reload" destination="UeU-qA-p4V" id="rqM-RV-bHw"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="g6p-Wd-bgN"/>
-                                    <barButtonItem systemItem="stop" id="Ky8-9b-Nt1"/>
+                                    <barButtonItem systemItem="stop" id="Ky8-9b-Nt1">
+                                        <connections>
+                                            <action selector="stopLoading" destination="UeU-qA-p4V" id="so6-EU-kPi"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="hHQ-uM-el5" id="wCc-ND-0Ho"/>
+                        <outlet property="webView" destination="UeU-qA-p4V" id="SAZ-lY-by2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

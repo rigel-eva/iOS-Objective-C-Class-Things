@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize webView, textField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +25,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)LoadPage:(id)sender{
+    NSLog(@"Value of boxText is %@",textField.text);
+    NSURL *url=[NSURL URLWithString:textField.text];
+    NSURLRequest *request=[NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURLRequest:textField.text]]];//Way more messy way of doing things...
+    
+}
 
 @end
