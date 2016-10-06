@@ -6,14 +6,14 @@
 //  Copyright © 2016 Alex Maguire. All rights reserved.
 //
 
-#import "TabBarViewController.h"
+#import "TableDetailViewController.h"
 
-@interface TabBarViewController ()
-
+@interface TableDetailViewController ()
 @end
 
-@implementation TabBarViewController
-
+@implementation TableDetailViewController
+@synthesize inLabelText, inRow, inSection;
+@synthesize outLabel,showRow,showSection;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
