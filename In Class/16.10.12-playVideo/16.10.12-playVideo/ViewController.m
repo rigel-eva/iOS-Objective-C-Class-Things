@@ -17,9 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *url=[[NSBundle mainBundle] pathForResource:@"PipeDream" ofType:@"m4v"]
-    player=[[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:url]];
-    [NSNotificationCenter defaultCenter];
+    NSString *url=[[NSBundle mainBundle] pathForResource:@"PipeDream" ofType:@"m4v"];//getting the path to our movie
+    player=[[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:url]];//initilizing movie player
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(movieFinishedCallBack:) name:MPMoviePlayerPlaybackDidFinishNotification object:player];//
+    player.view.frame=CGRectMake(10,10,300,300);//seting the size of the player
+    [self.view addSubview:player.view];//adding the player to the main view
+    //play movie
+    [player play];//Play dat movie
+    
+}
+-(void)movieFinishedCallBack:(NSNotification *)aNotification{
+    MPMoviePlayerController *moviePlayer=[aNotification object];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:moviePlayer];
+    
 }
 
 

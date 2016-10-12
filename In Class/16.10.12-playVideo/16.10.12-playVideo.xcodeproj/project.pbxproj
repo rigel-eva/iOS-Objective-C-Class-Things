@@ -15,6 +15,7 @@
 		739910BE1DAEFCC500190C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739910BC1DAEFCC500190C50 /* LaunchScreen.storyboard */; };
 		739910C91DAEFCC500190C50 /* _6_10_12_playVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739910C81DAEFCC500190C50 /* _6_10_12_playVideoTests.m */; };
 		739910D41DAEFCC500190C50 /* _6_10_12_playVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739910D31DAEFCC500190C50 /* _6_10_12_playVideoUITests.m */; };
+		739910E21DAF021400190C50 /* Pipe_Dream_by_AniMusic_176674_Pipe_Dream_1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 739910E11DAF021300190C50 /* Pipe_Dream_by_AniMusic_176674_Pipe_Dream_1.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		739910CF1DAEFCC500190C50 /* 16.10.12-playVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16.10.12-playVideoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		739910D31DAEFCC500190C50 /* _6_10_12_playVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _6_10_12_playVideoUITests.m; sourceTree = "<group>"; };
 		739910D51DAEFCC500190C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739910E11DAF021300190C50 /* Pipe_Dream_by_AniMusic_176674_Pipe_Dream_1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pipe_Dream_by_AniMusic_176674_Pipe_Dream_1.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		739910AD1DAEFCC500190C50 /* 16.10.12-playVideo */ = {
 			isa = PBXGroup;
 			children = (
+				739910E11DAF021300190C50 /* Pipe_Dream_by_AniMusic_176674_Pipe_Dream_1.m4v */,
 				739910B11DAEFCC500190C50 /* AppDelegate.h */,
 				739910B21DAEFCC500190C50 /* AppDelegate.m */,
 				739910B41DAEFCC500190C50 /* ViewController.h */,
@@ -251,6 +254,7 @@
 			files = (
 				739910BE1DAEFCC500190C50 /* LaunchScreen.storyboard in Resources */,
 				739910BB1DAEFCC500190C50 /* Assets.xcassets in Resources */,
+				739910E21DAF021400190C50 /* Pipe_Dream_by_AniMusic_176674_Pipe_Dream_1.m4v in Resources */,
 				739910B91DAEFCC500190C50 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
