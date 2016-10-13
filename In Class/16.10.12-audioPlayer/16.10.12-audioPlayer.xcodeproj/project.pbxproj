@@ -15,6 +15,7 @@
 		735341211DAF0B8A003A389C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7353411F1DAF0B8A003A389C /* LaunchScreen.storyboard */; };
 		7353412C1DAF0B8A003A389C /* _6_10_12_audioPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353412B1DAF0B8A003A389C /* _6_10_12_audioPlayerTests.m */; };
 		735341371DAF0B8A003A389C /* _6_10_12_audioPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 735341361DAF0B8A003A389C /* _6_10_12_audioPlayerUITests.m */; };
+		735341481DAF1906003A389C /* HMB1936.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 735341471DAF1906003A389C /* HMB1936.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		735341361DAF0B8A003A389C /* _6_10_12_audioPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _6_10_12_audioPlayerUITests.m; sourceTree = "<group>"; };
 		735341381DAF0B8A003A389C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		735341461DAF1034003A389C /* 03 Melt (feat. Hatsune Miku).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "03 Melt (feat. Hatsune Miku).m4a"; sourceTree = "<group>"; };
+		735341471DAF1906003A389C /* HMB1936.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HMB1936.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		735341101DAF0B89003A389C /* 16.10.12-audioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				735341471DAF1906003A389C /* HMB1936.mp3 */,
 				735341461DAF1034003A389C /* 03 Melt (feat. Hatsune Miku).m4a */,
 				735341141DAF0B8A003A389C /* AppDelegate.h */,
 				735341151DAF0B8A003A389C /* AppDelegate.m */,
@@ -254,6 +257,7 @@
 				735341211DAF0B8A003A389C /* LaunchScreen.storyboard in Resources */,
 				7353411E1DAF0B8A003A389C /* Assets.xcassets in Resources */,
 				7353411C1DAF0B8A003A389C /* Main.storyboard in Resources */,
+				735341481DAF1906003A389C /* HMB1936.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
