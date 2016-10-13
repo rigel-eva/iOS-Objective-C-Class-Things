@@ -51,6 +51,7 @@
 		735341321DAF0B8A003A389C /* 16.10.12-audioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16.10.12-audioPlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		735341361DAF0B8A003A389C /* _6_10_12_audioPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _6_10_12_audioPlayerUITests.m; sourceTree = "<group>"; };
 		735341381DAF0B8A003A389C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		735341461DAF1034003A389C /* 03 Melt (feat. Hatsune Miku).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "03 Melt (feat. Hatsune Miku).m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		735341101DAF0B89003A389C /* 16.10.12-audioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				735341461DAF1034003A389C /* 03 Melt (feat. Hatsune Miku).m4a */,
 				735341141DAF0B8A003A389C /* AppDelegate.h */,
 				735341151DAF0B8A003A389C /* AppDelegate.m */,
 				735341171DAF0B8A003A389C /* ViewController.h */,

@@ -15,6 +15,7 @@
 		735340E21DAF0AFC003A389C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735340E01DAF0AFC003A389C /* LaunchScreen.storyboard */; };
 		735340ED1DAF0AFC003A389C /* finalProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 735340EC1DAF0AFC003A389C /* finalProjectTests.m */; };
 		735340F81DAF0AFC003A389C /* finalProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 735340F71DAF0AFC003A389C /* finalProjectUITests.m */; };
+		735341451DAF0D0C003A389C /* designDocument.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 735341441DAF0D0C003A389C /* designDocument.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		735340F31DAF0AFC003A389C /* finalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		735340F71DAF0AFC003A389C /* finalProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = finalProjectUITests.m; sourceTree = "<group>"; };
 		735340F91DAF0AFC003A389C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		735341441DAF0D0C003A389C /* designDocument.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = designDocument.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		735340C61DAF0AFB003A389C = {
 			isa = PBXGroup;
 			children = (
+				735341441DAF0D0C003A389C /* designDocument.rtf */,
 				735340D11DAF0AFB003A389C /* finalProject */,
 				735340EB1DAF0AFC003A389C /* finalProjectTests */,
 				735340F61DAF0AFC003A389C /* finalProjectUITests */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				735340E21DAF0AFC003A389C /* LaunchScreen.storyboard in Resources */,
+				735341451DAF0D0C003A389C /* designDocument.rtf in Resources */,
 				735340DF1DAF0AFC003A389C /* Assets.xcassets in Resources */,
 				735340DD1DAF0AFC003A389C /* Main.storyboard in Resources */,
 			);

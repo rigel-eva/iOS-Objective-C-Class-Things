@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import <AVFoundation/AVFoundation.h>
+@interface ViewController : UIViewController{
+    AVAudioPlayer *player;
+    NSTimer *timer;
+    IBOutlet UIProgressView *avgVolume;
+    IBOutlet UIProgressView *peakVolume;
+    IBOutlet UIButton *playPauseButton;
+    IBOutlet UISlider *volumeSlider;
+    
+}
+@property (retain) AVAudioPlayer *player;
+@property(retain) NSString *path;
+-(IBAction)play:(id)sender;
+-(IBAction)changeVolume:(id)sender;
 
 @end
 
