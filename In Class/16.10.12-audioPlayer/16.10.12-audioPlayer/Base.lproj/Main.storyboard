@@ -41,6 +41,13 @@
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJw-et-jZd"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="faN-rh-0VT">
+                                <frame key="frameInset" minX="14" minY="535" width="293" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="adjustTime:" destination="BYZ-38-t0r" eventType="valueChanged" id="1BC-6h-ey0"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -48,6 +55,7 @@
                         <outlet property="avgVolume" destination="RxG-qy-pS5" id="bMY-aQ-T80"/>
                         <outlet property="peakVolume" destination="xkx-rN-DrN" id="01i-78-T84"/>
                         <outlet property="playPauseButton" destination="Aa6-9m-GIL" id="0tz-gV-KdY"/>
+                        <outlet property="playbackSlider" destination="faN-rh-0VT" id="zPx-GK-fCh"/>
                         <outlet property="volumeSlider" destination="RVv-9b-SNQ" id="jbx-EK-deb"/>
                     </connections>
                 </viewController>

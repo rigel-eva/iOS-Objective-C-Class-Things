@@ -15,11 +15,13 @@
     IBOutlet UIProgressView *peakVolume;
     IBOutlet UIButton *playPauseButton;
     IBOutlet UISlider *volumeSlider;
+    IBOutlet UISlider *playbackSlider;
     
 }
 @property (retain) AVAudioPlayer *player;
 @property(retain) NSString *path;
 -(IBAction)play:(id)sender;
+-(IBAction)adjustTime:(id)sender;
 -(IBAction)changeVolume:(id)sender;
 
 @end

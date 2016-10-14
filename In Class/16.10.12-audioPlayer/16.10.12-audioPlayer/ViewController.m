@@ -47,6 +47,11 @@
         //switch label text
         [playPauseButton setTitle:@"Pause" forState:UIControlStateNormal];
         [playPauseButton setEnabled:YES];
+        timer=[NSTimer scheduledTimerWithTimeInterval:0.01
+                                               target:self
+                                             selector:@selector(updateUI:)
+                                             userInfo:nil
+                                              repeats:YES];//Sets up a timer to trigger updateUI every centisecond
         [player play];
     }else if([playPauseButton.currentTitle isEqualToString:@"Pause"]){
         //switch label text
@@ -61,7 +66,14 @@
     float peak=-1*[player peakPowerForChannel:0];
     avgVolume.progress=avg/20;
     peakVolume.progress=peak/20;
-    NSLog(@"Avg %f\navgProgress %f\nPeak %f\n,peakProgress%f\n",avg,peak,avgVolume.progress,peakVolume.progress);
+    playbackSlider.value=player.currentTime/player.duration;
+    NSLog(@"Avg %f\navgProgress %f\nPeak %f\npeakProgress%f\nTime:%f/%f",avg,peak,avgVolume.progress,peakVolume.progress,player.currentTime,player.duration);
+    if(player.playing==FALSE){
+        [timer invalidate];
+        [playPauseButton setTitle:@"Play" forState:UIControlStateNormal];
+        [playPauseButton setEnabled:TRUE];
+        
+    }
 }
 -(IBAction)changeVolume:(id)sender{
     player.volume=volumeSlider.value;
@@ -70,6 +82,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)adjustTime:(id)sender{
+    [player setCurrentTime:playbackSlider.value*player.duration];
+}
 
 @end
