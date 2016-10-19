@@ -15,7 +15,7 @@
 		73B42E481DB83D92000D0C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B42E461DB83D92000D0C65 /* LaunchScreen.storyboard */; };
 		73B42E531DB83D96000D0C65 /* _9_10_16___sqLiteDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B42E521DB83D96000D0C65 /* _9_10_16___sqLiteDBTests.m */; };
 		73B42E5E1DB83D97000D0C65 /* _9_10_16___sqLiteDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B42E5D1DB83D97000D0C65 /* _9_10_16___sqLiteDBUITests.m */; };
-		73B42E6D1DB83E80000D0C65 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B42E6C1DB83E80000D0C65 /* libsqlite3.0.tbd */; };
+		73B42E6F1DB83EF3000D0C65 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B42E6E1DB83EF3000D0C65 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,7 @@
 		73B42E5D1DB83D97000D0C65 /* _9_10_16___sqLiteDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_9_10_16___sqLiteDBUITests.m"; sourceTree = "<group>"; };
 		73B42E5F1DB83D97000D0C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73B42E6C1DB83E80000D0C65 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		73B42E6E1DB83EF3000D0C65 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73B42E6D1DB83E80000D0C65 /* libsqlite3.0.tbd in Frameworks */,
+				73B42E6F1DB83EF3000D0C65 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +148,7 @@
 		73B42E6B1DB83E80000D0C65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73B42E6E1DB83EF3000D0C65 /* libsqlite3.tbd */,
 				73B42E6C1DB83E80000D0C65 /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
