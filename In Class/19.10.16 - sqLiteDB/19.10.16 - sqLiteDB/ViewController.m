@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self openDB];
-    
+    [self createTableNamed:@"Faculty" withField1:@"Course" withField2:@"Name"];
 }
 
 
@@ -38,6 +38,15 @@
     }
     else{
         NSLog(@"myDB.db successfuly opened");
+    }
+}
+-(void) createTableNamed:(NSString *)tableName withField1:(NSString *)field1 withField2:(NSString *)field2{
+    char *err;
+    //NO LINE BREAKS FOR THIS STATEMENT
+    NSString *sqlStmt=[NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName,field1,field2];
+    if(sqlite3_exec(db, [sqlStmt UTF8String], NULL,NULL, &err)!=SQLITE_OK){
+        sqlite3_close(db);
+        NSLog(@"Failed to execute table create");
     }
 }
 @end
