@@ -24,6 +24,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(NSString *)filePath{
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDir = [paths objectAtIndex:0];
+    return [documentDir stringByAppendingPathComponent:@"myDB.db"];
+}
 
 @end
