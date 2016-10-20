@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self openDB];
     [self createTableNamed:@"Faculty" withField1:@"Course" withField2:@"Name"];
+    [self insertRecordIntoTableNamed:@"Faculty" field1:@"Course" field1Value:@"CIS 2840-003" field2:@"Name" field2Value:@"iPhone App Development"];
+    [self insertRecordIntoTableNamed:@"Faculty" field1:@"Course" field1Value:@"CIS 2841-003" field2:@"Name" field2Value:@"Android App Development"];
 }
 
 
@@ -40,7 +42,9 @@
         NSLog(@"myDB.db: successfuly opened");
     }
 }
--(void) createTableNamed:(NSString *)tableName withField1:(NSString *)field1 withField2:(NSString *)field2{
+-(void) createTableNamed:(NSString *)tableName
+              withField1:(NSString *)field1
+              withField2:(NSString *)field2{
     char *err;
     //NO LINE BREAKS FOR THIS STATEMENT
     NSString *sqlStmt=[NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName,field1,field2];
@@ -49,7 +53,7 @@
         NSLog(@"myDB.db: Failed to execute table create");
     }
 }
--(void)insertRecordIntoTalbeNamed:(NSString *)tableName
+-(void)insertRecordIntoTableNamed:(NSString *)tableName
                            field1:(NSString *)field1
                       field1Value:(NSString *)field1Value
                            field2:(NSString *)field2
