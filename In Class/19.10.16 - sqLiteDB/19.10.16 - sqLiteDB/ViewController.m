@@ -34,10 +34,10 @@
 -(void)openDB{
     if((sqlite3_open([[self filePath] UTF8String],&db))!=SQLITE_OK){
         sqlite3_close(db);
-        NSLog(@"myDB.db failed ot open");
+        NSLog(@"myDB.db: failed to open");
     }
     else{
-        NSLog(@"myDB.db successfuly opened");
+        NSLog(@"myDB.db: successfuly opened");
     }
 }
 -(void) createTableNamed:(NSString *)tableName withField1:(NSString *)field1 withField2:(NSString *)field2{
@@ -46,7 +46,20 @@
     NSString *sqlStmt=[NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName,field1,field2];
     if(sqlite3_exec(db, [sqlStmt UTF8String], NULL,NULL, &err)!=SQLITE_OK){
         sqlite3_close(db);
-        NSLog(@"Failed to execute table create");
+        NSLog(@"myDB.db: Failed to execute table create");
     }
 }
+-(void)insertRecordIntoTalbeNamed:(NSString *)tableName
+                           field1:(NSString *)field1
+                      field1Value:(NSString *)field1Value
+                           field2:(NSString *)field2
+                      field2Value:(NSString *)field2Value{
+    NSString *sqlStmt=[NSString stringWithFormat:@"INSERT OR REPLACE into '%@' ('%@','%@') VALUES ('%@','%@')",tableName,field1,field2,field1Value,field2Value];
+    char *err;
+    if(sqlite3_exec(db, [sqlStmt UTF8String], NULL,NULL, &err)!=SQLITE_OK){
+        sqlite3_close(db);
+        NSLog(@"myDB.db: Failed to execute table insert/replace");
+    }
+}
+
 @end
