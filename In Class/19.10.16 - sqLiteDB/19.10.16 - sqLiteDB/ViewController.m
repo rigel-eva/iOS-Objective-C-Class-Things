@@ -29,5 +29,13 @@
     NSString *documentDir = [paths objectAtIndex:0];
     return [documentDir stringByAppendingPathComponent:@"myDB.db"];
 }
-
+-(void)openDB{
+    if((sqlite3_open([[self filePath] UTF8String],&db))!=SQLITE_OK){
+        sqlite3_close(db);
+        NSLog(@"myDB.db failed ot open");
+    }
+    else{
+        NSLog(@"myDB.db successfuly opened");
+    }
+}
 @end
