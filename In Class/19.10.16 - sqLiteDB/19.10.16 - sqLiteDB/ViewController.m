@@ -65,5 +65,20 @@
         NSLog(@"myDB.db: Failed to execute table insert/replace");
     }
 }
-
+-(void) getAllRowsFromTableNamed:(NSString *)tableName{
+    NSString *qryStmt=[NSString stringWithFormat:@"SELECT * FROM '%@';",tableName];
+    char *err;
+    sqlite3_stmt *stmt;
+    if(sqlite3_prepare_v2(db,[qryStmt UTF8String],-1,&stmt,nil)==SQLITE_OK){
+        while(sqlite3_step(stmt)==SQLITE_ROW){
+            char *field1=(char *)sqlite3_column_text(stmt,0);
+            char *field2=(char *)sqlite3_column_text(stmt,1);
+            NSString *field1Value=[[NSString alloc]initWithUTF8String:field1];
+            NSString *field2Value=[[NSString alloc]initWithUTF8String:field2];
+            NSLog(@"%@---%@",field1Value,field2Value);
+        }
+    }
+    //close - this will delete stmt from memory
+    sqlite3_finalize(stmt);
+}
 @end
