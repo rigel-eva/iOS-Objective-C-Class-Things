@@ -21,6 +21,7 @@
     [self createTableNamed:@"Faculty" withField1:@"Course" withField2:@"Name"];
     [self insertRecordIntoTableNamed:@"Faculty" field1:@"Course" field1Value:@"CIS 2840-003" field2:@"Name" field2Value:@"iPhone App Development"];
     [self insertRecordIntoTableNamed:@"Faculty" field1:@"Course" field1Value:@"CIS 2841-003" field2:@"Name" field2Value:@"Android App Development"];
+    [self getAllRowsFromTableNamed:@"Faculty"];
 }
 
 
