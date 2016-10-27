@@ -13,12 +13,27 @@
 @end
 
 @implementation ViewController
+@synthesize imageView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //recognize tap
+    UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc]
+                                        initWithTarget:self action:@selector(handleTapGesture:)];
+    tapGesture.numberOfTapsRequired=2;
+    [imageView addGestureRecognizer:tapGesture];
 }
-
+-(IBAction)handleTapGesture:(UITapGestureRecognizer *)sender{
+    NSLog(@"Tap Tap");
+    if(sender.view.contentMode==UIViewContentModeScaleAspectFit){
+        sender.view.contentMode=UIViewContentModeCenter;
+    }
+    else{
+        sender.view.contentMode=UIViewContentModeScaleAspectFit;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
