@@ -12,6 +12,7 @@
     IBOutlet UIImageView *imageView;
     IBOutlet UISlider *slider;
     CGPoint delta;
+    CGPoint translation;
     NSTimer *timer;
     float ballRadius;
 }
