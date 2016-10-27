@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <math.h>
 @interface ViewController ()
 
 @end
@@ -21,23 +21,16 @@
     //need a starting point to animate the image - could be any legit value
     delta=CGPointMake(4,4);
     timer=[NSTimer scheduledTimerWithTimeInterval:slider.value target:self selector:@selector(onTimer:) userInfo:nil repeats:YES];
-    
+    angle=0;
 }
 -(void)onTimer:(id)sender{
-    /*imageView.center=CGPointMake(imageView.center.x+delta.x, imageView.center.y +delta.y);
-    if(imageView.center.x>self.view.bounds.size.width -ballRadius||imageView.center.x>self.view.bounds.size.width-ballRadius){
-     delta.x=-delta.x;
-    }
-    if(imageView.center.y>self.view.bounds.size.height-ballRadius||imageView.center.y<ballRadius){
-      delta.y=-delta.y;
-    }*/
+
     //Set Animation parameters
     [UIView beginAnimations:@"myOwn" context:nil];
     [UIView setAnimationDuration:slider.value];
     [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-    imageView.transform = CGAffineTransformMakeTranslation(translation.x, translation.y);
-    [UIView commitAnimations];
-    //set up next tiemr call
+    //imageView.transform = CGAffineTransformMakeTranslation(translation.x, translation.y);
+    /*//set up next timer call
     translation.x=translation.x+delta.x;
     translation.y=translation.y+delta.y;
     if((imageView.center.x+translation.x>self.view.bounds.size.width-ballRadius)||(imageView.center.x+translation.x<ballRadius)){
@@ -45,7 +38,22 @@
     }
     if((imageView.center.y+translation.y>self.view.bounds.size.height-ballRadius)||(imageView.center.y+translation.y<ballRadius)){
         delta.y= -delta.y;
+    }*/
+    imageView.transform=CGAffineTransformMakeRotation(angle);
+    [UIView commitAnimations];
+    angle+=0.02;
+    //full rotation is exactly waht you expect, 2 pi or 2 *3.1415926(using M_PI for ease of use...)
+    if(angle>M_PI*2){
+        angle=0;
     }
+    imageView.center=CGPointMake(imageView.center.x+delta.x, imageView.center.y +delta.y);
+     if(imageView.center.x>self.view.bounds.size.width -ballRadius||
+        imageView.center.x>self.view.bounds.size.width-ballRadius){
+         delta.x=-delta.x;
+     }
+     if(imageView.center.y>self.view.bounds.size.height-ballRadius||imageView.center.y<ballRadius){
+         delta.y=-delta.y;
+     }
     
 }
 -(IBAction)sliderMoved:(id)sender{

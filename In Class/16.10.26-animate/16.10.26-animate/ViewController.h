@@ -15,6 +15,7 @@
     CGPoint translation;
     NSTimer *timer;
     float ballRadius;
+    float angle;
 }
 @property (nonatomic,retain)UIImageView *imageView;
 @property (nonatomic,retain)UISlider *slider;
