@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <math.h>
 @interface ViewController ()
 
 @end
@@ -24,6 +24,9 @@
                                         initWithTarget:self action:@selector(handleTapGesture:)];
     tapGesture.numberOfTapsRequired=2;
     [imageView addGestureRecognizer:tapGesture];
+    UITapGestureRecognizer *tapGesture2=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSecondTapGesture:)];
+    tapGesture2.numberOfTapsRequired=3;
+    [imageView addGestureRecognizer:tapGesture2];
 }
 -(IBAction)handleTapGesture:(UITapGestureRecognizer *)sender{
     NSLog(@"Tap Tap");
@@ -34,7 +37,11 @@
         sender.view.contentMode=UIViewContentModeScaleAspectFit;
     }
 }
-
+-(IBAction)handleSecondTapGesture:(UITapGestureRecognizer*)sender{
+    NSLog(@"Tap Tap Tap");
+    imageView.transform=CGAffineTransformRotate(imageView.transform, M_PI);
+    [UIView commitAnimations];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
