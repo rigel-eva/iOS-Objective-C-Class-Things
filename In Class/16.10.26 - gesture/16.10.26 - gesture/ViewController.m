@@ -14,33 +14,65 @@
 
 @implementation ViewController
 @synthesize imageView;
-
+float lastScaleFactor;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     //recognize tap
-    UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc]
-                                        initWithTarget:self action:@selector(handleTapGesture:)];
-    tapGesture.numberOfTapsRequired=2;
-    [imageView addGestureRecognizer:tapGesture];
-    UITapGestureRecognizer *tapGesture2=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSecondTapGesture:)];
-    tapGesture2.numberOfTapsRequired=3;
-    [imageView addGestureRecognizer:tapGesture2];
+    //UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    //tapGesture.numberOfTapsRequired=2;
+   // [imageView addGestureRecognizer:tapGesture];
+
+    //recognize pinch
+    //UIPinchGestureRecognizer *pinchGesture=[[UIPinchGestureRecognizer alloc] initWithtarget:self action:@selector(handlePinch:)];
+    UIPinchGestureRecognizer *pinchGesture=[[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(handlePinch:)];
+    lastScaleFactor=1;
+    [imageView addGestureRecognizer:pinchGesture];
 }
 -(IBAction)handleTapGesture:(UITapGestureRecognizer *)sender{
-    NSLog(@"Tap Tap");
-    if(sender.view.contentMode==UIViewContentModeScaleAspectFit){
-        sender.view.contentMode=UIViewContentModeCenter;
-    }
-    else{
-        sender.view.contentMode=UIViewContentModeScaleAspectFit;
+    switch(sender.numberOfTouches){
+        case 2:
+            NSLog(@"Tap Tap");
+            if(sender.view.contentMode==UIViewContentModeScaleAspectFit){
+                sender.view.contentMode=UIViewContentModeCenter;
+            }
+            else{
+                sender.view.contentMode=UIViewContentModeScaleAspectFit;
+            }
+            break;
+        case 3:
+            NSLog(@"Tap Tap Tap");
+            imageView.transform=CGAffineTransformRotate(imageView.transform, M_PI);
+            [UIView commitAnimations];
+            break;
+
     }
 }
 -(IBAction)handleSecondTapGesture:(UITapGestureRecognizer*)sender{
-    NSLog(@"Tap Tap Tap");
-    imageView.transform=CGAffineTransformRotate(imageView.transform, M_PI);
+}
+-(IBAction)handlePinch:(UIPinchGestureRecognizer *)sender{
+    CGFloat factor=[sender scale];
+    NSLog(@"Pinched (oww) with a factor of %f",factor);
+    if(factor>1){
+        //zoom in
+        sender.view.transform=CGAffineTransformMakeScale(lastScaleFactor+factor-1, lastScaleFactor+factor-1);
+    }else{
+        //zoom out
+        sender.view.transform=CGAffineTransformMakeScale(lastScaleFactor*factor,factor);
+    }
+    if(sender.state==UIGestureRecognizerStateEnded){
+        if(factor>1){
+            lastScaleFactor+=(factor-1);
+        }else{
+            lastScaleFactor*=factor;
+        }
+    }
     [UIView commitAnimations];
+    
+}
+-(IBAction)handleSwipe:(UISwipeGestureRecognizer *)sender{
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
