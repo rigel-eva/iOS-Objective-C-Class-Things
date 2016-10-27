@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732FFE6A1DC1786E007E3A68 /* 16.10.26-animate in Resources */ = {isa = PBXBuildFile; fileRef = 732FFE691DC1786E007E3A68 /* 16.10.26-animate */; };
 		73B42E3A1DB83D8B000D0C65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B42E391DB83D8B000D0C65 /* main.m */; };
 		73B42E3D1DB83D8C000D0C65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B42E3C1DB83D8C000D0C65 /* AppDelegate.m */; };
 		73B42E401DB83D8D000D0C65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B42E3F1DB83D8D000D0C65 /* ViewController.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732FFE691DC1786E007E3A68 /* 16.10.26-animate */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "16.10.26-animate"; path = "../16.10.26-animate"; sourceTree = "<group>"; };
 		73B42E351DB83D8A000D0C65 /* 19.10.16 - sqLiteDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "19.10.16 - sqLiteDB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B42E391DB83D8B000D0C65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73B42E3B1DB83D8C000D0C65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		73B42E2C1DB83D88000D0C65 = {
 			isa = PBXGroup;
 			children = (
+				732FFE691DC1786E007E3A68 /* 16.10.26-animate */,
 				73B42E371DB83D8A000D0C65 /* 19.10.16 - sqLiteDB */,
 				73B42E511DB83D95000D0C65 /* 19.10.16 - sqLiteDBTests */,
 				73B42E5C1DB83D96000D0C65 /* 19.10.16 - sqLiteDBUITests */,
@@ -263,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732FFE6A1DC1786E007E3A68 /* 16.10.26-animate in Resources */,
 				73B42E481DB83D92000D0C65 /* LaunchScreen.storyboard in Resources */,
 				73B42E451DB83D92000D0C65 /* Assets.xcassets in Resources */,
 				73B42E431DB83D8D000D0C65 /* Main.storyboard in Resources */,
@@ -528,6 +532,7 @@
 				73B42E641DB83D97000D0C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73B42E651DB83D97000D0C65 /* Build configuration list for PBXNativeTarget "19.10.16 - sqLiteDBTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +541,7 @@
 				73B42E671DB83D97000D0C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73B42E681DB83D97000D0C65 /* Build configuration list for PBXNativeTarget "19.10.16 - sqLiteDBUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				73B42E6A1DB83D97000D0C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
