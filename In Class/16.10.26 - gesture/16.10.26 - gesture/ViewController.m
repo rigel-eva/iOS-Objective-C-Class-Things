@@ -15,6 +15,8 @@
 @implementation ViewController
 @synthesize imageView;
 float lastScaleFactor;
+NSArray *images;
+int imageIndex;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -26,9 +28,20 @@ float lastScaleFactor;
 
     //recognize pinch
     //UIPinchGestureRecognizer *pinchGesture=[[UIPinchGestureRecognizer alloc] initWithtarget:self action:@selector(handlePinch:)];
-    UIPinchGestureRecognizer *pinchGesture=[[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(handlePinch:)];
-    lastScaleFactor=1;
-    [imageView addGestureRecognizer:pinchGesture];
+    //UIPinchGestureRecognizer *pinchGesture=[[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(handlePinch:)];
+    //lastScaleFactor=1;
+    //[imageView addGestureRecognizer:pinchGesture];
+    //Doing setup for images
+    imageIndex=0;
+    images=[[NSArray alloc] initWithObjects:@"1299297179658.jpg",@"1299557075811.jpg",nil];
+    //Right Swipe - which is default
+    UISwipeGestureRecognizer *swipeGesture;
+    swipeGesture=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+    [imageView addGestureRecognizer:swipeGesture];
+    UISwipeGestureRecognizer *lSwipeGesture;
+    lSwipeGesture=[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+    lSwipeGesture.direction=UISwipeGestureRecognizerDirectionLeft;
+    [imageView addGestureRecognizer:lSwipeGesture];
 }
 -(IBAction)handleTapGesture:(UITapGestureRecognizer *)sender{
     switch(sender.numberOfTouches){
@@ -72,7 +85,19 @@ float lastScaleFactor;
     
 }
 -(IBAction)handleSwipe:(UISwipeGestureRecognizer *)sender{
-    
+    UISwipeGestureRecognizerDirection direction=sender.direction;
+    switch(direction){
+        case UISwipeGestureRecognizerDirectionLeft:
+            NSLog(@"Swiped Left");
+            imageIndex++;
+            break;
+        case UISwipeGestureRecognizerDirectionRight:
+            NSLog(@"Swiped Right");
+            imageIndex--;
+            break;
+    }
+    imageIndex=(imageIndex<0)?([images count]-1):imageIndex%[images count];
+    imageView.image=[UIImage imageNamed:images[imageIndex]];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
