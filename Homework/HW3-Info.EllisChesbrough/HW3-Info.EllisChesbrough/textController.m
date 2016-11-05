@@ -6,17 +6,20 @@
 //  Copyright © 2016 Sir Rigel. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "textController.h"
 
-@interface ViewController ()
+@interface textController ()
 
 @end
 
-@implementation ViewController
-
+@implementation textController
+@synthesize info;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *filePath=[[NSBundle mainBundle]pathForResource:@"info" ofType:@"txt"];
+    info.text=[NSString stringWithContentsOfFile:filePath encoding:kCFStringEncodingUTF8 error:nil];
+    
 }
 
 

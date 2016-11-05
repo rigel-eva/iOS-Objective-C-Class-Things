@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		739AAD361DCD8FCA003C5646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD351DCD8FCA003C5646 /* main.m */; };
 		739AAD391DCD8FCA003C5646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD381DCD8FCA003C5646 /* AppDelegate.m */; };
-		739AAD3C1DCD8FCA003C5646 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD3B1DCD8FCA003C5646 /* ViewController.m */; };
+		739AAD3C1DCD8FCA003C5646 /* textController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD3B1DCD8FCA003C5646 /* textController.m */; };
 		739AAD3F1DCD8FCB003C5646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD3D1DCD8FCB003C5646 /* Main.storyboard */; };
 		739AAD411DCD8FCB003C5646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD401DCD8FCB003C5646 /* Assets.xcassets */; };
 		739AAD441DCD8FCB003C5646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD421DCD8FCB003C5646 /* LaunchScreen.storyboard */; };
 		739AAD4F1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD4E1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughTests.m */; };
 		739AAD5A1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD591DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m */; };
+		739AAD681DCD9596003C5646 /* info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD671DCD9596003C5646 /* info.txt */; };
+		739AAD6C1DCDBD4C003C5646 /* imageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD6B1DCDBD4C003C5646 /* imageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,8 @@
 		739AAD351DCD8FCA003C5646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		739AAD371DCD8FCA003C5646 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		739AAD381DCD8FCA003C5646 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		739AAD3A1DCD8FCA003C5646 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		739AAD3B1DCD8FCA003C5646 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		739AAD3A1DCD8FCA003C5646 /* textController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = textController.h; sourceTree = "<group>"; };
+		739AAD3B1DCD8FCA003C5646 /* textController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textController.m; sourceTree = "<group>"; };
 		739AAD3E1DCD8FCB003C5646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		739AAD401DCD8FCB003C5646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		739AAD431DCD8FCB003C5646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,9 @@
 		739AAD551DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW3-Info.EllisChesbroughUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		739AAD591DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW3_Info_EllisChesbroughUITests.m; sourceTree = "<group>"; };
 		739AAD5B1DCD8FCD003C5646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739AAD671DCD9596003C5646 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info.txt; sourceTree = "<group>"; };
+		739AAD6A1DCDBD4C003C5646 /* imageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageViewController.h; sourceTree = "<group>"; };
+		739AAD6B1DCDBD4C003C5646 /* imageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +106,15 @@
 		739AAD331DCD8FCA003C5646 /* HW3-Info.EllisChesbrough */ = {
 			isa = PBXGroup;
 			children = (
+				739AAD691DCD9D0B003C5646 /* View Controllers */,
 				739AAD371DCD8FCA003C5646 /* AppDelegate.h */,
 				739AAD381DCD8FCA003C5646 /* AppDelegate.m */,
-				739AAD3A1DCD8FCA003C5646 /* ViewController.h */,
-				739AAD3B1DCD8FCA003C5646 /* ViewController.m */,
 				739AAD3D1DCD8FCB003C5646 /* Main.storyboard */,
 				739AAD401DCD8FCB003C5646 /* Assets.xcassets */,
 				739AAD421DCD8FCB003C5646 /* LaunchScreen.storyboard */,
 				739AAD451DCD8FCB003C5646 /* Info.plist */,
 				739AAD341DCD8FCA003C5646 /* Supporting Files */,
+				739AAD671DCD9596003C5646 /* info.txt */,
 			);
 			path = "HW3-Info.EllisChesbrough";
 			sourceTree = "<group>";
@@ -138,6 +143,17 @@
 				739AAD5B1DCD8FCD003C5646 /* Info.plist */,
 			);
 			path = "HW3-Info.EllisChesbroughUITests";
+			sourceTree = "<group>";
+		};
+		739AAD691DCD9D0B003C5646 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				739AAD3A1DCD8FCA003C5646 /* textController.h */,
+				739AAD3B1DCD8FCA003C5646 /* textController.m */,
+				739AAD6A1DCDBD4C003C5646 /* imageViewController.h */,
+				739AAD6B1DCDBD4C003C5646 /* imageViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +267,7 @@
 			files = (
 				739AAD441DCD8FCB003C5646 /* LaunchScreen.storyboard in Resources */,
 				739AAD411DCD8FCB003C5646 /* Assets.xcassets in Resources */,
+				739AAD681DCD9596003C5646 /* info.txt in Resources */,
 				739AAD3F1DCD8FCB003C5646 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739AAD3C1DCD8FCA003C5646 /* ViewController.m in Sources */,
+				739AAD3C1DCD8FCA003C5646 /* textController.m in Sources */,
 				739AAD391DCD8FCA003C5646 /* AppDelegate.m in Sources */,
+				739AAD6C1DCDBD4C003C5646 /* imageViewController.m in Sources */,
 				739AAD361DCD8FCA003C5646 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

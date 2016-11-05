@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface textController : UIViewController{
+    IBOutlet UITextView *info;
+}
+@property (nonatomic,retain) UITextView *info;
 @end
 
