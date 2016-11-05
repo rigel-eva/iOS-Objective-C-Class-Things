@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		739AAD361DCD8FCA003C5646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD351DCD8FCA003C5646 /* main.m */; };
+		739AAD391DCD8FCA003C5646 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD381DCD8FCA003C5646 /* AppDelegate.m */; };
+		739AAD3C1DCD8FCA003C5646 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD3B1DCD8FCA003C5646 /* ViewController.m */; };
+		739AAD3F1DCD8FCB003C5646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD3D1DCD8FCB003C5646 /* Main.storyboard */; };
+		739AAD411DCD8FCB003C5646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD401DCD8FCB003C5646 /* Assets.xcassets */; };
+		739AAD441DCD8FCB003C5646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD421DCD8FCB003C5646 /* LaunchScreen.storyboard */; };
+		739AAD4F1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD4E1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughTests.m */; };
+		739AAD5A1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AAD591DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		739AAD4B1DCD8FCD003C5646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739AAD291DCD8FC8003C5646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739AAD301DCD8FC9003C5646;
+			remoteInfo = "HW3-Info.EllisChesbrough";
+		};
+		739AAD561DCD8FCD003C5646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739AAD291DCD8FC8003C5646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739AAD301DCD8FC9003C5646;
+			remoteInfo = "HW3-Info.EllisChesbrough";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		739AAD311DCD8FC9003C5646 /* HW3-Info.EllisChesbrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW3-Info.EllisChesbrough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739AAD351DCD8FCA003C5646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		739AAD371DCD8FCA003C5646 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		739AAD381DCD8FCA003C5646 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		739AAD3A1DCD8FCA003C5646 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		739AAD3B1DCD8FCA003C5646 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		739AAD3E1DCD8FCB003C5646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		739AAD401DCD8FCB003C5646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		739AAD431DCD8FCB003C5646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		739AAD451DCD8FCB003C5646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739AAD4A1DCD8FCD003C5646 /* HW3-Info.EllisChesbroughTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW3-Info.EllisChesbroughTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739AAD4E1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW3_Info_EllisChesbroughTests.m; sourceTree = "<group>"; };
+		739AAD501DCD8FCD003C5646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739AAD551DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW3-Info.EllisChesbroughUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739AAD591DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW3_Info_EllisChesbroughUITests.m; sourceTree = "<group>"; };
+		739AAD5B1DCD8FCD003C5646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739AAD2E1DCD8FC9003C5646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739AAD471DCD8FCD003C5646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739AAD521DCD8FCD003C5646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		739AAD281DCD8FC8003C5646 = {
+			isa = PBXGroup;
+			children = (
+				739AAD331DCD8FCA003C5646 /* HW3-Info.EllisChesbrough */,
+				739AAD4D1DCD8FCD003C5646 /* HW3-Info.EllisChesbroughTests */,
+				739AAD581DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests */,
+				739AAD321DCD8FC9003C5646 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		739AAD321DCD8FC9003C5646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739AAD311DCD8FC9003C5646 /* HW3-Info.EllisChesbrough.app */,
+				739AAD4A1DCD8FCD003C5646 /* HW3-Info.EllisChesbroughTests.xctest */,
+				739AAD551DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		739AAD331DCD8FCA003C5646 /* HW3-Info.EllisChesbrough */ = {
+			isa = PBXGroup;
+			children = (
+				739AAD371DCD8FCA003C5646 /* AppDelegate.h */,
+				739AAD381DCD8FCA003C5646 /* AppDelegate.m */,
+				739AAD3A1DCD8FCA003C5646 /* ViewController.h */,
+				739AAD3B1DCD8FCA003C5646 /* ViewController.m */,
+				739AAD3D1DCD8FCB003C5646 /* Main.storyboard */,
+				739AAD401DCD8FCB003C5646 /* Assets.xcassets */,
+				739AAD421DCD8FCB003C5646 /* LaunchScreen.storyboard */,
+				739AAD451DCD8FCB003C5646 /* Info.plist */,
+				739AAD341DCD8FCA003C5646 /* Supporting Files */,
+			);
+			path = "HW3-Info.EllisChesbrough";
+			sourceTree = "<group>";
+		};
+		739AAD341DCD8FCA003C5646 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				739AAD351DCD8FCA003C5646 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		739AAD4D1DCD8FCD003C5646 /* HW3-Info.EllisChesbroughTests */ = {
+			isa = PBXGroup;
+			children = (
+				739AAD4E1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughTests.m */,
+				739AAD501DCD8FCD003C5646 /* Info.plist */,
+			);
+			path = "HW3-Info.EllisChesbroughTests";
+			sourceTree = "<group>";
+		};
+		739AAD581DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests */ = {
+			isa = PBXGroup;
+			children = (
+				739AAD591DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m */,
+				739AAD5B1DCD8FCD003C5646 /* Info.plist */,
+			);
+			path = "HW3-Info.EllisChesbroughUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739AAD301DCD8FC9003C5646 /* HW3-Info.EllisChesbrough */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739AAD5E1DCD8FCD003C5646 /* Build configuration list for PBXNativeTarget "HW3-Info.EllisChesbrough" */;
+			buildPhases = (
+				739AAD2D1DCD8FC9003C5646 /* Sources */,
+				739AAD2E1DCD8FC9003C5646 /* Frameworks */,
+				739AAD2F1DCD8FC9003C5646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HW3-Info.EllisChesbrough";
+			productName = "HW3-Info.EllisChesbrough";
+			productReference = 739AAD311DCD8FC9003C5646 /* HW3-Info.EllisChesbrough.app */;
+			productType = "com.apple.product-type.application";
+		};
+		739AAD491DCD8FCD003C5646 /* HW3-Info.EllisChesbroughTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739AAD611DCD8FCD003C5646 /* Build configuration list for PBXNativeTarget "HW3-Info.EllisChesbroughTests" */;
+			buildPhases = (
+				739AAD461DCD8FCD003C5646 /* Sources */,
+				739AAD471DCD8FCD003C5646 /* Frameworks */,
+				739AAD481DCD8FCD003C5646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739AAD4C1DCD8FCD003C5646 /* PBXTargetDependency */,
+			);
+			name = "HW3-Info.EllisChesbroughTests";
+			productName = "HW3-Info.EllisChesbroughTests";
+			productReference = 739AAD4A1DCD8FCD003C5646 /* HW3-Info.EllisChesbroughTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		739AAD541DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739AAD641DCD8FCD003C5646 /* Build configuration list for PBXNativeTarget "HW3-Info.EllisChesbroughUITests" */;
+			buildPhases = (
+				739AAD511DCD8FCD003C5646 /* Sources */,
+				739AAD521DCD8FCD003C5646 /* Frameworks */,
+				739AAD531DCD8FCD003C5646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739AAD571DCD8FCD003C5646 /* PBXTargetDependency */,
+			);
+			name = "HW3-Info.EllisChesbroughUITests";
+			productName = "HW3-Info.EllisChesbroughUITests";
+			productReference = 739AAD551DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		739AAD291DCD8FC8003C5646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sir Rigel";
+				TargetAttributes = {
+					739AAD301DCD8FC9003C5646 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BW37M2R4G3;
+						ProvisioningStyle = Automatic;
+					};
+					739AAD491DCD8FCD003C5646 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BW37M2R4G3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 739AAD301DCD8FC9003C5646;
+					};
+					739AAD541DCD8FCD003C5646 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BW37M2R4G3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 739AAD301DCD8FC9003C5646;
+					};
+				};
+			};
+			buildConfigurationList = 739AAD2C1DCD8FC8003C5646 /* Build configuration list for PBXProject "HW3-Info.EllisChesbrough" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 739AAD281DCD8FC8003C5646;
+			productRefGroup = 739AAD321DCD8FC9003C5646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739AAD301DCD8FC9003C5646 /* HW3-Info.EllisChesbrough */,
+				739AAD491DCD8FCD003C5646 /* HW3-Info.EllisChesbroughTests */,
+				739AAD541DCD8FCD003C5646 /* HW3-Info.EllisChesbroughUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		739AAD2F1DCD8FC9003C5646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739AAD441DCD8FCB003C5646 /* LaunchScreen.storyboard in Resources */,
+				739AAD411DCD8FCB003C5646 /* Assets.xcassets in Resources */,
+				739AAD3F1DCD8FCB003C5646 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739AAD481DCD8FCD003C5646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739AAD531DCD8FCD003C5646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		739AAD2D1DCD8FC9003C5646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739AAD3C1DCD8FCA003C5646 /* ViewController.m in Sources */,
+				739AAD391DCD8FCA003C5646 /* AppDelegate.m in Sources */,
+				739AAD361DCD8FCA003C5646 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739AAD461DCD8FCD003C5646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739AAD4F1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739AAD511DCD8FCD003C5646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739AAD5A1DCD8FCD003C5646 /* HW3_Info_EllisChesbroughUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		739AAD4C1DCD8FCD003C5646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739AAD301DCD8FC9003C5646 /* HW3-Info.EllisChesbrough */;
+			targetProxy = 739AAD4B1DCD8FCD003C5646 /* PBXContainerItemProxy */;
+		};
+		739AAD571DCD8FCD003C5646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739AAD301DCD8FC9003C5646 /* HW3-Info.EllisChesbrough */;
+			targetProxy = 739AAD561DCD8FCD003C5646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		739AAD3D1DCD8FCB003C5646 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739AAD3E1DCD8FCB003C5646 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		739AAD421DCD8FCB003C5646 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739AAD431DCD8FCB003C5646 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		739AAD5C1DCD8FCD003C5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		739AAD5D1DCD8FCD003C5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		739AAD5F1DCD8FCD003C5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW3-Info.EllisChesbrough/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW3-Info-EllisChesbrough";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		739AAD601DCD8FCD003C5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW3-Info.EllisChesbrough/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW3-Info-EllisChesbrough";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		739AAD621DCD8FCD003C5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW3-Info.EllisChesbroughTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW3-Info-EllisChesbroughTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW3-Info.EllisChesbrough.app/HW3-Info.EllisChesbrough";
+			};
+			name = Debug;
+		};
+		739AAD631DCD8FCD003C5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW3-Info.EllisChesbroughTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW3-Info-EllisChesbroughTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW3-Info.EllisChesbrough.app/HW3-Info.EllisChesbrough";
+			};
+			name = Release;
+		};
+		739AAD651DCD8FCD003C5646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW3-Info.EllisChesbroughUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW3-Info-EllisChesbroughUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HW3-Info.EllisChesbrough";
+			};
+			name = Debug;
+		};
+		739AAD661DCD8FCD003C5646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW3-Info.EllisChesbroughUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW3-Info-EllisChesbroughUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HW3-Info.EllisChesbrough";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739AAD2C1DCD8FC8003C5646 /* Build configuration list for PBXProject "HW3-Info.EllisChesbrough" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739AAD5C1DCD8FCD003C5646 /* Debug */,
+				739AAD5D1DCD8FCD003C5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739AAD5E1DCD8FCD003C5646 /* Build configuration list for PBXNativeTarget "HW3-Info.EllisChesbrough" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739AAD5F1DCD8FCD003C5646 /* Debug */,
+				739AAD601DCD8FCD003C5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		739AAD611DCD8FCD003C5646 /* Build configuration list for PBXNativeTarget "HW3-Info.EllisChesbroughTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739AAD621DCD8FCD003C5646 /* Debug */,
+				739AAD631DCD8FCD003C5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		739AAD641DCD8FCD003C5646 /* Build configuration list for PBXNativeTarget "HW3-Info.EllisChesbroughUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739AAD651DCD8FCD003C5646 /* Debug */,
+				739AAD661DCD8FCD003C5646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 739AAD291DCD8FC8003C5646 /* Project object */;
+}
