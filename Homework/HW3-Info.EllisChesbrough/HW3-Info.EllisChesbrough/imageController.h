@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface imageViewController : UIViewController
-
+@interface imageController : UIViewController{
+    IBOutlet UIImageView *image;
+}
+@property (nonatomic, retain) UIImageView *image;
 @end

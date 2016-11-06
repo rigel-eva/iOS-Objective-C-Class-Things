@@ -6,17 +6,15 @@
 //  Copyright © 2016 Sir Rigel. All rights reserved.
 //
 
-#import "imageViewController.h"
-
-@interface imageViewController ()
-
-@end
-
-@implementation imageViewController
-
+#import "imageController.h"
+                                                                                                    
+@implementation imageController
+@synthesize image;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [image setImage:[UIImage imageNamed:@"Chesbrough portrait.jpg"]];
+    [image setHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {
