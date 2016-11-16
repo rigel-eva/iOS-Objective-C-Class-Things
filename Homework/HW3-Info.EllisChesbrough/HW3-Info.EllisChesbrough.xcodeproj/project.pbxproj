@@ -64,7 +64,7 @@
 		739AAD6B1DCDBD4C003C5646 /* imageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageController.m; sourceTree = "<group>"; };
 		739AAD701DCDC3ED003C5646 /* Briggs_house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Briggs_house.jpg; path = Assets/Briggs_house.jpg; sourceTree = "<group>"; };
 		739AAD711DCDC3ED003C5646 /* Chesbrough portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Chesbrough portrait.jpg"; path = "Assets/Chesbrough portrait.jpg"; sourceTree = "<group>"; };
-		739AAD721DCDC3ED003C5646 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = info.txt; path = Assets/info.txt; sourceTree = "<group>"; };
+		739AAD721DCDC3ED003C5646 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = info.txt; path = Assets/info.txt; sourceTree = "<group>"; };
 		739AAD731DCDC3ED003C5646 /* SewerSystemplansfrom1857_zps4eb8ca5e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SewerSystemplansfrom1857_zps4eb8ca5e.jpg; path = Assets/SewerSystemplansfrom1857_zps4eb8ca5e.jpg; sourceTree = "<group>"; };
 		739AAD741DCDC3ED003C5646 /* Street_Raising_on_Lake_Street.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Street_Raising_on_Lake_Street.jpg; path = Assets/Street_Raising_on_Lake_Street.jpg; sourceTree = "<group>"; };
 		73B3D0071DDCFBA300232638 /* info1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info1@2x.png"; sourceTree = "<group>"; };
