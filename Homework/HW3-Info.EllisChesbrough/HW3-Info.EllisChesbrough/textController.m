@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSString *filePath=[[NSBundle mainBundle]pathForResource:@"info" ofType:@"txt"];
     info.text=[NSString stringWithContentsOfFile:filePath encoding:kCFStringEncodingUTF8 error:nil];
-    
+    info.editable=false;
 }
 
 

@@ -32,7 +32,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" id="UZs-HL-Vbm"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info1.png" id="UZs-HL-Vbm"/>
                     <connections>
                         <outlet property="info" destination="Izf-iI-StO" id="0z9-Wo-PQ2"/>
                     </connections>
@@ -54,16 +54,17 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RZg-oL-Gcx"/>
                         <segue destination="3KF-mZ-SQR" kind="relationship" relationship="viewControllers" id="J4M-KR-XMc"/>
+                        <segue destination="aNk-0O-pfq" kind="relationship" relationship="viewControllers" id="Lcf-WC-lBg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV0-C8-Rxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--Item-->
+        <!--portrait-->
         <scene sceneID="Yie-X4-Rfh">
             <objects>
-                <viewController id="3KF-mZ-SQR" customClass="imageController" sceneMemberID="viewController">
+                <viewController title="portrait" id="3KF-mZ-SQR" customClass="imageController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UVR-Pb-5TF"/>
                         <viewControllerLayoutGuide type="bottom" id="jG6-xE-LWl"/>
@@ -79,7 +80,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="AaV-IM-LxE"/>
+                    <tabBarItem key="tabBarItem" title="Image" image="portrait1.png" id="AaV-IM-LxE"/>
                     <connections>
                         <outlet property="image" destination="cY5-dx-lJe" id="hru-jX-PGa"/>
                     </connections>
@@ -88,5 +89,38 @@
             </objects>
             <point key="canvasLocation" x="968.79999999999995" y="372.86356821589209"/>
         </scene>
+        <!--map-->
+        <scene sceneID="XMA-Rn-q9b">
+            <objects>
+                <viewController title="map" id="aNk-0O-pfq" customClass="imageController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3kV-SH-i2e"/>
+                        <viewControllerLayoutGuide type="bottom" id="eV6-of-knW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kmh-YZ-if4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43q-C2-LWj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map1.png" id="9sO-a4-3ds"/>
+                    <connections>
+                        <outlet property="image" destination="43q-C2-LWj" id="Yoa-8O-Eqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H26-ff-1pT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.8" y="36.431784107946029"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="info1.png" width="29" height="29"/>
+        <image name="map1.png" width="24" height="24"/>
+        <image name="portrait1.png" width="29" height="29"/>
+    </resources>
 </document>

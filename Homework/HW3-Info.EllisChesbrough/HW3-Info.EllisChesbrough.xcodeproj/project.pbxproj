@@ -21,6 +21,9 @@
 		739AAD771DCDC3ED003C5646 /* info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD721DCDC3ED003C5646 /* info.txt */; };
 		739AAD781DCDC3ED003C5646 /* SewerSystemplansfrom1857_zps4eb8ca5e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD731DCDC3ED003C5646 /* SewerSystemplansfrom1857_zps4eb8ca5e.jpg */; };
 		739AAD791DCDC3ED003C5646 /* Street_Raising_on_Lake_Street.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 739AAD741DCDC3ED003C5646 /* Street_Raising_on_Lake_Street.jpg */; };
+		73B3D0081DDCFBA300232638 /* info1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B3D0071DDCFBA300232638 /* info1@2x.png */; };
+		73B3D00A1DDCFE0900232638 /* portrait1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B3D0091DDCFE0900232638 /* portrait1@2x.png */; };
+		73B3D00C1DDCFEF300232638 /* map1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73B3D00B1DDCFEF300232638 /* map1@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		739AAD721DCDC3ED003C5646 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = info.txt; path = Assets/info.txt; sourceTree = "<group>"; };
 		739AAD731DCDC3ED003C5646 /* SewerSystemplansfrom1857_zps4eb8ca5e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SewerSystemplansfrom1857_zps4eb8ca5e.jpg; path = Assets/SewerSystemplansfrom1857_zps4eb8ca5e.jpg; sourceTree = "<group>"; };
 		739AAD741DCDC3ED003C5646 /* Street_Raising_on_Lake_Street.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Street_Raising_on_Lake_Street.jpg; path = Assets/Street_Raising_on_Lake_Street.jpg; sourceTree = "<group>"; };
+		73B3D0071DDCFBA300232638 /* info1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info1@2x.png"; sourceTree = "<group>"; };
+		73B3D0091DDCFE0900232638 /* portrait1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portrait1@2x.png"; sourceTree = "<group>"; };
+		73B3D00B1DDCFEF300232638 /* map1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map1@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 		739AAD6D1DCDC238003C5646 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				73B3D0061DDCFB8E00232638 /* tabBar Items */,
 				739AAD701DCDC3ED003C5646 /* Briggs_house.jpg */,
 				739AAD711DCDC3ED003C5646 /* Chesbrough portrait.jpg */,
 				739AAD721DCDC3ED003C5646 /* info.txt */,
@@ -174,6 +181,16 @@
 				739AAD741DCDC3ED003C5646 /* Street_Raising_on_Lake_Street.jpg */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		73B3D0061DDCFB8E00232638 /* tabBar Items */ = {
+			isa = PBXGroup;
+			children = (
+				73B3D00B1DDCFEF300232638 /* map1@2x.png */,
+				73B3D0091DDCFE0900232638 /* portrait1@2x.png */,
+				73B3D0071DDCFBA300232638 /* info1@2x.png */,
+			);
+			name = "tabBar Items";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +306,13 @@
 				739AAD751DCDC3ED003C5646 /* Briggs_house.jpg in Resources */,
 				739AAD441DCD8FCB003C5646 /* LaunchScreen.storyboard in Resources */,
 				739AAD791DCDC3ED003C5646 /* Street_Raising_on_Lake_Street.jpg in Resources */,
+				73B3D00A1DDCFE0900232638 /* portrait1@2x.png in Resources */,
 				739AAD411DCD8FCB003C5646 /* Assets.xcassets in Resources */,
 				739AAD771DCDC3ED003C5646 /* info.txt in Resources */,
 				739AAD3F1DCD8FCB003C5646 /* Main.storyboard in Resources */,
 				739AAD781DCDC3ED003C5646 /* SewerSystemplansfrom1857_zps4eb8ca5e.jpg in Resources */,
+				73B3D00C1DDCFEF300232638 /* map1@2x.png in Resources */,
+				73B3D0081DDCFBA300232638 /* info1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

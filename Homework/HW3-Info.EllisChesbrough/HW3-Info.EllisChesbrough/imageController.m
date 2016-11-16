@@ -13,8 +13,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [image setImage:[UIImage imageNamed:@"Chesbrough portrait.jpg"]];
     [image setHidden:NO];
+    if([self.title isEqual:@"map"]){
+        [image setImage:[UIImage imageNamed:@"SewerSystemplansfrom1857_zps4eb8ca5e.jpg"]];
+    }else if([self.title isEqual:@"portrait"]){
+        [image setImage:[UIImage imageNamed:@"Chesbrough portrait.jpg"]];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
