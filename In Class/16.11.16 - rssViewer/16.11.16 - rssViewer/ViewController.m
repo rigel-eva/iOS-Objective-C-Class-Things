@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -63,5 +62,12 @@
     cell.textLabel.text=[[rssList objectAtIndex:indexPath.row]objectForKey:@"title"];
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *myIndexPath=[self.tableView indexPathForSelectedRow];
+    rssTableViewController *rssVC=[segue destinationViewController];
+    rssVC.url=[[rssList objectAtIndex:myIndexPath.row]objectForKey:@"url"];
+    rssVC.title=[[rssList objectAtIndex:myIndexPath.row]objectForKey:@"title"];
+    
 }
 @end

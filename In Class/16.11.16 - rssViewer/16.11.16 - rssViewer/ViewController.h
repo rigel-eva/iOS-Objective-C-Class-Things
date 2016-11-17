@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "rssTableViewController.h"
 @interface ViewController : UITableViewController <NSXMLParserDelegate>{
     NSMutableArray *rssList;
     
