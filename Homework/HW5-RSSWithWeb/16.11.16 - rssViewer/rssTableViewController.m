@@ -91,6 +91,13 @@
         currentContents=nil;
     }
 }
+#pragma - segue
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    NSIndexPath *myIndexPath=[self.tableView indexPathForSelectedRow];
+    webViewController *wvController=[segue destinationViewController];
+    wvController.url=[NSURL URLWithString:[[feedList objectAtIndex:myIndexPath.row] objectForKey:@"link"]];
+    wvController.title=[[feedList objectAtIndex:myIndexPath.row]objectForKey:@"title"];
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

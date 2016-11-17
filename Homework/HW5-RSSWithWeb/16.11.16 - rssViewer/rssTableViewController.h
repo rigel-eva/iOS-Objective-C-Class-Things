@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "webViewController.h"
 @interface rssTableViewController : UITableViewController <NSXMLParserDelegate>{
     NSMutableArray *feedList;
     NSMutableDictionary *currentItem;

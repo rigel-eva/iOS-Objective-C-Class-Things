@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		739F1EB71DDD3FAE0074C8B0 /* rssTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1EB61DDD3FAE0074C8B0 /* rssTableViewController.m */; };
+		739F1EBB1DDD502A0074C8B0 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1EBA1DDD502A0074C8B0 /* webViewController.m */; };
 		73B3D01B1DDD32A800232638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B3D01A1DDD32A800232638 /* main.m */; };
 		73B3D01E1DDD32A800232638 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B3D01D1DDD32A800232638 /* AppDelegate.m */; };
 		73B3D0211DDD32A800232638 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B3D0201DDD32A800232638 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		739F1EB51DDD3FAE0074C8B0 /* rssTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rssTableViewController.h; sourceTree = "<group>"; };
 		739F1EB61DDD3FAE0074C8B0 /* rssTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rssTableViewController.m; sourceTree = "<group>"; };
+		739F1EB91DDD502A0074C8B0 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
+		739F1EBA1DDD502A0074C8B0 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
 		73B3D0161DDD32A800232638 /* HW5-RSS.WithWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW5-RSS.WithWeb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B3D01A1DDD32A800232638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73B3D01C1DDD32A800232638 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				739F1EB61DDD3FAE0074C8B0 /* rssTableViewController.m */,
 				73B3D01F1DDD32A800232638 /* ViewController.h */,
 				73B3D0201DDD32A800232638 /* ViewController.m */,
+				739F1EB91DDD502A0074C8B0 /* webViewController.h */,
+				739F1EBA1DDD502A0074C8B0 /* webViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			files = (
 				73B3D0211DDD32A800232638 /* ViewController.m in Sources */,
 				73B3D01E1DDD32A800232638 /* AppDelegate.m in Sources */,
+				739F1EBB1DDD502A0074C8B0 /* webViewController.m in Sources */,
 				739F1EB71DDD3FAE0074C8B0 /* rssTableViewController.m in Sources */,
 				73B3D01B1DDD32A800232638 /* main.m in Sources */,
 			);

@@ -58,6 +58,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="Cell"/>
+                                <connections>
+                                    <segue destination="Jfi-aG-mMY" kind="push" id="oej-CS-5U8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -70,6 +73,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHo-Xq-vIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1938" y="99"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="ga6-PB-ikY">
+            <objects>
+                <viewController id="Jfi-aG-mMY" customClass="webViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="yGe-qP-U2G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="KWV-1h-808"/>
+                    <connections>
+                        <outlet property="webView" destination="yGe-qP-U2G" id="gUf-hL-prs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F59-i7-dg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2872.8000000000002" y="98.50074962518741"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VoU-Z6-iPd">
