@@ -34,9 +34,9 @@
 }
 #pragma mark ---NSXMLParserDelegateMethods
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary<NSString*,NSString *> *)attributeDict{
-    NSLog(@"didStartElement:namespaceURI = %@",namespaceURI);
-    NSLog(@"didStartElement:qualifiedName = %@",qName);
-    NSLog(@"didStartElement:attributes =%@",attributeDict);
+    NSLog(@"ViewController:didStartElement:namespaceURI = %@",namespaceURI);
+    NSLog(@"ViewController:didStartElement:qualifiedName = %@",qName);
+    NSLog(@"ViewController:didStartElement:attributes =%@",attributeDict);
     if([elementName compare: @"feed"]==NSOrderedSame){
         [rssList addObject:[[NSDictionary alloc]
                             initWithObjectsAndKeys:[attributeDict objectForKey:@"title"],@"title",[attributeDict objectForKey:@"url"],@"url", nil]];

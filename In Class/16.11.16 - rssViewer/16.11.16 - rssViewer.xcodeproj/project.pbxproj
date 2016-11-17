@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739F1EB71DDD3FAE0074C8B0 /* rssTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1EB61DDD3FAE0074C8B0 /* rssTableViewController.m */; };
 		73B3D01B1DDD32A800232638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B3D01A1DDD32A800232638 /* main.m */; };
 		73B3D01E1DDD32A800232638 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B3D01D1DDD32A800232638 /* AppDelegate.m */; };
 		73B3D0211DDD32A800232638 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B3D0201DDD32A800232638 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		739F1EB51DDD3FAE0074C8B0 /* rssTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rssTableViewController.h; sourceTree = "<group>"; };
+		739F1EB61DDD3FAE0074C8B0 /* rssTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rssTableViewController.m; sourceTree = "<group>"; };
 		73B3D0161DDD32A800232638 /* 16.11.16 - rssViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16.11.16 - rssViewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B3D01A1DDD32A800232638 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73B3D01C1DDD32A800232638 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		739F1EB81DDD3FB40074C8B0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				739F1EB51DDD3FAE0074C8B0 /* rssTableViewController.h */,
+				739F1EB61DDD3FAE0074C8B0 /* rssTableViewController.m */,
+				73B3D01F1DDD32A800232638 /* ViewController.h */,
+				73B3D0201DDD32A800232638 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		73B3D00D1DDD32A700232638 = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +117,10 @@
 		73B3D0181DDD32A800232638 /* 16.11.16 - rssViewer */ = {
 			isa = PBXGroup;
 			children = (
+				739F1EB81DDD3FB40074C8B0 /* View Controllers */,
 				73B3D04C1DDD331300232638 /* rssfeeds.xml */,
 				73B3D01C1DDD32A800232638 /* AppDelegate.h */,
 				73B3D01D1DDD32A800232638 /* AppDelegate.m */,
-				73B3D01F1DDD32A800232638 /* ViewController.h */,
-				73B3D0201DDD32A800232638 /* ViewController.m */,
 				73B3D0221DDD32A800232638 /* Main.storyboard */,
 				73B3D0251DDD32A800232638 /* Assets.xcassets */,
 				73B3D0271DDD32A800232638 /* LaunchScreen.storyboard */,
@@ -282,6 +295,7 @@
 			files = (
 				73B3D0211DDD32A800232638 /* ViewController.m in Sources */,
 				73B3D01E1DDD32A800232638 /* AppDelegate.m in Sources */,
+				739F1EB71DDD3FAE0074C8B0 /* rssTableViewController.m in Sources */,
 				73B3D01B1DDD32A800232638 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +532,7 @@
 				73B3D0451DDD32A800232638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73B3D0461DDD32A800232638 /* Build configuration list for PBXNativeTarget "16.11.16 - rssViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +541,7 @@
 				73B3D0481DDD32A800232638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73B3D0491DDD32A800232638 /* Build configuration list for PBXNativeTarget "16.11.16 - rssViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +550,7 @@
 				73B3D04B1DDD32A800232638 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
