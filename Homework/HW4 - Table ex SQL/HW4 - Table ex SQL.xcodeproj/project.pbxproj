@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		739F1ECA1DDE33D30074C8B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1EC91DDE33D30074C8B0 /* main.m */; };
+		739F1ECD1DDE33D30074C8B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1ECC1DDE33D30074C8B0 /* AppDelegate.m */; };
+		739F1ED01DDE33D30074C8B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1ECF1DDE33D30074C8B0 /* ViewController.m */; };
+		739F1ED31DDE33D30074C8B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739F1ED11DDE33D30074C8B0 /* Main.storyboard */; };
+		739F1ED51DDE33D30074C8B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739F1ED41DDE33D30074C8B0 /* Assets.xcassets */; };
+		739F1ED81DDE33D30074C8B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739F1ED61DDE33D30074C8B0 /* LaunchScreen.storyboard */; };
+		739F1EE31DDE33D30074C8B0 /* HW4___Table_ex_SQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1EE21DDE33D30074C8B0 /* HW4___Table_ex_SQLTests.m */; };
+		739F1EEE1DDE33D30074C8B0 /* HW4___Table_ex_SQLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739F1EED1DDE33D30074C8B0 /* HW4___Table_ex_SQLUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		739F1EDF1DDE33D30074C8B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739F1EBD1DDE33D30074C8B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739F1EC41DDE33D30074C8B0;
+			remoteInfo = "HW4 - Table ex SQL";
+		};
+		739F1EEA1DDE33D30074C8B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739F1EBD1DDE33D30074C8B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739F1EC41DDE33D30074C8B0;
+			remoteInfo = "HW4 - Table ex SQL";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		739F1EC51DDE33D30074C8B0 /* HW4 - Table ex SQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW4 - Table ex SQL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739F1EC91DDE33D30074C8B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		739F1ECB1DDE33D30074C8B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		739F1ECC1DDE33D30074C8B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		739F1ECE1DDE33D30074C8B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		739F1ECF1DDE33D30074C8B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		739F1ED21DDE33D30074C8B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		739F1ED41DDE33D30074C8B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		739F1ED71DDE33D30074C8B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		739F1ED91DDE33D30074C8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739F1EDE1DDE33D30074C8B0 /* HW4 - Table ex SQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW4 - Table ex SQLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739F1EE21DDE33D30074C8B0 /* HW4___Table_ex_SQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HW4___Table_ex_SQLTests.m"; sourceTree = "<group>"; };
+		739F1EE41DDE33D30074C8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739F1EE91DDE33D30074C8B0 /* HW4 - Table ex SQLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW4 - Table ex SQLUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		739F1EED1DDE33D30074C8B0 /* HW4___Table_ex_SQLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HW4___Table_ex_SQLUITests.m"; sourceTree = "<group>"; };
+		739F1EEF1DDE33D30074C8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739F1EC21DDE33D30074C8B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739F1EDB1DDE33D30074C8B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739F1EE61DDE33D30074C8B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		739F1EBC1DDE33D30074C8B0 = {
+			isa = PBXGroup;
+			children = (
+				739F1EC71DDE33D30074C8B0 /* HW4 - Table ex SQL */,
+				739F1EE11DDE33D30074C8B0 /* HW4 - Table ex SQLTests */,
+				739F1EEC1DDE33D30074C8B0 /* HW4 - Table ex SQLUITests */,
+				739F1EC61DDE33D30074C8B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		739F1EC61DDE33D30074C8B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739F1EC51DDE33D30074C8B0 /* HW4 - Table ex SQL.app */,
+				739F1EDE1DDE33D30074C8B0 /* HW4 - Table ex SQLTests.xctest */,
+				739F1EE91DDE33D30074C8B0 /* HW4 - Table ex SQLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		739F1EC71DDE33D30074C8B0 /* HW4 - Table ex SQL */ = {
+			isa = PBXGroup;
+			children = (
+				739F1ECB1DDE33D30074C8B0 /* AppDelegate.h */,
+				739F1ECC1DDE33D30074C8B0 /* AppDelegate.m */,
+				739F1ECE1DDE33D30074C8B0 /* ViewController.h */,
+				739F1ECF1DDE33D30074C8B0 /* ViewController.m */,
+				739F1ED11DDE33D30074C8B0 /* Main.storyboard */,
+				739F1ED41DDE33D30074C8B0 /* Assets.xcassets */,
+				739F1ED61DDE33D30074C8B0 /* LaunchScreen.storyboard */,
+				739F1ED91DDE33D30074C8B0 /* Info.plist */,
+				739F1EC81DDE33D30074C8B0 /* Supporting Files */,
+			);
+			path = "HW4 - Table ex SQL";
+			sourceTree = "<group>";
+		};
+		739F1EC81DDE33D30074C8B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				739F1EC91DDE33D30074C8B0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		739F1EE11DDE33D30074C8B0 /* HW4 - Table ex SQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				739F1EE21DDE33D30074C8B0 /* HW4___Table_ex_SQLTests.m */,
+				739F1EE41DDE33D30074C8B0 /* Info.plist */,
+			);
+			path = "HW4 - Table ex SQLTests";
+			sourceTree = "<group>";
+		};
+		739F1EEC1DDE33D30074C8B0 /* HW4 - Table ex SQLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				739F1EED1DDE33D30074C8B0 /* HW4___Table_ex_SQLUITests.m */,
+				739F1EEF1DDE33D30074C8B0 /* Info.plist */,
+			);
+			path = "HW4 - Table ex SQLUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739F1EC41DDE33D30074C8B0 /* HW4 - Table ex SQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739F1EF21DDE33D30074C8B0 /* Build configuration list for PBXNativeTarget "HW4 - Table ex SQL" */;
+			buildPhases = (
+				739F1EC11DDE33D30074C8B0 /* Sources */,
+				739F1EC21DDE33D30074C8B0 /* Frameworks */,
+				739F1EC31DDE33D30074C8B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HW4 - Table ex SQL";
+			productName = "HW4 - Table ex SQL";
+			productReference = 739F1EC51DDE33D30074C8B0 /* HW4 - Table ex SQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		739F1EDD1DDE33D30074C8B0 /* HW4 - Table ex SQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739F1EF51DDE33D30074C8B0 /* Build configuration list for PBXNativeTarget "HW4 - Table ex SQLTests" */;
+			buildPhases = (
+				739F1EDA1DDE33D30074C8B0 /* Sources */,
+				739F1EDB1DDE33D30074C8B0 /* Frameworks */,
+				739F1EDC1DDE33D30074C8B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739F1EE01DDE33D30074C8B0 /* PBXTargetDependency */,
+			);
+			name = "HW4 - Table ex SQLTests";
+			productName = "HW4 - Table ex SQLTests";
+			productReference = 739F1EDE1DDE33D30074C8B0 /* HW4 - Table ex SQLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		739F1EE81DDE33D30074C8B0 /* HW4 - Table ex SQLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739F1EF81DDE33D30074C8B0 /* Build configuration list for PBXNativeTarget "HW4 - Table ex SQLUITests" */;
+			buildPhases = (
+				739F1EE51DDE33D30074C8B0 /* Sources */,
+				739F1EE61DDE33D30074C8B0 /* Frameworks */,
+				739F1EE71DDE33D30074C8B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739F1EEB1DDE33D30074C8B0 /* PBXTargetDependency */,
+			);
+			name = "HW4 - Table ex SQLUITests";
+			productName = "HW4 - Table ex SQLUITests";
+			productReference = 739F1EE91DDE33D30074C8B0 /* HW4 - Table ex SQLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		739F1EBD1DDE33D30074C8B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sir Rigel";
+				TargetAttributes = {
+					739F1EC41DDE33D30074C8B0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BW37M2R4G3;
+						ProvisioningStyle = Automatic;
+					};
+					739F1EDD1DDE33D30074C8B0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BW37M2R4G3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 739F1EC41DDE33D30074C8B0;
+					};
+					739F1EE81DDE33D30074C8B0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BW37M2R4G3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 739F1EC41DDE33D30074C8B0;
+					};
+				};
+			};
+			buildConfigurationList = 739F1EC01DDE33D30074C8B0 /* Build configuration list for PBXProject "HW4 - Table ex SQL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 739F1EBC1DDE33D30074C8B0;
+			productRefGroup = 739F1EC61DDE33D30074C8B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739F1EC41DDE33D30074C8B0 /* HW4 - Table ex SQL */,
+				739F1EDD1DDE33D30074C8B0 /* HW4 - Table ex SQLTests */,
+				739F1EE81DDE33D30074C8B0 /* HW4 - Table ex SQLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		739F1EC31DDE33D30074C8B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739F1ED81DDE33D30074C8B0 /* LaunchScreen.storyboard in Resources */,
+				739F1ED51DDE33D30074C8B0 /* Assets.xcassets in Resources */,
+				739F1ED31DDE33D30074C8B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739F1EDC1DDE33D30074C8B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739F1EE71DDE33D30074C8B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		739F1EC11DDE33D30074C8B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739F1ED01DDE33D30074C8B0 /* ViewController.m in Sources */,
+				739F1ECD1DDE33D30074C8B0 /* AppDelegate.m in Sources */,
+				739F1ECA1DDE33D30074C8B0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739F1EDA1DDE33D30074C8B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739F1EE31DDE33D30074C8B0 /* HW4___Table_ex_SQLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739F1EE51DDE33D30074C8B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739F1EEE1DDE33D30074C8B0 /* HW4___Table_ex_SQLUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		739F1EE01DDE33D30074C8B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739F1EC41DDE33D30074C8B0 /* HW4 - Table ex SQL */;
+			targetProxy = 739F1EDF1DDE33D30074C8B0 /* PBXContainerItemProxy */;
+		};
+		739F1EEB1DDE33D30074C8B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739F1EC41DDE33D30074C8B0 /* HW4 - Table ex SQL */;
+			targetProxy = 739F1EEA1DDE33D30074C8B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		739F1ED11DDE33D30074C8B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739F1ED21DDE33D30074C8B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		739F1ED61DDE33D30074C8B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739F1ED71DDE33D30074C8B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		739F1EF01DDE33D30074C8B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		739F1EF11DDE33D30074C8B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		739F1EF31DDE33D30074C8B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW4 - Table ex SQL/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW4---Table-ex-SQL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		739F1EF41DDE33D30074C8B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW4 - Table ex SQL/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW4---Table-ex-SQL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		739F1EF61DDE33D30074C8B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW4 - Table ex SQLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW4---Table-ex-SQLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW4 - Table ex SQL.app/HW4 - Table ex SQL";
+			};
+			name = Debug;
+		};
+		739F1EF71DDE33D30074C8B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW4 - Table ex SQLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW4---Table-ex-SQLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW4 - Table ex SQL.app/HW4 - Table ex SQL";
+			};
+			name = Release;
+		};
+		739F1EF91DDE33D30074C8B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW4 - Table ex SQLUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW4---Table-ex-SQLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HW4 - Table ex SQL";
+			};
+			name = Debug;
+		};
+		739F1EFA1DDE33D30074C8B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BW37M2R4G3;
+				INFOPLIST_FILE = "HW4 - Table ex SQLUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirrigel.HW4---Table-ex-SQLUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "HW4 - Table ex SQL";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739F1EC01DDE33D30074C8B0 /* Build configuration list for PBXProject "HW4 - Table ex SQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739F1EF01DDE33D30074C8B0 /* Debug */,
+				739F1EF11DDE33D30074C8B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739F1EF21DDE33D30074C8B0 /* Build configuration list for PBXNativeTarget "HW4 - Table ex SQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739F1EF31DDE33D30074C8B0 /* Debug */,
+				739F1EF41DDE33D30074C8B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		739F1EF51DDE33D30074C8B0 /* Build configuration list for PBXNativeTarget "HW4 - Table ex SQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739F1EF61DDE33D30074C8B0 /* Debug */,
+				739F1EF71DDE33D30074C8B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		739F1EF81DDE33D30074C8B0 /* Build configuration list for PBXNativeTarget "HW4 - Table ex SQLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739F1EF91DDE33D30074C8B0 /* Debug */,
+				739F1EFA1DDE33D30074C8B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 739F1EBD1DDE33D30074C8B0 /* Project object */;
+}
