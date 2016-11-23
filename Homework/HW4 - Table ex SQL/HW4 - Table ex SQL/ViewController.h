@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import <sqlite3.h>
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+    IBOutlet UITableView *table;
+    sqlite3 *db;
+}
+@property (nonatomic, retain) UITableView *  stable;
 
 @end
-
