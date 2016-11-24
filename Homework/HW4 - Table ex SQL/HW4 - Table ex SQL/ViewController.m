@@ -58,7 +58,16 @@ NSMutableArray *tableData;
     }
     return -1;
 }
-
+-(NSString*)findBookForIndex:(NSInteger)Index{
+    sqlite3_stmt *stmt;
+    NSString *Name=[tableData objectAtIndex:Index];
+    NSString * qryStmt=[NSString stringWithFormat:@"select book from monsters where name=\"%@\"",Name];
+    if(sqlite3_prepare(db, [qryStmt UTF8String], -1, &stmt, nil)==SQLITE_OK){
+        sqlite3_step(stmt);
+        return [NSString stringWithFormat:@"%s",sqlite3_column_text(stmt, 0)];
+    }
+    return nil;
+}
 #pragma mark Table Methods
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -84,7 +93,7 @@ NSMutableArray *tableData;
     // Dispose of any resources that can be recreated.
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIAlertController *page=[UIAlertController alertControllerWithTitle:@"Book/Page" message:[NSString stringWithFormat:@"Book:%s\nPage:%li","nope",(long)[self findPageForIndex:indexPath.row]] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *page=[UIAlertController alertControllerWithTitle:[tableData objectAtIndex:indexPath.row] message:[NSString stringWithFormat:@"Book: %@\nPage: %li",[self findBookForIndex:indexPath.row],(long)[self findPageForIndex:indexPath.row]] preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
     [page addAction:defaultAction];
     [self presentViewController:page animated:YES completion:nil];
