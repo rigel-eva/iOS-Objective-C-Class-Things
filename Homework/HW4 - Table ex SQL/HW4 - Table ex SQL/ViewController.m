@@ -15,6 +15,7 @@
 @implementation ViewController
 NSMutableArray *tableData;
 - (void)viewDidLoad {
+    tableData=[[NSMutableArray alloc] init];
     [self openDB];
     [self getRows];
     [super viewDidLoad];
@@ -37,21 +38,33 @@ NSMutableArray *tableData;
 }
 -(void)getRows{
     sqlite3_stmt *stmt;
-    NSString * qryStmt=@"select * from monsters;";//This way we only get the row we are interested in
+    NSString * qryStmt=@"select name from monsters;";//This way we only get the row we are interested in
     if(sqlite3_prepare(db, [qryStmt UTF8String], -1, &stmt, nil)==SQLITE_OK){
     while(sqlite3_step(stmt)==SQLITE_ROW){
         char *name=(char *)sqlite3_column_text(stmt,0);
+        NSLog(@"Found: %s",name);
         [tableData addObject:[NSString stringWithFormat:@"%s",name]];
+        NSLog(@"Added: %@", [tableData objectAtIndex:([tableData count]-1)]);
     }
   }
 }
+-(NSInteger)findPageForIndex:(NSInteger)Index{
+    sqlite3_stmt *stmt;
+    NSString *Name=[tableData objectAtIndex:Index];
+    NSString * qryStmt=[NSString stringWithFormat:@"select page from monsters where name=\"%@\"",Name];
+    if(sqlite3_prepare(db, [qryStmt UTF8String], -1, &stmt, nil)==SQLITE_OK){
+        sqlite3_step(stmt);
+        return sqlite3_column_int(stmt, 0);
+    }
+    return -1;
+}
+
 #pragma mark Table Methods
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"numRowsInSectionr returning: %i",[tableData count]);
     return [tableData count];
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -69,5 +82,11 @@ NSMutableArray *tableData;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIAlertController *page=[UIAlertController alertControllerWithTitle:@"Book/Page" message:[NSString stringWithFormat:@"Book:%s\nPage:%li","nope",(long)[self findPageForIndex:indexPath.row]] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+    [page addAction:defaultAction];
+    [self presentViewController:page animated:YES completion:nil];
 }
 @end
