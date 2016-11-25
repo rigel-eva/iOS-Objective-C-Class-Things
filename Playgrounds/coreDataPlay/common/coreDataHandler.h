@@ -12,3 +12,6 @@
 @property (strong)NSManagedObjectContext *managedObjectContext;
 -(void) initializeCoreData;
 @end
+@interface AAOTesterEntity:NSManagedObject
+@property (nonatomic) NSInteger testerInt;
+@end

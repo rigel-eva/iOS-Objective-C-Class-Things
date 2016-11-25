@@ -20,7 +20,6 @@
 		73E48BDA1DE7A0E300D66009 /* coreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BD91DE7A0E300D66009 /* coreDataHandler.m */; };
 		73E48BE31DE7A11500D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BDC1DE7A11500D66009 /* AppDelegate.m */; };
 		73E48BE41DE7A11500D66009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BDD1DE7A11500D66009 /* Assets.xcassets */; };
-		73E48BE51DE7A11500D66009 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BDE1DE7A11500D66009 /* Base.lproj */; };
 		73E48BE61DE7A11500D66009 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BDF1DE7A11500D66009 /* Info.plist */; };
 		73E48BE71DE7A11500D66009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BE01DE7A11500D66009 /* main.m */; };
 		73E48BE81DE7A11500D66009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BE21DE7A11500D66009 /* ViewController.m */; };
@@ -90,7 +89,6 @@
 		73E48BDB1DE7A11500D66009 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "coreDataPlay-macOS/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		73E48BDC1DE7A11500D66009 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "coreDataPlay-macOS/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
 		73E48BDD1DE7A11500D66009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "coreDataPlay-macOS/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		73E48BDE1DE7A11500D66009 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "coreDataPlay-macOS/Base.lproj"; sourceTree = SOURCE_ROOT; };
 		73E48BDF1DE7A11500D66009 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "coreDataPlay-macOS/Info.plist"; sourceTree = SOURCE_ROOT; };
 		73E48BE01DE7A11500D66009 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "coreDataPlay-macOS/main.m"; sourceTree = SOURCE_ROOT; };
 		73E48BE11DE7A11500D66009 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "coreDataPlay-macOS/ViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -182,7 +180,6 @@
 				73E48BDC1DE7A11500D66009 /* AppDelegate.m */,
 				73E48BDD1DE7A11500D66009 /* Assets.xcassets */,
 				73E48BF11DE7A46B00D66009 /* Main.storyboard */,
-				73E48BDE1DE7A11500D66009 /* Base.lproj */,
 				73E48BDF1DE7A11500D66009 /* Info.plist */,
 				73E48BE11DE7A11500D66009 /* ViewController.h */,
 				73E48BE21DE7A11500D66009 /* ViewController.m */,
@@ -458,7 +455,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E48BF31DE7A47400D66009 /* Main.storyboard in Resources */,
-				73E48BE51DE7A11500D66009 /* Base.lproj in Resources */,
 				73E48BE41DE7A11500D66009 /* Assets.xcassets in Resources */,
 				73E48BE61DE7A11500D66009 /* Info.plist in Resources */,
 			);

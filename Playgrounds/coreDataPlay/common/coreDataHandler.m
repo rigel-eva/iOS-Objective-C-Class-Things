@@ -38,5 +38,7 @@
         NSAssert(store != nil, @"Error initializing PSC: %@\n%@", [error localizedDescription], [error userInfo]);
     });
 }
-
+@end
+@implementation AAOTesterEntity
+@dynamic testerInt;
 @end
