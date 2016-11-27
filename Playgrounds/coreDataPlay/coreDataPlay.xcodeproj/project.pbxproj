@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739BD0CB1DEA7B74007EC4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739BD0C91DEA7B74007EC4ED /* Main.storyboard */; };
 		73E48BA11DE79A6800D66009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA01DE79A6800D66009 /* main.m */; };
 		73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA31DE79A6800D66009 /* AppDelegate.m */; };
 		73E48BA71DE79A6800D66009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA61DE79A6800D66009 /* ViewController.m */; };
@@ -27,8 +28,6 @@
 		73E48BEC1DE7A13800D66009 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BEA1DE7A13800D66009 /* Info.plist */; };
 		73E48BEF1DE7A16500D66009 /* coreDataPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BED1DE7A16500D66009 /* coreDataPlayUITests.m */; };
 		73E48BF01DE7A16500D66009 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BEE1DE7A16500D66009 /* Info.plist */; };
-		73E48BF21DE7A46B00D66009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BF11DE7A46B00D66009 /* Main.storyboard */; };
-		73E48BF31DE7A47400D66009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BF11DE7A46B00D66009 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		739BD0CA1DEA7B74007EC4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "coreDataPlay-macOS/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		73E48B601DE7774900D66009 /* coreDataPlay-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coreDataPlay-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E48B791DE7774A00D66009 /* coreDataPlayTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coreDataPlayTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E48B841DE7774A00D66009 /* coreDataPlayUITests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coreDataPlayUITests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +97,6 @@
 		73E48BEA1DE7A13800D66009 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "coreDataPlayTests-macOS/Info.plist"; sourceTree = SOURCE_ROOT; };
 		73E48BED1DE7A16500D66009 /* coreDataPlayUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = coreDataPlayUITests.m; path = "coreDataPlayUITests-macOS/coreDataPlayUITests.m"; sourceTree = SOURCE_ROOT; };
 		73E48BEE1DE7A16500D66009 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "coreDataPlayUITests-macOS/Info.plist"; sourceTree = SOURCE_ROOT; };
-		73E48BF11DE7A46B00D66009 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../coreDataPlay-macOS/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +178,7 @@
 				73E48BDB1DE7A11500D66009 /* AppDelegate.h */,
 				73E48BDC1DE7A11500D66009 /* AppDelegate.m */,
 				73E48BDD1DE7A11500D66009 /* Assets.xcassets */,
-				73E48BF11DE7A46B00D66009 /* Main.storyboard */,
+				739BD0C91DEA7B74007EC4ED /* Main.storyboard */,
 				73E48BDF1DE7A11500D66009 /* Info.plist */,
 				73E48BE11DE7A11500D66009 /* ViewController.h */,
 				73E48BE21DE7A11500D66009 /* ViewController.m */,
@@ -454,9 +453,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E48BF31DE7A47400D66009 /* Main.storyboard in Resources */,
 				73E48BE41DE7A11500D66009 /* Assets.xcassets in Resources */,
 				73E48BE61DE7A11500D66009 /* Info.plist in Resources */,
+				739BD0CB1DEA7B74007EC4ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +472,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E48BF01DE7A16500D66009 /* Info.plist in Resources */,
-				73E48BF21DE7A46B00D66009 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +583,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		739BD0C91DEA7B74007EC4ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739BD0CA1DEA7B74007EC4ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		73E48BA81DE79A6800D66009 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -912,6 +918,7 @@
 				73E48BCB1DE79A6900D66009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73E48BD11DE79A6900D66009 /* Build configuration list for PBXNativeTarget "coreDataPlayTests-iOS" */ = {
 			isa = XCConfigurationList;
@@ -920,6 +927,7 @@
 				73E48BCD1DE79A6900D66009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73E48BD21DE79A6900D66009 /* Build configuration list for PBXNativeTarget "coreDataPlayUITests-iOS" */ = {
 			isa = XCConfigurationList;
@@ -928,6 +936,7 @@
 				73E48BCF1DE79A6900D66009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

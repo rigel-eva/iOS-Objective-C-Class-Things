@@ -11,10 +11,15 @@
     coreDataHandler *data;
 }
 - (void)viewDidLoad {
-    data=[[coreDataHandler alloc]init];
     [super viewDidLoad];
-
     // Do any additional setup after loading the view.
+    data=[[coreDataHandler alloc]init];//This makes allocating the data entity a bit easier ...
+    AAOTesterEntity* test=[NSEntityDescription insertNewObjectForEntityForName:@"TesterEntity" inManagedObjectContext:data.managedObjectContext];//Allocates our test entity
+    test.testString=@"Hello Data!";//Adds our data to the test entity
+    NSError *error = nil;
+    if ([[test managedObjectContext] save:&error] == NO) {//Saves our data
+        NSAssert(NO, @"Error saving context: %@\n%@", [error localizedDescription], [error userInfo]);
+    }
 }
 
 

@@ -13,5 +13,5 @@
 -(void) initializeCoreData;
 @end
 @interface AAOTesterEntity:NSManagedObject
-@property (nonatomic) NSInteger testerInt;
+@property (nonatomic, strong) NSString* testString;
 @end

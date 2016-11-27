@@ -30,7 +30,7 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];//I think this allows us to save our data stack
     NSURL *documentsURL = [[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     NSURL *storeURL = [documentsURL URLByAppendingPathComponent:@"DataModel.sqlite"];
-    
+    NSLog(@"%@",storeURL);
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         NSError *error = nil;
         NSPersistentStoreCoordinator *psc = [[self managedObjectContext] persistentStoreCoordinator];
@@ -40,5 +40,12 @@
 }
 @end
 @implementation AAOTesterEntity
-@dynamic testerInt;
+@dynamic testString;
+-(id) initInDataHandler:(coreDataHandler*)handler{
+    self=[NSEntityDescription insertNewObjectForEntityForName:@"TesterEntity" inManagedObjectContext:[handler managedObjectContext]];
+    return self;
+}
+-(void)save{
+    
+}
 @end
