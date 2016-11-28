@@ -15,13 +15,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     data=[[coreDataHandler alloc]init];//This makes allocating the data entity a bit easier ...
-    AAOTesterEntity* test=[NSEntityDescription insertNewObjectForEntityForName:@"TesterEntity" inManagedObjectContext:data.managedObjectContext];//Allocates our test entity
-    test.testString=@"Boop";//Adds our data to the test entity
-    NSError *error = nil;
+    //test.testString=@"Boop";//Adds our data to the test entity
     [self testFetch:data.managedObjectContext];
-    if ([[test managedObjectContext] save:&error] == NO) {//Saves our data
-        NSAssert(NO, @"Error saving context: %@\n%@", [error localizedDescription], [error userInfo]);
-    }
+
 }
 -(void) testFetch:(NSManagedObjectContext*)moc{
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"TesterEntity"];
@@ -44,7 +40,13 @@
 }
 - (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex{
     AAOTesterEntity *current=displayData[rowIndex];
-    NSLog(current.testString);
+    NSLog(@"%@",current.testString);
     return current.testString;
+}
+-(void)saveObject:(NSManagedObject*)object{
+        NSError *error = nil;
+    if ([[object managedObjectContext] save:&error] == NO) {//Saves our data
+        NSAssert(NO, @"Error saving context: %@\n%@", [error localizedDescription], [error userInfo]);
+    }
 }
 @end
