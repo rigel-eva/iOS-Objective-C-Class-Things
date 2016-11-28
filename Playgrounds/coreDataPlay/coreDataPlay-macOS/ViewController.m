@@ -9,9 +9,8 @@
 #import "ViewController.h"
 @implementation ViewController{
     coreDataHandler *data;
-    NSArray *data;
+    NSArray *displayData;
 }
-@synthesize tableView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -28,16 +27,11 @@
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"TesterEntity"];
     
     NSError *error = nil;
-    NSArray *results=[moc executeFetchRequest:request error:&error];//AND THIS IS HOW WE GET DATA OUT!
-    if (!results) {
+    displayData=[moc executeFetchRequest:request error:&error];//AND THIS IS HOW WE GET DATA OUT!
+    if (!displayData) {
         NSLog(@"Error fetching TesterEntity objects: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
-    for(int i=0; i<results.count; i++){
-        AAOTesterEntity *current=results[i];
-        NSLog(@"Result %i: %@",i,current.testString);
-    }
-    NSLog(@"This is just a break, plz ignore");
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -46,7 +40,11 @@
     // Update the view, if already loaded.
 }
 -(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView{
-    return
+    return displayData.count;
 }
-
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex{
+    AAOTesterEntity *current=displayData[rowIndex];
+    NSLog(current.testString);
+    return current.testString;
+}
 @end

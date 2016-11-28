@@ -9,7 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "coreDataHandler.h"
 @interface ViewController : NSViewController <NSTableViewDelegate, NSTableViewDataSource>
-@property (weak) IBOutlet NSTableView *tableView;
 
 
 @end
