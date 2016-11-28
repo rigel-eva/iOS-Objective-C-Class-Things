@@ -45,7 +45,4 @@
     self=[NSEntityDescription insertNewObjectForEntityForName:@"TesterEntity" inManagedObjectContext:[handler managedObjectContext]];
     return self;
 }
--(void)save{
-    
-}
 @end
