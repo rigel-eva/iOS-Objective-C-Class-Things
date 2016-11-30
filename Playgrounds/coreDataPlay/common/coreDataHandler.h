@@ -15,3 +15,11 @@
 @interface AAOTesterEntity:NSManagedObject
 @property (nonatomic, strong) NSString* testString;
 @end
+@interface AAOGameObject:NSManagedObject
+@property (nonatomic) NSInteger strength;
+@property (nonatomic) NSInteger dexterity;
+@property (nonatomic) NSInteger constitution;
+@property (nonatomic) NSInteger intellegence;
+@property (nonatomic) NSInteger wisdom;
+@property (nonatomic) NSInteger charisma;
+@end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		739BD0CB1DEA7B74007EC4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739BD0C91DEA7B74007EC4ED /* Main.storyboard */; };
+		73E38F9F1DECC3C7008CF6DF /* gameObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E38F9E1DECC3C7008CF6DF /* gameObjects.m */; };
+		73E38FA21DECC693008CF6DF /* data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73E38FA01DECC693008CF6DF /* data.xcdatamodeld */; };
 		73E48BA11DE79A6800D66009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA01DE79A6800D66009 /* main.m */; };
 		73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA31DE79A6800D66009 /* AppDelegate.m */; };
 		73E48BA71DE79A6800D66009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA61DE79A6800D66009 /* ViewController.m */; };
@@ -17,7 +19,6 @@
 		73E48BB21DE79A6800D66009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */; };
 		73E48BBD1DE79A6900D66009 /* coreDataPlay_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BBC1DE79A6900D66009 /* coreDataPlay_iOSTests.m */; };
 		73E48BC81DE79A6900D66009 /* coreDataPlay_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BC71DE79A6900D66009 /* coreDataPlay_iOSUITests.m */; };
-		73E48BD71DE7A03200D66009 /* data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BD51DE7A03200D66009 /* data.xcdatamodeld */; };
 		73E48BDA1DE7A0E300D66009 /* coreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BD91DE7A0E300D66009 /* coreDataHandler.m */; };
 		73E48BE31DE7A11500D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BDC1DE7A11500D66009 /* AppDelegate.m */; };
 		73E48BE41DE7A11500D66009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BDD1DE7A11500D66009 /* Assets.xcassets */; };
@@ -63,6 +64,9 @@
 
 /* Begin PBXFileReference section */
 		739BD0CA1DEA7B74007EC4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "coreDataPlay-macOS/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		73E38F9D1DECC3C7008CF6DF /* gameObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gameObjects.h; path = common/gameObjects.h; sourceTree = "<group>"; };
+		73E38F9E1DECC3C7008CF6DF /* gameObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gameObjects.m; path = common/gameObjects.m; sourceTree = "<group>"; };
+		73E38FA11DECC693008CF6DF /* data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = data.xcdatamodel; sourceTree = "<group>"; };
 		73E48B601DE7774900D66009 /* coreDataPlay-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coreDataPlay-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E48B791DE7774A00D66009 /* coreDataPlayTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coreDataPlayTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E48B841DE7774A00D66009 /* coreDataPlayUITests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coreDataPlayUITests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +87,6 @@
 		73E48BC31DE79A6900D66009 /* coreDataPlayUITests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coreDataPlayUITests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73E48BC71DE79A6900D66009 /* coreDataPlay_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreDataPlay_iOSUITests.m; sourceTree = "<group>"; };
 		73E48BC91DE79A6900D66009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73E48BD61DE7A03200D66009 /* data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = data.xcdatamodel; sourceTree = "<group>"; };
 		73E48BD81DE7A0E300D66009 /* coreDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coreDataHandler.h; path = common/coreDataHandler.h; sourceTree = "<group>"; };
 		73E48BD91DE7A0E300D66009 /* coreDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = coreDataHandler.m; path = common/coreDataHandler.m; sourceTree = "<group>"; };
 		73E48BDB1DE7A11500D66009 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "coreDataPlay-macOS/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
@@ -264,9 +267,11 @@
 		73E48BD31DE79AA200D66009 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				73E38FA01DECC693008CF6DF /* data.xcdatamodeld */,
 				73E48BD81DE7A0E300D66009 /* coreDataHandler.h */,
 				73E48BD91DE7A0E300D66009 /* coreDataHandler.m */,
-				73E48BD51DE7A03200D66009 /* data.xcdatamodeld */,
+				73E38F9D1DECC3C7008CF6DF /* gameObjects.h */,
+				73E38F9E1DECC3C7008CF6DF /* gameObjects.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -506,11 +511,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E48BD71DE7A03200D66009 /* data.xcdatamodeld in Sources */,
 				73E48BE71DE7A11500D66009 /* main.m in Sources */,
 				73E48BE81DE7A11500D66009 /* ViewController.m in Sources */,
 				73E48BE31DE7A11500D66009 /* AppDelegate.m in Sources */,
+				73E38F9F1DECC3C7008CF6DF /* gameObjects.m in Sources */,
 				73E48BDA1DE7A0E300D66009 /* coreDataHandler.m in Sources */,
+				73E38FA21DECC693008CF6DF /* data.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,6 +947,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		73E38FA01DECC693008CF6DF /* data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				73E38FA11DECC693008CF6DF /* data.xcdatamodel */,
+			);
+			currentVersion = 73E38FA11DECC693008CF6DF /* data.xcdatamodel */;
+			name = data.xcdatamodeld;
+			path = common/data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		73E48BAB1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
@@ -948,17 +965,6 @@
 			);
 			currentVersion = 73E48BAC1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodel */;
 			path = coreDataPlay_iOS.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		73E48BD51DE7A03200D66009 /* data.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				73E48BD61DE7A03200D66009 /* data.xcdatamodel */,
-			);
-			currentVersion = 73E48BD61DE7A03200D66009 /* data.xcdatamodel */;
-			name = data.xcdatamodeld;
-			path = common/data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

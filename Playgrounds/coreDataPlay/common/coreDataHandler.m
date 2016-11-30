@@ -46,3 +46,10 @@
     return self;
 }
 @end
+@implementation AAOGameObject
+@dynamic strength, dexterity, constitution,intellegence,wisdom,charisma;
+-(id) initInDataHandler:(coreDataHandler*)handler{
+    self=[NSEntityDescription insertNewObjectForEntityForName:@"GameObject" inManagedObjectContext:[handler managedObjectContext]];
+    return self;
+}
+@end
