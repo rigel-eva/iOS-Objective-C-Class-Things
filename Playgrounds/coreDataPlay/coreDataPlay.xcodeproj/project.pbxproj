@@ -22,7 +22,6 @@
 		73E48BDA1DE7A0E300D66009 /* coreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BD91DE7A0E300D66009 /* coreDataHandler.m */; };
 		73E48BE31DE7A11500D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BDC1DE7A11500D66009 /* AppDelegate.m */; };
 		73E48BE41DE7A11500D66009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BDD1DE7A11500D66009 /* Assets.xcassets */; };
-		73E48BE61DE7A11500D66009 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BDF1DE7A11500D66009 /* Info.plist */; };
 		73E48BE71DE7A11500D66009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BE01DE7A11500D66009 /* main.m */; };
 		73E48BE81DE7A11500D66009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BE21DE7A11500D66009 /* ViewController.m */; };
 		73E48BEB1DE7A13800D66009 /* coreDataPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BE91DE7A13800D66009 /* coreDataPlayTests.m */; };
@@ -459,7 +458,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73E48BE41DE7A11500D66009 /* Assets.xcassets in Resources */,
-				73E48BE61DE7A11500D66009 /* Info.plist in Resources */,
 				739BD0CB1DEA7B74007EC4ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

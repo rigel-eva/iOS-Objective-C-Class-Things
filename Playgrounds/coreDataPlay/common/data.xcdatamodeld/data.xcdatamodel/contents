@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16C48b" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="GameObject" representedClassName="GameObject" syncable="YES" codeGenerationType="class">
+    <entity name="GameObject" representedClassName="GameObject" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="abilities" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="baseHP" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="charisma" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="constitution" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="dexterity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="intellegence" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="skills" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="strength" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="wisdom" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="NonPlayerCharacter" representedClassName="NonPlayerCharacter" parentEntity="GameObject" syncable="YES" codeGenerationType="class">
+        <attribute name="levels" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="playerCharacters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlayerCharacter" inverseName="player" inverseEntity="PlayerCharacter" syncable="YES"/>
+    </entity>
+    <entity name="PlayerCharacter" representedClassName="PlayerCharacter" parentEntity="GameObject" syncable="YES" codeGenerationType="class">
+        <attribute name="levels" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="playerCharacters" inverseEntity="Player" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="GameObject" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="GameObject" positionX="-16182" positionY="267" width="128" height="43"/>
+        <element name="Player" positionX="-16182" positionY="324" width="128" height="73"/>
+        <element name="PlayerCharacter" positionX="-15948" positionY="261" width="119" height="58"/>
+        <element name="NonPlayerCharacter" positionX="-16047" positionY="333" width="128" height="90"/>
     </elements>
 </model>

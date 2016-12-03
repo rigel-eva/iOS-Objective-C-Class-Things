@@ -39,17 +39,28 @@
     });
 }
 @end
-@implementation AAOTesterEntity
-@dynamic testString;
--(id) initInDataHandler:(coreDataHandler*)handler{
-    self=[NSEntityDescription insertNewObjectForEntityForName:@"TesterEntity" inManagedObjectContext:[handler managedObjectContext]];
-    return self;
-}
-@end
+
 @implementation AAOGameObject
-@dynamic strength, dexterity, constitution,intellegence,wisdom,charisma;
+@dynamic strength, dexterity, constitution,intellegence,wisdom,charisma, baseHP;
+@dynamic abilities, skills;
 -(id) initInDataHandler:(coreDataHandler*)handler{
     self=[NSEntityDescription insertNewObjectForEntityForName:@"GameObject" inManagedObjectContext:[handler managedObjectContext]];
     return self;
 }
 @end
+@implementation AAONonPlayerCharacter
+@dynamic name, race;
+@dynamic levels;
+-(id) initInDataHandler:(coreDataHandler*)handler{
+    self=[NSEntityDescription insertNewObjectForEntityForName:@"NonPlayerCharacter" inManagedObjectContext:[handler managedObjectContext]];
+    return self;
+}
+@end
+@implementation AAOPlayerCharacter
+@dynamic name, race;
+@dynamic levels;
+-(id) initInDataHandler:(coreDataHandler*)handler{
+    self=[NSEntityDescription insertNewObjectForEntityForName:@"PlayerCharcter" inManagedObjectContext:[handler managedObjectContext]];
+    return self;
+}
+@end;
