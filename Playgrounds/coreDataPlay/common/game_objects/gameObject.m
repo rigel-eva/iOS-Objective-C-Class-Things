@@ -1,13 +1,13 @@
 //
-//  gameObjects.m
+//  gameObject.m
 //  coreDataPlay
 //
-//  Created by Alex Maguire on 11/28/16.
+//  Created by Alex Maguire on 12/4/16.
 //  Copyright © 2016 Sir Rigel. All rights reserved.
 //
 
-#import "gameObjects.h"
-
+#import "gameObject.h"
+#import "coreDataHandler.h"
 @implementation gameObject
 @synthesize strength, dexterity, constitution, intellegence, wisdom, charisma, baseHP;
 @synthesize abilities, skills;
@@ -41,30 +41,5 @@
     object.skills=[NSKeyedArchiver archivedDataWithRootObject:skills];
     return [[object managedObjectContext] save:&error]==NO;
     //@throw [NSException exceptionWithName:@"NotImplemented" reason:@"To be implemented at a later date" userInfo:nil];
-}
-@end
-@implementation nonPlayerCharacter
-@synthesize levels;
-@synthesize name, race;
--(bool)saveToManagedObjectContext:(NSManagedObjectContext*)context{
-    NSString *entName=@"NonPlayerCharacter";
-    NSLog(@"SavetoContext got: %@",context);
-    AAONonPlayerCharacter *toSave=[NSEntityDescription insertNewObjectForEntityForName:entName inManagedObjectContext:context];
-    return [self saveToManagedObject:toSave];
-}
--(bool)saveToManagedObject:(AAONonPlayerCharacter *)object{
-    object.levels=[NSKeyedArchiver archivedDataWithRootObject:levels];
-    object.name=name;
-    object.race=race;
-    return [super saveToManagedObject:object];
-}
-@end
-@implementation playerCharacter
--(bool)saveToManagedObjectContext:(NSManagedObjectContext *)context{
-    AAOPlayerCharacter *toSave=[[AAOPlayerCharacter alloc]initWithContext:context];
-    return [self saveToManagedObject:toSave];
-}
--(bool)saveToManagedObject:(NSManagedObject *)object{
-    return [super saveToManagedObject:object];
 }
 @end

@@ -45,22 +45,6 @@
     return current.name;
 }
 #pragma mark Data Set Stuff
-- (void) insertTestData:(NSManagedObjectContext*)moc{
-    nonPlayerCharacter *testObject=[[nonPlayerCharacter alloc]init];
-    testObject.name=@"I AM ERROR";
-    testObject.race=@"Human";
-    testObject.levels=@{@"Commoner":@1};
-    testObject.skills=@{@"Knowledge: Local":@[@3, @4]};
-    testObject.baseHP=4;
-    testObject.strength=10;
-    testObject.dexterity=10;
-    testObject.constitution=10;
-    testObject.intellegence=14;
-    testObject.wisdom=10;
-    testObject.charisma=10;
-    [testObject saveToManagedObjectContext:moc];
-    
-}
 - (void) loadDataSet:(NSManagedObjectContext*)moc{
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"NonPlayerCharacter"];
     NSError *error = nil;
@@ -70,10 +54,10 @@
         abort();
 
     }
-    if(displayData.count<1){
+    /*if(displayData.count<1){
         [self insertTestData:moc];
         [self loadDataSet:moc];
-    }
+    }//*/
 }
 
 -(void)saveObject:(NSManagedObject*)object{
