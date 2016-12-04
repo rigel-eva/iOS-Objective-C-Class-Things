@@ -20,16 +20,13 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="playerCharacters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlayerCharacter" inverseName="player" inverseEntity="PlayerCharacter" syncable="YES"/>
     </entity>
-    <entity name="PlayerCharacter" representedClassName="PlayerCharacter" parentEntity="GameObject" syncable="YES" codeGenerationType="class">
-        <attribute name="levels" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="PlayerCharacter" representedClassName="PlayerCharacter" parentEntity="NonPlayerCharacter" syncable="YES" codeGenerationType="class">
         <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="playerCharacters" inverseEntity="Player" syncable="YES"/>
     </entity>
     <elements>
-        <element name="GameObject" positionX="-16182" positionY="267" width="128" height="43"/>
-        <element name="Player" positionX="-16182" positionY="324" width="128" height="73"/>
-        <element name="PlayerCharacter" positionX="-15948" positionY="261" width="119" height="58"/>
-        <element name="NonPlayerCharacter" positionX="-16047" positionY="333" width="128" height="90"/>
+        <element name="GameObject" positionX="-16148" positionY="198" width="128" height="178"/>
+        <element name="Player" positionX="-16146" positionY="396" width="128" height="73"/>
+        <element name="PlayerCharacter" positionX="-15950" positionY="369" width="119" height="58"/>
+        <element name="NonPlayerCharacter" positionX="-15957" positionY="243" width="128" height="88"/>
     </elements>
 </model>

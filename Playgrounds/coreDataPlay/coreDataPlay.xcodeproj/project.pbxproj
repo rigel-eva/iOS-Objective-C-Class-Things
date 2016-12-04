@@ -14,7 +14,6 @@
 		73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA31DE79A6800D66009 /* AppDelegate.m */; };
 		73E48BA71DE79A6800D66009 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA61DE79A6800D66009 /* ViewController.m */; };
 		73E48BAA1DE79A6800D66009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BA81DE79A6800D66009 /* Main.storyboard */; };
-		73E48BAD1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BAB1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodeld */; };
 		73E48BAF1DE79A6800D66009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BAE1DE79A6800D66009 /* Assets.xcassets */; };
 		73E48BB21DE79A6800D66009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */; };
 		73E48BBD1DE79A6900D66009 /* coreDataPlay_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BBC1DE79A6900D66009 /* coreDataPlay_iOSTests.m */; };
@@ -76,7 +75,6 @@
 		73E48BA51DE79A6800D66009 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		73E48BA61DE79A6800D66009 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		73E48BA91DE79A6800D66009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		73E48BAC1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreDataPlay_iOS.xcdatamodel; sourceTree = "<group>"; };
 		73E48BAE1DE79A6800D66009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E48BB11DE79A6800D66009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73E48BB31DE79A6900D66009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				73E48BAE1DE79A6800D66009 /* Assets.xcassets */,
 				73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */,
 				73E48BB31DE79A6900D66009 /* Info.plist */,
-				73E48BAB1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodeld */,
 				73E48B9F1DE79A6800D66009 /* Supporting Files */,
 			);
 			path = "coreDataPlay-iOS";
@@ -538,7 +535,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73E48BAD1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodeld in Sources */,
 				73E48BA71DE79A6800D66009 /* ViewController.m in Sources */,
 				73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */,
 				73E48BA11DE79A6800D66009 /* main.m in Sources */,
@@ -953,16 +949,6 @@
 			currentVersion = 73E38FA11DECC693008CF6DF /* data.xcdatamodel */;
 			name = data.xcdatamodeld;
 			path = common/data.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		73E48BAB1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				73E48BAC1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodel */,
-			);
-			currentVersion = 73E48BAC1DE79A6800D66009 /* coreDataPlay_iOS.xcdatamodel */;
-			path = coreDataPlay_iOS.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "coreDataHandler.h"
+#import "gameObjects.h"
 @interface ViewController : NSViewController <NSTableViewDelegate, NSTableViewDataSource>
 
 
