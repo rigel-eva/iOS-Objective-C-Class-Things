@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73663AFB1DF53A61000B3C5A /* NPCDetailViewControllerController_Skills.m in Sources */ = {isa = PBXBuildFile; fileRef = 73663AFA1DF53A61000B3C5A /* NPCDetailViewControllerController_Skills.m */; };
+		73663AFE1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 73663AFD1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m */; };
 		737478D81DF4DAF700D0CDF3 /* testFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 737478D71DF4DAF700D0CDF3 /* testFunctions.m */; };
 		737478D91DF4DAF700D0CDF3 /* testFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 737478D71DF4DAF700D0CDF3 /* testFunctions.m */; };
 		739BD0CB1DEA7B74007EC4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739BD0C91DEA7B74007EC4ED /* Main.storyboard */; };
@@ -22,7 +24,7 @@
 		73E38FA21DECC693008CF6DF /* data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73E38FA01DECC693008CF6DF /* data.xcdatamodeld */; };
 		73E48BA11DE79A6800D66009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA01DE79A6800D66009 /* main.m */; };
 		73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA31DE79A6800D66009 /* AppDelegate.m */; };
-		73E48BA71DE79A6800D66009 /* NPCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA61DE79A6800D66009 /* NPCDetailViewController.m */; };
+		73E48BA71DE79A6800D66009 /* NPCDetailViewController_Basics.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA61DE79A6800D66009 /* NPCDetailViewController_Basics.m */; };
 		73E48BAA1DE79A6800D66009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BA81DE79A6800D66009 /* Main.storyboard */; };
 		73E48BAF1DE79A6800D66009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BAE1DE79A6800D66009 /* Assets.xcassets */; };
 		73E48BB21DE79A6800D66009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */; };
@@ -71,6 +73,10 @@
 
 /* Begin PBXFileReference section */
 		7344C41A1DF4E3AB005A8DB9 /* gameObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gameObjects.h; path = common/gameObjects.h; sourceTree = "<group>"; };
+		73663AF91DF53A61000B3C5A /* NPCDetailViewControllerController_Skills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewControllerController_Skills.h; sourceTree = "<group>"; };
+		73663AFA1DF53A61000B3C5A /* NPCDetailViewControllerController_Skills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewControllerController_Skills.m; sourceTree = "<group>"; };
+		73663AFC1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewController_Abilities.h; sourceTree = "<group>"; };
+		73663AFD1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewController_Abilities.m; sourceTree = "<group>"; };
 		737478D61DF4DAF700D0CDF3 /* testFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testFunctions.h; path = common/testFunctions.h; sourceTree = "<group>"; };
 		737478D71DF4DAF700D0CDF3 /* testFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testFunctions.m; path = common/testFunctions.m; sourceTree = "<group>"; };
 		739BD0CA1DEA7B74007EC4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "coreDataPlay-macOS/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
@@ -90,8 +96,8 @@
 		73E48BA01DE79A6800D66009 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73E48BA21DE79A6800D66009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73E48BA31DE79A6800D66009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		73E48BA51DE79A6800D66009 /* NPCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewController.h; sourceTree = "<group>"; };
-		73E48BA61DE79A6800D66009 /* NPCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewController.m; sourceTree = "<group>"; };
+		73E48BA51DE79A6800D66009 /* NPCDetailViewController_Basics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewController_Basics.h; sourceTree = "<group>"; };
+		73E48BA61DE79A6800D66009 /* NPCDetailViewController_Basics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewController_Basics.m; sourceTree = "<group>"; };
 		73E48BA91DE79A6800D66009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73E48BAE1DE79A6800D66009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E48BB11DE79A6800D66009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -182,8 +188,12 @@
 		73663AF81DF53955000B3C5A /* NPC Detail */ = {
 			isa = PBXGroup;
 			children = (
-				73E48BA51DE79A6800D66009 /* NPCDetailViewController.h */,
-				73E48BA61DE79A6800D66009 /* NPCDetailViewController.m */,
+				73663AFC1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.h */,
+				73663AFD1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m */,
+				73663AF91DF53A61000B3C5A /* NPCDetailViewControllerController_Skills.h */,
+				73663AFA1DF53A61000B3C5A /* NPCDetailViewControllerController_Skills.m */,
+				73E48BA51DE79A6800D66009 /* NPCDetailViewController_Basics.h */,
+				73E48BA61DE79A6800D66009 /* NPCDetailViewController_Basics.m */,
 			);
 			name = "NPC Detail";
 			sourceTree = "<group>";
@@ -598,13 +608,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D25D971DF505B600E5903C /* coreDataHandler.m in Sources */,
+				73663AFE1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m in Sources */,
 				73D25D921DF4E45A00E5903C /* gameObject.m in Sources */,
 				73D25D931DF4E45A00E5903C /* nonPlayerCharacter.m in Sources */,
 				73D25D941DF4E45A00E5903C /* player.m in Sources */,
 				73D25D951DF4E45A00E5903C /* playerCharacter.m in Sources */,
-				73E48BA71DE79A6800D66009 /* NPCDetailViewController.m in Sources */,
+				73E48BA71DE79A6800D66009 /* NPCDetailViewController_Basics.m in Sources */,
 				73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */,
 				73E48BA11DE79A6800D66009 /* main.m in Sources */,
+				73663AFB1DF53A61000B3C5A /* NPCDetailViewControllerController_Skills.m in Sources */,
 				737478D91DF4DAF700D0CDF3 /* testFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

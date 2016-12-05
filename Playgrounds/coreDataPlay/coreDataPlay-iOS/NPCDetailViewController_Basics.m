@@ -6,9 +6,9 @@
 //  Copyright © 2016 Sir Rigel. All rights reserved.
 //
 
-#import "NPCDetailViewController.h"
+#import "NPCDetailViewController_Basics.h"
 #import "testFunctions.h"
-@implementation NPCDetailViewController
+@implementation NPCDetailViewController_Basics
 @synthesize toEdit;
 - (void)viewDidLoad {
     [super viewDidLoad];
