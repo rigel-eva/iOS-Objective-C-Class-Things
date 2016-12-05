@@ -18,7 +18,7 @@
 		73D25D931DF4E45A00E5903C /* nonPlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D25D7F1DF4E40700E5903C /* nonPlayerCharacter.m */; };
 		73D25D941DF4E45A00E5903C /* player.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D25D811DF4E40700E5903C /* player.m */; };
 		73D25D951DF4E45A00E5903C /* playerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D25D831DF4E40700E5903C /* playerCharacter.m */; };
-		73D25D961DF4F2B500E5903C /* coreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BD91DE7A0E300D66009 /* coreDataHandler.m */; };
+		73D25D971DF505B600E5903C /* coreDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BD91DE7A0E300D66009 /* coreDataHandler.m */; };
 		73E38FA21DECC693008CF6DF /* data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73E38FA01DECC693008CF6DF /* data.xcdatamodeld */; };
 		73E48BA11DE79A6800D66009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA01DE79A6800D66009 /* main.m */; };
 		73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA31DE79A6800D66009 /* AppDelegate.m */; };
@@ -573,7 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D25D961DF4F2B500E5903C /* coreDataHandler.m in Sources */,
+				73D25D971DF505B600E5903C /* coreDataHandler.m in Sources */,
 				73D25D921DF4E45A00E5903C /* gameObject.m in Sources */,
 				73D25D931DF4E45A00E5903C /* nonPlayerCharacter.m in Sources */,
 				73D25D941DF4E45A00E5903C /* player.m in Sources */,

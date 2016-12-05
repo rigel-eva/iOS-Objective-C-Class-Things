@@ -26,6 +26,12 @@
 @property NSInteger intellegence;
 @property NSInteger wisdom;
 @property NSInteger charisma;
+@property (getter=strMod, readonly) NSInteger strengthModifier;
+@property (getter=dexMod, readonly) NSInteger dexterityModifier;
+@property (getter=conMod, readonly) NSInteger constitutionModifier;
+@property (getter=intMod, readonly) NSInteger intellegenceModifier;
+@property (getter=wisMod, readonly) NSInteger wisdomModifier;
+@property (getter=chaMod, readonly) NSInteger charismaModifier;
 //The Object's Base HP
 @property NSInteger baseHP;
 //Stored as KEY:skill name VALUE: [int for ability, total points invested+modifiers]
