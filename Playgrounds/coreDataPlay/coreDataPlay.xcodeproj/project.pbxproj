@@ -163,6 +163,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73663AF61DF538AC000B3C5A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73663AF71DF53945000B3C5A /* NPC */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		73663AF71DF53945000B3C5A /* NPC */ = {
+			isa = PBXGroup;
+			children = (
+				73663AF81DF53955000B3C5A /* NPC Detail */,
+			);
+			name = NPC;
+			sourceTree = "<group>";
+		};
+		73663AF81DF53955000B3C5A /* NPC Detail */ = {
+			isa = PBXGroup;
+			children = (
+				73E48BA51DE79A6800D66009 /* NPCDetailViewController.h */,
+				73E48BA61DE79A6800D66009 /* NPCDetailViewController.m */,
+			);
+			name = "NPC Detail";
+			sourceTree = "<group>";
+		};
 		737478DA1DF4DD7600D0CDF3 /* gameObjects */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,10 +277,9 @@
 		73E48B9E1DE79A6800D66009 /* coreDataPlay-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				73663AF61DF538AC000B3C5A /* View Controllers */,
 				73E48BA21DE79A6800D66009 /* AppDelegate.h */,
 				73E48BA31DE79A6800D66009 /* AppDelegate.m */,
-				73E48BA51DE79A6800D66009 /* NPCDetailViewController.h */,
-				73E48BA61DE79A6800D66009 /* NPCDetailViewController.m */,
 				73E48BA81DE79A6800D66009 /* Main.storyboard */,
 				73E48BAE1DE79A6800D66009 /* Assets.xcassets */,
 				73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */,
