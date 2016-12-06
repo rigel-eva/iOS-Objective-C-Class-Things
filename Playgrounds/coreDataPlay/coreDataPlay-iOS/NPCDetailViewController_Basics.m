@@ -15,9 +15,23 @@
     toEdit=[testFunctions generateTestObject];//Just for right now ... we kinda want to get our view up and running
     nameEntry.text=toEdit.name;
     raceEntry.text=toEdit.race;
+    strEntry.text=[NSString stringWithFormat:@"%d",toEdit.strength];
+    dexEntry.text=[NSString stringWithFormat:@"%d",toEdit.dexterity];
+    conEntry.text=[NSString stringWithFormat:@"%d",toEdit.constitution];
+    intEntry.text=[NSString stringWithFormat:@"%d",toEdit.intellegence];
+    wisEntry.text=[NSString stringWithFormat:@"%d",toEdit.wisdom];
+    chaEntry.text=[NSString stringWithFormat:@"%d",toEdit.charisma];
+    [self setModifiers];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
+-(void)setModifiers{
+    strMod.text=[NSString stringWithFormat:@"%d",toEdit.strengthModifier];
+    dexMod.text=[NSString stringWithFormat:@"%d",toEdit.dexterityModifier];
+    conMod.text=[NSString stringWithFormat:@"%d",toEdit.constitutionModifier];
+    intMod.text=[NSString stringWithFormat:@"%d",toEdit.intellegenceModifier];
+    wisMod.text=[NSString stringWithFormat:@"%d",toEdit.wisdomModifier];
+    chaMod.text=[NSString stringWithFormat:@"%d",toEdit.charismaModifier];
+}
 -(IBAction)abilityFieldChanged:(id)sender{
     //Update the Entry we have to edit
     toEdit.strength=[strEntry.text intValue];
@@ -27,13 +41,7 @@
     toEdit.wisdom=[wisEntry.text intValue];
     toEdit.charisma=[chaEntry.text intValue];
     //Update the Modifiers
-    strMod.text=[NSString stringWithFormat:@"%d",toEdit.strengthModifier];
-    dexMod.text=[NSString stringWithFormat:@"%d",toEdit.dexterityModifier];
-    conMod.text=[NSString stringWithFormat:@"%d",toEdit.constitutionModifier];
-    intMod.text=[NSString stringWithFormat:@"%d",toEdit.intellegenceModifier];
-    wisMod.text=[NSString stringWithFormat:@"%d",toEdit.wisdomModifier];
-    chaMod.text=[NSString stringWithFormat:@"%d",toEdit.charismaModifier];
-    //Update any relevant Skills n' stuff
+    [self setModifiers];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

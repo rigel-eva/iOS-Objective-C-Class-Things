@@ -13,8 +13,15 @@
     nonPlayerCharacter *testObject=[[nonPlayerCharacter alloc]init];
     testObject.name=@"I AM ERROR";
     testObject.race=@"Human";
-    testObject.levels=@{@"Commoner":@1};
-    testObject.skills=@{@"Knowledge: Local":@[@3, @4]};
+    testObject.levels=@{@"Commoner":@1,@"Guide":@4};
+    testObject.skills=[[NSMutableDictionary alloc] init];
+    [testObject.skills setObject:
+     [[NSArray alloc]initWithObjects:@3,@4, nil] forKey:@"Knowledge: Local"];
+    [testObject.skills setObject:
+     [[NSArray alloc]initWithObjects:@3,@8, nil] forKey:@"Craft: Alchemy"];
+    [testObject.skills setObject:
+     [[NSArray alloc]initWithObjects:@4,@2, nil] forKey:@"Survival"];
+    //@{@"Knowledge: Local":@[@3, @4],@"Craft: Alchemy":@[@3,@8],@"Survival":@[@4,@2]};
     testObject.baseHP=4;
     testObject.strength=10;
     testObject.dexterity=10;

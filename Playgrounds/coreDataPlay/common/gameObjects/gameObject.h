@@ -16,8 +16,8 @@
     NSInteger wisdom;
     NSInteger charisma;
     NSInteger baseHP;
-    NSDictionary *skills;//Should contain the skill name as the key, and the skill descrition, and modifier as a array or a tuple.
-    NSDictionary *abilities;//Should contain the ability name as the key, and the ability descriptin as a string, for formating purposes
+    NSMutableDictionary *skills;//Should contain the skill name as the key, and the skill descrition, and modifier as a array or a tuple.
+    NSMutableDictionary *abilities;//Should contain the ability name as the key, and the ability descriptin as a string, for formating purposes
 }
 //Base Abilities
 @property NSInteger strength;
@@ -43,9 +43,9 @@
  * 4: Wisdom
  * 5: Charisma
  */
-@property (nonatomic)NSDictionary *skills;
+@property (nonatomic)NSMutableDictionary *skills;
 //Stored as KEY:Ability Name Value: Ability Description
-@property (nonatomic)NSDictionary *abilities;
+@property (nonatomic)NSMutableDictionary *abilities;
 //Saves to the specified managed object context as a new instance in that context
 -(bool)saveToManagedObjectContext:(NSManagedObjectContext*)context;
 //Saves to the specified managed object context, overriding the specified object.

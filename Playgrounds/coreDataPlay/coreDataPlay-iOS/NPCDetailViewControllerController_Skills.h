@@ -1,5 +1,5 @@
 //
-//  NPCDetailController_Skills.h
+//  NPCDetailViewControllerController_Skills.h
 //  coreDataPlay
 //
 //  Created by Alex Maguire on 12/5/16.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface NPCDetailViewControllerController_Skills : UIViewController
-
+#import "nonPlayerCharacter.h"
+@interface NPCDetailViewControllerController_Skills : UITableViewController<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic) nonPlayerCharacter *toEdit;
 @end
