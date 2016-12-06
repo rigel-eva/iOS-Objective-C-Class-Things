@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "coreDataHandler.h"
+#import "skill.h"
 @interface gameObject : NSObject{
     NSInteger strength;
     NSInteger dexterity;
@@ -16,7 +17,7 @@
     NSInteger wisdom;
     NSInteger charisma;
     NSInteger baseHP;
-    NSMutableDictionary *skills;//Should contain the skill name as the key, and the skill descrition, and modifier as a array or a tuple.
+    NSMutableArray *skills;//Should contain objects of type skill
     NSMutableDictionary *abilities;//Should contain the ability name as the key, and the ability descriptin as a string, for formating purposes
 }
 //Base Abilities

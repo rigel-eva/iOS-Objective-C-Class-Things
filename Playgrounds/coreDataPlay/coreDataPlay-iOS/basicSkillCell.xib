@@ -38,6 +38,9 @@
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                        <connections>
+                            <action selector="changedModifier:" destination="FiH-ox-n9N" eventType="valueChanged" id="AOY-vK-6ou"/>
+                        </connections>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dK-7f-REk">
                         <rect key="frame" x="200" y="10" width="10" height="21"/>
@@ -61,7 +64,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="abilityField" destination="ENS-Lo-m0w" id="jPD-zd-uyy"/>
+                <outlet property="abilityField" destination="ENS-Lo-m0w" id="7rJ-Ra-eGb"/>
                 <outlet property="abilityModifierField" destination="9fa-Rd-m5e" id="2oj-mM-3Rf"/>
                 <outlet property="skillModifierField" destination="KVZ-lx-pD1" id="wXl-Pq-OzI"/>
                 <outlet property="skillNameField" destination="93y-mU-QdA" id="iVG-hz-Z9e"/>
