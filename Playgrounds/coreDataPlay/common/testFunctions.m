@@ -19,7 +19,6 @@
     [testObject.skills addObject:[[skill alloc] initWithName:@"Craft: Alchemy" skillType:intellegence ranks:8 modifier:0]];
     [testObject.skills addObject:[[skill alloc] initWithName:@"Survival" skillType:wisdom ranks:2 modifier:-1]];
     [testObject.skills addObject:[[skill alloc] initWithName:@"Swim" skillType:strength ranks:0 modifier:-4]];
-    [testObject.skills sor]
     //@{@"Knowledge: Local":@[@3, @4],@"Craft: Alchemy":@[@3,@8],@"Survival":@[@4,@2]};
     testObject.baseHP=4;
     testObject.strength=10;
