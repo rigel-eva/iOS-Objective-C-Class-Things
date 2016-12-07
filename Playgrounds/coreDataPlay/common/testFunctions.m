@@ -14,13 +14,12 @@
     testObject.name=@"I AM ERROR";
     testObject.race=@"Human";
     testObject.levels=@{@"Commoner":@1,@"Guide":@4};
-    testObject.skills=[[NSMutableDictionary alloc] init];
-    [testObject.skills setObject:
-     [[NSArray alloc]initWithObjects:@3,@4, nil] forKey:@"Knowledge: Local"];
-    [testObject.skills setObject:
-     [[NSArray alloc]initWithObjects:@3,@8, nil] forKey:@"Craft: Alchemy"];
-    [testObject.skills setObject:
-     [[NSArray alloc]initWithObjects:@4,@2, nil] forKey:@"Survival"];
+    testObject.skills=[[NSMutableArray alloc] init];
+    [testObject.skills addObject:[[skill alloc] initWithName:@"Knowledge: Local" skillType:intellegence ranks:4 modifier:0]];
+    [testObject.skills addObject:[[skill alloc] initWithName:@"Craft: Alchemy" skillType:intellegence ranks:8 modifier:0]];
+    [testObject.skills addObject:[[skill alloc] initWithName:@"Survival" skillType:wisdom ranks:2 modifier:-1]];
+    [testObject.skills addObject:[[skill alloc] initWithName:@"Swim" skillType:strength ranks:0 modifier:-4]];
+    [testObject.skills sor]
     //@{@"Knowledge: Local":@[@3, @4],@"Craft: Alchemy":@[@3,@8],@"Survival":@[@4,@2]};
     testObject.baseHP=4;
     testObject.strength=10;

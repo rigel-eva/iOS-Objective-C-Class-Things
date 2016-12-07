@@ -44,7 +44,7 @@
  * 4: Wisdom
  * 5: Charisma
  */
-@property (nonatomic)NSMutableDictionary *skills;
+@property (nonatomic)NSMutableArray *skills;
 //Stored as KEY:Ability Name Value: Ability Description
 @property (nonatomic)NSMutableDictionary *abilities;
 //Saves to the specified managed object context as a new instance in that context

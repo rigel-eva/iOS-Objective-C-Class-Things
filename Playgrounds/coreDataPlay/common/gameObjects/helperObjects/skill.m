@@ -12,4 +12,11 @@
 @synthesize name;
 @synthesize ranks, modifier;
 @synthesize skillType;
+-(id)initWithName:(NSString*)_name skillType:(enum ability)_ability ranks:(NSInteger)_ranks modifier:(NSInteger)_modifier{
+    name=_name;
+    skillType=_ability;
+    ranks=_ranks;
+    modifier=_modifier;
+    return self;
+}
 @end

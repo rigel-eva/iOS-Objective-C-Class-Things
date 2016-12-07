@@ -13,4 +13,5 @@ enum ability{strength, dexterity, constitution, intellegence, wisdom, charisma, 
 @property (nonatomic) enum ability skillType;
 @property (nonatomic) NSInteger ranks;
 @property (nonatomic) NSInteger modifier;
+-(id)initWithName:(NSString*)_name skillType:(enum ability)_ability ranks:(NSInteger)_ranks modifier:(NSInteger)_modifier;
 @end

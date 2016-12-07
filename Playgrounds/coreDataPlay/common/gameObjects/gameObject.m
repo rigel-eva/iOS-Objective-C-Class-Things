@@ -10,7 +10,8 @@
 #import "coreDataHandler.h"
 @implementation gameObject
 @synthesize strength, dexterity, constitution, intellegence, wisdom, charisma, baseHP;
-@synthesize abilities, skills;
+@synthesize abilities;
+@synthesize skills;
 -(id)initFromManagedObject:(AAOGameObject *)object{
     self.strength=object.strength;
     self.dexterity=object.dexterity;

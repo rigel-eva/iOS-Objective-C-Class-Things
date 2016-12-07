@@ -178,6 +178,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		732F35F51DF777CA00604A4D /* helper objects */ = {
+			isa = PBXGroup;
+			children = (
+				732F35F11DF7756700604A4D /* skill.h */,
+				732F35F21DF7756700604A4D /* skill.m */,
+			);
+			name = "helper objects";
+			sourceTree = "<group>";
+		};
 		73663AF61DF538AC000B3C5A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +220,7 @@
 		737478DA1DF4DD7600D0CDF3 /* gameObjects */ = {
 			isa = PBXGroup;
 			children = (
+				732F35F51DF777CA00604A4D /* helper objects */,
 				73D25D7B1DF4E40700E5903C /* gameObject.h */,
 				73D25D7C1DF4E40700E5903C /* gameObject.m */,
 				73D25D7E1DF4E40700E5903C /* nonPlayerCharacter.h */,
@@ -219,8 +229,6 @@
 				73D25D811DF4E40700E5903C /* player.m */,
 				73D25D821DF4E40700E5903C /* playerCharacter.h */,
 				73D25D831DF4E40700E5903C /* playerCharacter.m */,
-				732F35F11DF7756700604A4D /* skill.h */,
-				732F35F21DF7756700604A4D /* skill.m */,
 			);
 			name = gameObjects;
 			sourceTree = "<group>";
