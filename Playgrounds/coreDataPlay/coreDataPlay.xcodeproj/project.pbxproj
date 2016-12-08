@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		732F35F31DF7756700604A4D /* skill.m in Sources */ = {isa = PBXBuildFile; fileRef = 732F35F21DF7756700604A4D /* skill.m */; };
 		732F35F41DF7756800604A4D /* skill.m in Sources */ = {isa = PBXBuildFile; fileRef = 732F35F21DF7756700604A4D /* skill.m */; };
-		73663AFE1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 73663AFD1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m */; };
 		737478D81DF4DAF700D0CDF3 /* testFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 737478D71DF4DAF700D0CDF3 /* testFunctions.m */; };
 		737478D91DF4DAF700D0CDF3 /* testFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 737478D71DF4DAF700D0CDF3 /* testFunctions.m */; };
+		737DFBCC1DF79DB5008E494E /* NPCDetailViewController_Abilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 737DFBCB1DF79DB5008E494E /* NPCDetailViewController_Abilities.m */; };
+		737DFBCF1DF79FC3008E494E /* ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 737DFBCE1DF79FC3008E494E /* ability.m */; };
+		737DFBD01DF79FC3008E494E /* ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 737DFBCE1DF79FC3008E494E /* ability.m */; };
+		737DFBD41DF7B019008E494E /* baseAbilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 737DFBD21DF7B018008E494E /* baseAbilityCell.m */; };
+		737DFBD51DF7B019008E494E /* baseAbilityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737DFBD31DF7B018008E494E /* baseAbilityCell.xib */; };
 		739BD0CB1DEA7B74007EC4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739BD0C91DEA7B74007EC4ED /* Main.storyboard */; };
 		73A40D4D1DF642F300216B8E /* NPCDetailViewControllerController_Skills.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A40D4C1DF642F300216B8E /* NPCDetailViewControllerController_Skills.m */; };
+		73A692491DF8DD8500643594 /* summarySkillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A692471DF8DD8500643594 /* summarySkillCell.m */; };
+		73A6924A1DF8DD8500643594 /* summarySkillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A692481DF8DD8500643594 /* summarySkillCell.xib */; };
 		73D25D8E1DF4E44500E5903C /* gameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D25D7C1DF4E40700E5903C /* gameObject.m */; };
 		73D25D8F1DF4E44500E5903C /* nonPlayerCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D25D7F1DF4E40700E5903C /* nonPlayerCharacter.m */; };
 		73D25D901DF4E44500E5903C /* player.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D25D811DF4E40700E5903C /* player.m */; };
@@ -79,13 +85,21 @@
 		732F35F11DF7756700604A4D /* skill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skill.h; path = common/gameObjects/helperObjects/skill.h; sourceTree = "<group>"; };
 		732F35F21DF7756700604A4D /* skill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = skill.m; path = common/gameObjects/helperObjects/skill.m; sourceTree = "<group>"; };
 		7344C41A1DF4E3AB005A8DB9 /* gameObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gameObjects.h; path = common/gameObjects.h; sourceTree = "<group>"; };
-		73663AFC1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewController_Abilities.h; sourceTree = "<group>"; };
-		73663AFD1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewController_Abilities.m; sourceTree = "<group>"; };
 		737478D61DF4DAF700D0CDF3 /* testFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testFunctions.h; path = common/testFunctions.h; sourceTree = "<group>"; };
 		737478D71DF4DAF700D0CDF3 /* testFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testFunctions.m; path = common/testFunctions.m; sourceTree = "<group>"; };
+		737DFBCA1DF79DB5008E494E /* NPCDetailViewController_Abilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewController_Abilities.h; sourceTree = "<group>"; };
+		737DFBCB1DF79DB5008E494E /* NPCDetailViewController_Abilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewController_Abilities.m; sourceTree = "<group>"; };
+		737DFBCD1DF79FC3008E494E /* ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ability.h; path = common/gameObjects/helperObjects/ability.h; sourceTree = "<group>"; };
+		737DFBCE1DF79FC3008E494E /* ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ability.m; path = common/gameObjects/helperObjects/ability.m; sourceTree = "<group>"; };
+		737DFBD11DF7B018008E494E /* baseAbilityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseAbilityCell.h; sourceTree = "<group>"; };
+		737DFBD21DF7B018008E494E /* baseAbilityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseAbilityCell.m; sourceTree = "<group>"; };
+		737DFBD31DF7B018008E494E /* baseAbilityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = baseAbilityCell.xib; sourceTree = "<group>"; };
 		739BD0CA1DEA7B74007EC4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "coreDataPlay-macOS/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		73A40D4B1DF642F300216B8E /* NPCDetailViewControllerController_Skills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewControllerController_Skills.h; sourceTree = "<group>"; };
 		73A40D4C1DF642F300216B8E /* NPCDetailViewControllerController_Skills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewControllerController_Skills.m; sourceTree = "<group>"; };
+		73A692461DF8DD8500643594 /* summarySkillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = summarySkillCell.h; sourceTree = "<group>"; };
+		73A692471DF8DD8500643594 /* summarySkillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = summarySkillCell.m; sourceTree = "<group>"; };
+		73A692481DF8DD8500643594 /* summarySkillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = summarySkillCell.xib; sourceTree = "<group>"; };
 		73D25D7B1DF4E40700E5903C /* gameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gameObject.h; path = common/gameObjects/gameObject.h; sourceTree = "<group>"; };
 		73D25D7C1DF4E40700E5903C /* gameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gameObject.m; path = common/gameObjects/gameObject.m; sourceTree = "<group>"; };
 		73D25D7E1DF4E40700E5903C /* nonPlayerCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nonPlayerCharacter.h; path = common/gameObjects/nonPlayerCharacter.h; sourceTree = "<group>"; };
@@ -183,6 +197,8 @@
 			children = (
 				732F35F11DF7756700604A4D /* skill.h */,
 				732F35F21DF7756700604A4D /* skill.m */,
+				737DFBCD1DF79FC3008E494E /* ability.h */,
+				737DFBCE1DF79FC3008E494E /* ability.m */,
 			);
 			name = "helper objects";
 			sourceTree = "<group>";
@@ -207,12 +223,12 @@
 		73663AF81DF53955000B3C5A /* NPC Detail */ = {
 			isa = PBXGroup;
 			children = (
-				73663AFC1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.h */,
-				73663AFD1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m */,
 				73E48BA51DE79A6800D66009 /* NPCDetailViewController_Basics.h */,
 				73E48BA61DE79A6800D66009 /* NPCDetailViewController_Basics.m */,
 				73A40D4B1DF642F300216B8E /* NPCDetailViewControllerController_Skills.h */,
 				73A40D4C1DF642F300216B8E /* NPCDetailViewControllerController_Skills.m */,
+				737DFBCA1DF79DB5008E494E /* NPCDetailViewController_Abilities.h */,
+				737DFBCB1DF79DB5008E494E /* NPCDetailViewController_Abilities.m */,
 			);
 			name = "NPC Detail";
 			sourceTree = "<group>";
@@ -231,6 +247,29 @@
 				73D25D831DF4E40700E5903C /* playerCharacter.m */,
 			);
 			name = gameObjects;
+			sourceTree = "<group>";
+		};
+		73A692441DF8B6C700643594 /* baseCells */ = {
+			isa = PBXGroup;
+			children = (
+				73EFED9E1DF64B9D004DE19A /* baseSkillCell.h */,
+				73EFED9F1DF64B9D004DE19A /* baseSkillCell.m */,
+				73EFEDA11DF64E25004DE19A /* basicSkillCell.xib */,
+				737DFBD11DF7B018008E494E /* baseAbilityCell.h */,
+				737DFBD21DF7B018008E494E /* baseAbilityCell.m */,
+				737DFBD31DF7B018008E494E /* baseAbilityCell.xib */,
+			);
+			name = baseCells;
+			sourceTree = "<group>";
+		};
+		73A692451DF8DD3600643594 /* summaryCells */ = {
+			isa = PBXGroup;
+			children = (
+				73A692461DF8DD8500643594 /* summarySkillCell.h */,
+				73A692471DF8DD8500643594 /* summarySkillCell.m */,
+				73A692481DF8DD8500643594 /* summarySkillCell.xib */,
+			);
+			name = summaryCells;
 			sourceTree = "<group>";
 		};
 		73E48B571DE7774900D66009 = {
@@ -364,9 +403,8 @@
 		73EFED9D1DF64B4D004DE19A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				73EFED9E1DF64B9D004DE19A /* baseSkillCell.h */,
-				73EFED9F1DF64B9D004DE19A /* baseSkillCell.m */,
-				73EFEDA11DF64E25004DE19A /* basicSkillCell.xib */,
+				73A692451DF8DD3600643594 /* summaryCells */,
+				73A692441DF8B6C700643594 /* baseCells */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -580,8 +618,10 @@
 			files = (
 				73EFEDA21DF64E25004DE19A /* basicSkillCell.xib in Resources */,
 				73E48BB21DE79A6800D66009 /* LaunchScreen.storyboard in Resources */,
+				73A6924A1DF8DD8500643594 /* summarySkillCell.xib in Resources */,
 				73E48BAF1DE79A6800D66009 /* Assets.xcassets in Resources */,
 				73E48BAA1DE79A6800D66009 /* Main.storyboard in Resources */,
+				737DFBD51DF7B019008E494E /* baseAbilityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +649,7 @@
 				73D25D8E1DF4E44500E5903C /* gameObject.m in Sources */,
 				73D25D8F1DF4E44500E5903C /* nonPlayerCharacter.m in Sources */,
 				73D25D901DF4E44500E5903C /* player.m in Sources */,
+				737DFBCF1DF79FC3008E494E /* ability.m in Sources */,
 				73D25D911DF4E44500E5903C /* playerCharacter.m in Sources */,
 				73E48BE71DE7A11500D66009 /* main.m in Sources */,
 				737478D81DF4DAF700D0CDF3 /* testFunctions.m in Sources */,
@@ -640,17 +681,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D25D971DF505B600E5903C /* coreDataHandler.m in Sources */,
-				73663AFE1DF53AC6000B3C5A /* NPCDetailViewController_Abilities.m in Sources */,
 				73D25D921DF4E45A00E5903C /* gameObject.m in Sources */,
 				73D25D931DF4E45A00E5903C /* nonPlayerCharacter.m in Sources */,
 				73D25D941DF4E45A00E5903C /* player.m in Sources */,
+				737DFBD01DF79FC3008E494E /* ability.m in Sources */,
 				73D25D951DF4E45A00E5903C /* playerCharacter.m in Sources */,
 				73E48BA71DE79A6800D66009 /* NPCDetailViewController_Basics.m in Sources */,
 				732F35F41DF7756800604A4D /* skill.m in Sources */,
 				73A40D4D1DF642F300216B8E /* NPCDetailViewControllerController_Skills.m in Sources */,
 				73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */,
+				73A692491DF8DD8500643594 /* summarySkillCell.m in Sources */,
 				73EFEDA01DF64B9E004DE19A /* baseSkillCell.m in Sources */,
+				737DFBD41DF7B019008E494E /* baseAbilityCell.m in Sources */,
 				73E48BA11DE79A6800D66009 /* main.m in Sources */,
+				737DFBCC1DF79DB5008E494E /* NPCDetailViewController_Abilities.m in Sources */,
 				737478D91DF4DAF700D0CDF3 /* testFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

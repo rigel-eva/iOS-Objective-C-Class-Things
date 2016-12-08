@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "gameObject.h"
-@interface baseSkillCell : UITableViewCell{
+@interface baseSkillCell : UITableViewCell<UITextFieldDelegate>{
     //Keep this in mind next time: MAKE SURE THAT YOU SET UP THE IBOUTLETS FOR THE FILE NAMED "something something something" NOT FILE OWNER!!!!
     IBOutlet UITextField *skillNameField;
     IBOutlet UITextField *skillTotalField;

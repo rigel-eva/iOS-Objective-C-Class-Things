@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #include "gameObjects.h"
 
-@interface NPCDetailViewController_Basics : UIViewController{
+@interface NPCDetailViewController_Basics : UIViewController<UITextFieldDelegate>{
     __weak IBOutlet UITextField *nameEntry;
     __weak IBOutlet UITextField *raceEntry;
     __weak IBOutlet UITextField *strEntry;

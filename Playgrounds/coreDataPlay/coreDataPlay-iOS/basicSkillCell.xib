@@ -24,6 +24,9 @@
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="FiH-ox-n9N" id="9FK-ak-A4T"/>
+                        </connections>
                     </textField>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mR4-oH-uH8" userLabel="Skill Total">
                         <rect key="frame" x="161" y="8" width="29" height="28"/>
@@ -40,6 +43,7 @@
                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                         <connections>
                             <action selector="changedModifier:" destination="FiH-ox-n9N" eventType="valueChanged" id="AOY-vK-6ou"/>
+                            <outlet property="delegate" destination="FiH-ox-n9N" id="7gV-1e-f21"/>
                         </connections>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dK-7f-REk">
@@ -57,6 +61,7 @@
                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                         <connections>
                             <action selector="changedModifier:" destination="FiH-ox-n9N" eventType="valueChanged" id="IwJ-oK-2oF"/>
+                            <outlet property="delegate" destination="FiH-ox-n9N" id="q1X-Me-QRA"/>
                         </connections>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fa-Rd-m5e" userLabel="Abillity Modifier">

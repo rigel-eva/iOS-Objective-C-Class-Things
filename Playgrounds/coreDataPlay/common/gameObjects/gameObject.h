@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "coreDataHandler.h"
 #import "skill.h"
+#import "ability.h"
 @interface gameObject : NSObject{
     NSInteger strength;
     NSInteger dexterity;
@@ -18,7 +19,7 @@
     NSInteger charisma;
     NSInteger baseHP;
     NSMutableArray *skills;//Should contain objects of type skill
-    NSMutableDictionary *abilities;//Should contain the ability name as the key, and the ability descriptin as a string, for formating purposes
+    NSMutableArray *abilities;//Should contain objects of the type ability
 }
 //Base Abilities
 @property NSInteger strength;
@@ -35,18 +36,10 @@
 @property (getter=chaMod, readonly) NSInteger charismaModifier;
 //The Object's Base HP
 @property NSInteger baseHP;
-//Stored as KEY:skill name VALUE: [int for ability, total points invested+modifiers]
-/*Integer Values for abilities
- * 0: Strength
- * 1: Dexterity
- * 2: Constitution
- * 3: Intelligence
- * 4: Wisdom
- * 5: Charisma
- */
+//Stored as the skill type
 @property (nonatomic)NSMutableArray *skills;
-//Stored as KEY:Ability Name Value: Ability Description
-@property (nonatomic)NSMutableDictionary *abilities;
+//stored as the ability type
+@property (nonatomic)NSMutableArray *abilities;
 //Saves to the specified managed object context as a new instance in that context
 -(bool)saveToManagedObjectContext:(NSManagedObjectContext*)context;
 //Saves to the specified managed object context, overriding the specified object.

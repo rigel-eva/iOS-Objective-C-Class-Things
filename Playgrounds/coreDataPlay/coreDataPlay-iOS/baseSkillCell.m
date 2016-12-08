@@ -73,6 +73,10 @@
         skillTotalField.text=[NSString stringWithFormat:@"%ld",total];
     }
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
 - (IBAction)changedModifier:(id)sender {
     if([sender isEqual:skillRankField]){
         skillReference.ranks=skillRankField.text.integerValue;
