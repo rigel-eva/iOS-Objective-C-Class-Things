@@ -8,7 +8,11 @@
 
 #import "NPCDetailViewController_Basics.h"
 #import "testFunctions.h"
-@implementation NPCDetailViewController_Basics
+#import "NPCDetailViewControllerController_Skills.h"
+#import "NPCDetailViewController_Abilities.h"
+#import "NPCDetailSkill-AbilitySummary.h"
+@implementation NPCDetailViewController_Basics{
+}
 @synthesize toEdit;
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,5 +54,11 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return NO;
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"summary"]) {
+        NPCDetailSkill_AbilitySummary* summary=segue.destinationViewController;
+        summary.toView=toEdit;
+    }
 }
 @end

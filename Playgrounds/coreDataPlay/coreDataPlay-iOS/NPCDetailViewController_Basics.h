@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #include "gameObjects.h"
-
+#include "NPCDetailSkill-AbilitySummary.h"
 @interface NPCDetailViewController_Basics : UIViewController<UITextFieldDelegate>{
     __weak IBOutlet UITextField *nameEntry;
     __weak IBOutlet UITextField *raceEntry;

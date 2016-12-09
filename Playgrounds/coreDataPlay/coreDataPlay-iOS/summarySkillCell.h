@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface summarySkillCell : UITableViewCell
-
+#import "gameObject.h"
+@interface summarySkillCell : UITableViewCell{
+    IBOutlet UILabel *skillNameField;
+    IBOutlet UILabel *skillTotalField;
+}
+@property (nonatomic) gameObject* toView;
+@property (nonatomic) skill* skillReference;
+-(bool)updateCell;
 @end

@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a0C-cE-7vx" id="X7k-Kt-ve9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -55,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jX-h2-cc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="349"/>
+            <point key="canvasLocation" x="1001" y="429"/>
         </scene>
         <!--Basics-->
         <scene sceneID="tne-QT-ifu">
@@ -71,9 +71,9 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5V-y9-fg7">
                                 <rect key="frame" x="120" y="109" width="239" height="497"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
-                                    <segue destination="uEV-ve-SRy" kind="embed" id="fhs-OV-3dd"/>
+                                    <segue destination="uEV-ve-SRy" kind="embed" identifier="summary" id="fhs-OV-3dd"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-Wf-jri" userLabel="Ability Stack">
@@ -292,11 +292,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FjJ-aR-XhQ" userLabel="Basic Data Stack">
-                                <rect key="frame" x="120" y="36" width="239" height="65"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FjJ-aR-XhQ" userLabel="Basic Data Stack">
+                                <rect key="frame" x="120" y="36" width="54" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="USS-sb-bf0">
-                                        <rect key="frame" x="0.0" y="0.0" width="239" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -305,7 +306,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Race" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-sn-0gd">
-                                        <rect key="frame" x="0.0" y="35" width="239" height="30"/>
+                                        <rect key="frame" x="0.0" y="35" width="54" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -315,9 +316,6 @@
                                     </textField>
                                 </subviews>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="239" id="9bu-e0-muK"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -355,7 +353,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fD6-QF-5MC"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kZ9-5L-jyV"/>
                         <segue destination="5D0-pO-3Wf" kind="relationship" relationship="viewControllers" id="k2r-Ac-bpN"/>
                         <segue destination="awy-Ix-JBA" kind="relationship" relationship="viewControllers" id="Rwn-aF-wQW"/>
                     </connections>
@@ -364,10 +362,10 @@
             </objects>
             <point key="canvasLocation" x="104.8" y="-416.0419790104948"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Skill Ability Summary-->
         <scene sceneID="yqg-db-Qx5">
             <objects>
-                <viewController id="uEV-ve-SRy" sceneMemberID="viewController">
+                <viewController id="uEV-ve-SRy" customClass="NPCDetailSkill_AbilitySummary" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dLj-Dc-50Z"/>
                         <viewControllerLayoutGuide type="bottom" id="KXW-S9-vVs"/>
@@ -377,9 +375,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vQj-bb-SK3">
-                                <rect key="frame" x="0.0" y="27" width="239" height="470"/>
+                                <rect key="frame" x="0.0" y="36" width="239" height="461"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="uEV-ve-SRy" id="GbJ-de-bOC"/>
+                                    <outlet property="delegate" destination="uEV-ve-SRy" id="X7A-Qe-OOa"/>
+                                </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-qM-q9H">
                                 <rect key="frame" x="0.0" y="0.0" width="239" height="29"/>
@@ -388,14 +390,21 @@
                                     <segment title="Skills"/>
                                     <segment title="Abilities"/>
                                 </segments>
+                                <connections>
+                                    <action selector="listingsSwitched:" destination="uEV-ve-SRy" eventType="valueChanged" id="wr2-xR-Rsg"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="listing" destination="vQj-bb-SK3" id="V5o-f8-kLP"/>
+                        <outlet property="switcher" destination="qmg-qM-q9H" id="GeN-Wi-Ynd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgV-px-zXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-1101.4992503748126"/>
+            <point key="canvasLocation" x="1751.2" y="-1101.4992503748126"/>
         </scene>
     </scenes>
 </document>

@@ -9,5 +9,5 @@
 #import "ability.h"
 
 @implementation ability
-
+@synthesize name, description;
 @end

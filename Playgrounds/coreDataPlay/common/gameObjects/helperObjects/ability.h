@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-//enum abilityType={extraordinary, spell-like, psi-like, supernatural};
+enum abilityType{extraordinary, spelllike, psilike, supernatural};
 @interface ability : NSObject
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* description;
