@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FiH-ox-n9N" id="TMe-w7-ZGr">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skill Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93y-mU-QdA">
@@ -42,7 +42,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                         <connections>
-                            <action selector="changedModifier:" destination="FiH-ox-n9N" eventType="valueChanged" id="AOY-vK-6ou"/>
+                            <action selector="changedModifier:" destination="FiH-ox-n9N" eventType="editingDidEnd" id="bix-CG-oFY"/>
                             <outlet property="delegate" destination="FiH-ox-n9N" id="7gV-1e-f21"/>
                         </connections>
                     </textField>
@@ -60,7 +60,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                         <connections>
-                            <action selector="changedModifier:" destination="FiH-ox-n9N" eventType="valueChanged" id="IwJ-oK-2oF"/>
+                            <action selector="changedModifier:" destination="FiH-ox-n9N" eventType="editingDidEnd" id="1N4-nh-nUx"/>
                             <outlet property="delegate" destination="FiH-ox-n9N" id="q1X-Me-QRA"/>
                         </connections>
                     </textField>

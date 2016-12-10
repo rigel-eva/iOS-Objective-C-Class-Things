@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #include "gameObjects.h"
 #include "NPCDetailSkill-AbilitySummary.h"
-@interface NPCDetailViewController_Basics : UIViewController<UITextFieldDelegate>{
+@interface NPCDetailViewController_Basics : UIViewController<UITextFieldDelegate, UITabBarControllerDelegate>{
     __weak IBOutlet UITextField *nameEntry;
     __weak IBOutlet UITextField *raceEntry;
     __weak IBOutlet UITextField *strEntry;
@@ -24,7 +24,8 @@
     __weak IBOutlet UITextField *wisMod;
     __weak IBOutlet UITextField *chaEntry;
     __weak IBOutlet UITextField *chaMod;
+    NPCDetailSkill_AbilitySummary *summ;
 }
-@property (nonatomic) nonPlayerCharacter *toEdit;
+@property (nonatomic,weak) nonPlayerCharacter* toEdit;
 -(IBAction)abilityFieldChanged:(id)sender;
 @end

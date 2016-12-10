@@ -12,7 +12,7 @@
     IBOutlet UILabel *skillNameField;
     IBOutlet UILabel *skillTotalField;
 }
-@property (nonatomic) gameObject* toView;
-@property (nonatomic) skill* skillReference;
+@property (nonatomic, weak) gameObject* toView;
+@property (nonatomic, weak) skill* skillReference;
 -(bool)updateCell;
 @end

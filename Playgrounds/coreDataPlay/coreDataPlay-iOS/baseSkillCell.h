@@ -21,7 +21,7 @@
 //Things we should allow to be editied here:
 // Skill Name: Because well ... we have no idea what our ability will be ...
 //nonPlayerCharacter: Because we need to know what we are editing ...
-@property (nonatomic) skill* skillReference;
-@property (nonatomic) gameObject* toEdit;
+@property (nonatomic, weak) skill* skillReference;
+@property (nonatomic, weak) gameObject* toEdit;
 - (void)refreshSkillInfo;
 @end

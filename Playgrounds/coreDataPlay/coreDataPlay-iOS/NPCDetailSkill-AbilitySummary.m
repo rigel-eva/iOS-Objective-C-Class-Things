@@ -12,10 +12,18 @@
     NSMutableArray *cells;
 }
 @synthesize toView;
+-(void)viewWillAppear:(BOOL)animated{
+    //Essentially we want to refresh our stuff...
+    [self refreshData];
+}
+-(void)refreshData{
+    [self fillWithSkills];
+    [listing reloadData];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    toView=[testFunctions generateTestObject];
+    //toView=[testFunctions generateTestObject];
     [self fillWithSkills];
 }
 - (void)fillWithSkills{

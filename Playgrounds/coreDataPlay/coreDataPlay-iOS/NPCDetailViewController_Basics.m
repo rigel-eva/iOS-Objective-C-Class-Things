@@ -8,15 +8,16 @@
 
 #import "NPCDetailViewController_Basics.h"
 #import "testFunctions.h"
-#import "NPCDetailViewControllerController_Skills.h"
-#import "NPCDetailViewController_Abilities.h"
 #import "NPCDetailSkill-AbilitySummary.h"
+#import "NPCTabBar.h"
 @implementation NPCDetailViewController_Basics{
 }
 @synthesize toEdit;
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    toEdit=[testFunctions generateTestObject];//Just for right now ... we kinda want to get our view up and running
     nameEntry.text=toEdit.name;
     raceEntry.text=toEdit.race;
     strEntry.text=[NSString stringWithFormat:@"%ld",toEdit.strength];
@@ -46,6 +47,7 @@
     toEdit.charisma=[chaEntry.text intValue];
     //Update the Modifiers
     [self setModifiers];
+    [summ refreshData];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -56,9 +58,17 @@
     return NO;
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([[segue identifier] isEqualToString:@"summary"]) {
-        NPCDetailSkill_AbilitySummary* summary=segue.destinationViewController;
+#warning remove the following 3 lines of code before Turning in.
+    if(toEdit==nil){
+        toEdit=[testFunctions generateTestObject];//Just for right now ... we kinda want to get our view up and running
+    }
+    if ([segue.destinationViewController isKindOfClass:[NPCDetailSkill_AbilitySummary class]]) {
+        NPCDetailSkill_AbilitySummary* summary=(NPCDetailSkill_AbilitySummary*) segue.destinationViewController;
         summary.toView=toEdit;
+        summ=summary;
+    }else if([segue.destinationViewController isKindOfClass:[NPCTabBar class]]){
+        NPCTabBar* tab=(NPCTabBar*)segue.destinationViewController;
+        tab.toEdit=toEdit;
     }
 }
 @end

@@ -28,22 +28,22 @@
         NSInteger total=skillReference.modifier+skillReference.ranks;
         switch (skillReference.skillType) {
             case strength:
-                total+=toView.strength;
+                total+=toView.strengthModifier;
                 break;
             case dexterity:
-                total+=toView.dexterity;
+                total+=toView.dexterityModifier;
                 break;
             case constitution:
-                total+=toView.constitution;
+                total+=toView.constitutionModifier;
                 break;
             case intellegence:
-                total+=toView.intellegence;
+                total+=toView.intellegenceModifier;
                 break;
             case wisdom:
-                total+=toView.wisdom;
+                total+=toView.wisdomModifier;
                 break;
             case charisma:
-                total+=toView.charisma;
+                total+=toView.charismaModifier;
                 break;
             case none:
                 break;

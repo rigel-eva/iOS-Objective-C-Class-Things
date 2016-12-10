@@ -13,5 +13,6 @@
     IBOutlet UISegmentedControl *switcher;
     IBOutlet UITableView *listing;
 }
-@property (nonatomic) gameObject* toView;
+@property (nonatomic, weak) gameObject* toView;
+-(void)refreshData;
 @end

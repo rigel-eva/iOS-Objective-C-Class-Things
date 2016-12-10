@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "nonPlayerCharacter.h"
 @interface NPCDetailViewController_Abilities : UITableViewController
-@property (nonatomic) nonPlayerCharacter* toEdit;
+@property (nonatomic, weak) nonPlayerCharacter* toEdit;
 
 @end

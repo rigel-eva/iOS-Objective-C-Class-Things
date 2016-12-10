@@ -80,7 +80,6 @@
 - (IBAction)changedModifier:(id)sender {
     if([sender isEqual:skillRankField]){
         skillReference.ranks=skillRankField.text.integerValue;
-        
     }else if([sender isEqual:skillModifierField]){
         skillReference.modifier=skillModifierField.text.integerValue;
     }

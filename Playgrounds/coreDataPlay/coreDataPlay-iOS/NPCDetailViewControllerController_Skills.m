@@ -14,7 +14,6 @@
 @synthesize toEdit;
 -(void)viewDidLoad{
     [super viewDidLoad];
-    toEdit=[testFunctions generateTestObject];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -33,5 +32,8 @@
     cell.skillReference=toEdit.skills[[indexPath row]];
     [cell refreshSkillInfo];
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:false];//right ... we don't want to select a row ...
 }
 @end
