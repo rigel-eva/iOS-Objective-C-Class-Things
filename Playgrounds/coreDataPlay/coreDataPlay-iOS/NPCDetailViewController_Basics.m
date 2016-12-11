@@ -15,6 +15,8 @@
 @synthesize toEdit;
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+#warning Need to fix the fact that the embed view controller isn't retaining correctly.
+    summ.toView=toEdit;//This fixes the fact that it's not retaining data ...
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

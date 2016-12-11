@@ -58,6 +58,6 @@
     return (wisdom-10)/2;
 }
 -(NSInteger)chaMod{
-    return (charisma-10/2);
+    return (charisma-10)/2;
 }
 @end

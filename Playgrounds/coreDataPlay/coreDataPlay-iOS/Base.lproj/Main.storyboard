@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a0C-cE-7vx" id="X7k-Kt-ve9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -409,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgV-px-zXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791" y="-1011"/>
+            <point key="canvasLocation" x="1199" y="-1047"/>
         </scene>
         <!--Detail View Controller Basics-->
         <scene sceneID="XmZ-o6-Qqr">
@@ -663,11 +663,11 @@
                                 </subviews>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
                             </stackView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWL-II-aw5">
+                            <containerView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWL-II-aw5">
                                 <rect key="frame" x="120" y="150" width="239" height="497"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
-                                    <segue destination="uEV-ve-SRy" kind="embed" id="l3k-Ob-4ra"/>
+                                    <segue destination="uEV-ve-SRy" kind="embed" id="iWL-Ni-QPo"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -706,6 +706,34 @@
             </objects>
             <point key="canvasLocation" x="98" y="-416"/>
         </scene>
+        <!--Selector-->
+        <scene sceneID="WbH-bd-ChA">
+            <objects>
+                <tableViewController id="dS6-GI-D3D" customClass="NPCSelector" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EwL-v5-7Kr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dNS-7U-C29">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dNS-7U-C29" id="5Ma-hj-l0M">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dS6-GI-D3D" id="eQb-VD-hNN"/>
+                            <outlet property="delegate" destination="dS6-GI-D3D" id="lht-ge-AcO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVD-Cv-Hwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1473" y="-416"/>
+        </scene>
         <!--Basics-->
         <scene sceneID="sWW-i1-7rm">
             <objects>
@@ -727,6 +755,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l3k-Ob-4ra"/>
+        <segue reference="iWL-Ni-QPo"/>
     </inferredMetricsTieBreakers>
 </document>

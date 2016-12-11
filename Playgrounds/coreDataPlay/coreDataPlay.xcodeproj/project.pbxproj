@@ -35,7 +35,6 @@
 		73E48BA11DE79A6800D66009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA01DE79A6800D66009 /* main.m */; };
 		73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA31DE79A6800D66009 /* AppDelegate.m */; };
 		73E48BA71DE79A6800D66009 /* NPCDetailViewController_Basics.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BA61DE79A6800D66009 /* NPCDetailViewController_Basics.m */; };
-		73E48BAA1DE79A6800D66009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BA81DE79A6800D66009 /* Main.storyboard */; };
 		73E48BAF1DE79A6800D66009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BAE1DE79A6800D66009 /* Assets.xcassets */; };
 		73E48BB21DE79A6800D66009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */; };
 		73E48BBD1DE79A6900D66009 /* coreDataPlay_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E48BBC1DE79A6900D66009 /* coreDataPlay_iOSTests.m */; };
@@ -50,6 +49,8 @@
 		73E48BF01DE7A16500D66009 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E48BEE1DE7A16500D66009 /* Info.plist */; };
 		73EFEDA01DF64B9E004DE19A /* baseSkillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EFED9F1DF64B9D004DE19A /* baseSkillCell.m */; };
 		73EFEDA21DF64E25004DE19A /* basicSkillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73EFEDA11DF64E25004DE19A /* basicSkillCell.xib */; };
+		73F7E94E1DFD0A1A002DABDA /* NPCSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F7E94D1DFD0A1A002DABDA /* NPCSelector.m */; };
+		73F7E9641DFD1351002DABDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F7E9621DFD1351002DABDA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +125,6 @@
 		73E48BA31DE79A6800D66009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		73E48BA51DE79A6800D66009 /* NPCDetailViewController_Basics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPCDetailViewController_Basics.h; sourceTree = "<group>"; };
 		73E48BA61DE79A6800D66009 /* NPCDetailViewController_Basics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPCDetailViewController_Basics.m; sourceTree = "<group>"; };
-		73E48BA91DE79A6800D66009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73E48BAE1DE79A6800D66009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E48BB11DE79A6800D66009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73E48BB31DE79A6900D66009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +150,9 @@
 		73EFED9E1DF64B9D004DE19A /* baseSkillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseSkillCell.h; sourceTree = "<group>"; };
 		73EFED9F1DF64B9D004DE19A /* baseSkillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseSkillCell.m; sourceTree = "<group>"; };
 		73EFEDA11DF64E25004DE19A /* basicSkillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = basicSkillCell.xib; sourceTree = "<group>"; };
+		73F7E94C1DFD0A1A002DABDA /* NPCSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPCSelector.h; sourceTree = "<group>"; };
+		73F7E94D1DFD0A1A002DABDA /* NPCSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPCSelector.m; sourceTree = "<group>"; };
+		73F7E9631DFD1351002DABDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				73663AF81DF53955000B3C5A /* NPC Detail */,
+				73F7E94C1DFD0A1A002DABDA /* NPCSelector.h */,
+				73F7E94D1DFD0A1A002DABDA /* NPCSelector.m */,
 			);
 			name = NPC;
 			sourceTree = "<group>";
@@ -356,10 +361,10 @@
 		73E48B9E1DE79A6800D66009 /* coreDataPlay-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				73F7E9621DFD1351002DABDA /* Main.storyboard */,
 				73E48BA21DE79A6800D66009 /* AppDelegate.h */,
 				73E48BA31DE79A6800D66009 /* AppDelegate.m */,
 				73663AF61DF538AC000B3C5A /* View Controllers */,
-				73E48BA81DE79A6800D66009 /* Main.storyboard */,
 				73E48BAE1DE79A6800D66009 /* Assets.xcassets */,
 				73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */,
 				73E48BB31DE79A6900D66009 /* Info.plist */,
@@ -629,8 +634,8 @@
 				73EFEDA21DF64E25004DE19A /* basicSkillCell.xib in Resources */,
 				73E48BB21DE79A6800D66009 /* LaunchScreen.storyboard in Resources */,
 				73A6924A1DF8DD8500643594 /* summarySkillCell.xib in Resources */,
+				73F7E9641DFD1351002DABDA /* Main.storyboard in Resources */,
 				73E48BAF1DE79A6800D66009 /* Assets.xcassets in Resources */,
-				73E48BAA1DE79A6800D66009 /* Main.storyboard in Resources */,
 				737DFBD51DF7B019008E494E /* baseAbilityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,6 +708,7 @@
 				73A40D4D1DF642F300216B8E /* NPCDetailViewControllerController_Skills.m in Sources */,
 				73E48BA41DE79A6800D66009 /* AppDelegate.m in Sources */,
 				73A692491DF8DD8500643594 /* summarySkillCell.m in Sources */,
+				73F7E94E1DFD0A1A002DABDA /* NPCSelector.m in Sources */,
 				73EFEDA01DF64B9E004DE19A /* baseSkillCell.m in Sources */,
 				737DFBD41DF7B019008E494E /* baseAbilityCell.m in Sources */,
 				73E48BA11DE79A6800D66009 /* main.m in Sources */,
@@ -761,20 +767,20 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		73E48BA81DE79A6800D66009 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73E48BA91DE79A6800D66009 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		73E48BB01DE79A6800D66009 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				73E48BB11DE79A6800D66009 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		73F7E9621DFD1351002DABDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73F7E9631DFD1351002DABDA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
