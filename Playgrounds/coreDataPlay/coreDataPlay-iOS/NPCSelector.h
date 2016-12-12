@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "nonPlayerCharacter.h"
 @interface NPCSelector : UITableViewController
-
+@property(nonatomic) NSMutableArray* NPCs;//should be filled with Nonplayer characters
 @end

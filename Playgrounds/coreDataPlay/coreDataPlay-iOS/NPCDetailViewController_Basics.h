@@ -26,6 +26,6 @@
     __weak IBOutlet UITextField *chaMod;
     NPCDetailSkill_AbilitySummary *summ;
 }
-@property (nonatomic,weak) nonPlayerCharacter* toEdit;
+@property (nonatomic,strong) nonPlayerCharacter* toEdit;//Note ... If you ever reuse a class like this ... make sure to double check your properties, it will save you alot of headaches.
 -(IBAction)abilityFieldChanged:(id)sender;
 @end

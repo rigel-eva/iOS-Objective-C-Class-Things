@@ -17,7 +17,9 @@
 
 @implementation NPCTabBar
 @synthesize toEdit;
-
+-(id)init{
+    return [super init];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate=self;//Might as well set ourself as the delegate ... because ... why not ...
@@ -45,7 +47,6 @@
     //Then let's update each view controller!
     for(int i=0; i<self.viewControllers.count; i++){
         UIViewController* viewController=[self.viewControllers objectAtIndex:i];
-        NSLog(@"Pushing View: %@",[viewController class]);
         if([viewController isKindOfClass:[NPCDetailViewController_Basics class]]){
             NPCDetailViewController_Basics* basics=(NPCDetailViewController_Basics*)viewController;
             basics.toEdit=toEdit;
@@ -59,9 +60,10 @@
     }
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
-    //[self updateToEdit];
+    [self updateToEdit];
     return true;
 }
+
 /*
 #pragma mark - Navigation
 

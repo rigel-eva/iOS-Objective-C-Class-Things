@@ -14,11 +14,9 @@
 }
 @synthesize toEdit;
 -(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-#warning Need to fix the fact that the embed view controller isn't retaining correctly.
     summ.toView=toEdit;//This fixes the fact that it's not retaining data ...
 }
-- (void)viewDidLoad {
+-(void)viewDidLoad {
     [super viewDidLoad];
     nameEntry.text=toEdit.name;
     raceEntry.text=toEdit.race;
@@ -51,26 +49,36 @@
     [self setModifiers];
     [summ refreshData];
 }
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return NO;
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 #warning remove the following 3 lines of code before Turning in.
-    if(toEdit==nil){
+    static bool gend=false;
+    if(toEdit==nil&&!gend){
         toEdit=[testFunctions generateTestObject];//Just for right now ... we kinda want to get our view up and running
+        gend=true;
     }
     if ([segue.destinationViewController isKindOfClass:[NPCDetailSkill_AbilitySummary class]]) {
         NPCDetailSkill_AbilitySummary* summary=(NPCDetailSkill_AbilitySummary*) segue.destinationViewController;
         summary.toView=toEdit;
         summ=summary;
     }else if([segue.destinationViewController isKindOfClass:[NPCTabBar class]]){
+
         NPCTabBar* tab=(NPCTabBar*)segue.destinationViewController;
         tab.toEdit=toEdit;
+        [tab updateToEdit];
     }
+}
+-(IBAction)updatedName:(id)sender{
+    toEdit.name=nameEntry.text;//Just copy the name entry into our npc.
+}
+-(IBAction)updatedRace:(id)sender{
+    toEdit.race=nameEntry.text;//and do the same for the race
 }
 @end

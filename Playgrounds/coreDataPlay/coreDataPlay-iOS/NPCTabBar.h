@@ -11,4 +11,5 @@
 
 @interface NPCTabBar : UITabBarController <UITabBarDelegate>
 @property (nonatomic) nonPlayerCharacter* toEdit;
+-(void)updateToEdit;
 @end

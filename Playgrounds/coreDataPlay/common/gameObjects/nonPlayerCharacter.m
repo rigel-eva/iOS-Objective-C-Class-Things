@@ -23,4 +23,7 @@
     object.race=race;
     return [super saveToManagedObject:object];
 }
+-(void)dealloc{
+    //NSLog(@"RIP %@ May they rest in peace",name);
+}
 @end

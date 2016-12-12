@@ -7,16 +7,24 @@
 //
 
 #import "NPCSelector.h"
-
+#import "testFunctions.h"
 @interface NPCSelector ()
 
 @end
 
 @implementation NPCSelector
-
+@synthesize NPCs;
 - (void)viewDidLoad {
+    static bool gend=false;
+    if(NPCs==nil&&!gend){
+        int rand=arc4random()%15;
+        NPCs=[[NSMutableArray alloc]init];
+        for(int i=0; i<rand; i++){
+            [NPCs addObject:[testFunctions generateTestObject]];
+        }
+        gend=true;
+    }
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -38,18 +46,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return NPCs.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"npc" forIndexPath:indexPath];
     // Configure the cell...
-    
+    nonPlayerCharacter* character=[NPCs objectAtIndex:indexPath.row];
+    cell.textLabel.text=character.name;
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
