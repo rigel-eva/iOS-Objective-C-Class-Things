@@ -8,6 +8,7 @@
 
 #import "NPCSelector.h"
 #import "testFunctions.h"
+#import "NPCDetailViewController_Basics.h"
 @interface NPCSelector ()
 
 @end
@@ -40,12 +41,10 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return NPCs.count;
 }
 
@@ -92,14 +91,17 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([segue.destinationViewController isKindOfClass:[NPCDetailViewController_Basics class]]){
+        NPCDetailViewController_Basics* destination=(NPCDetailViewController_Basics*)segue.destinationViewController;
+        destination.toEdit=(nonPlayerCharacter*)[NPCs objectAtIndex:[npcTable.indexPathForSelectedRow row]];
+    }
 }
-*/
 
 @end
